@@ -19,11 +19,6 @@
 
 
 
-
-
-
-
-
         <!-- CSS code from Bootply.com editor -->
         
         <style type="text/css">
@@ -62,10 +57,19 @@
   }
         </style>
     </head>
+
+    <div id="d_clip_button" data-clipboard-text="Copy Me!" title="Click to copy." style="border:1px solid black; padding:20px;">Copy To Clipboard</div>
+
+    <script type="text/javascript" src="/zeroclipboard/ZeroClipboard.js"></script>
+    <script type="text/javascript">
+      var clip = new ZeroClipboard( document.getElementById('d_clip_button') );
+    </script>
+   
+    
     
     <!-- HTML code from Bootply.com editor -->
     
-    <body  >
+    <body>
         
         <div class="container">
 <h1>Bootstrap 3 Glyphicons</h1>
