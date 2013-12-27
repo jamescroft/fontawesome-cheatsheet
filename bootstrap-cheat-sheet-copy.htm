@@ -56,6 +56,25 @@
     margin: 5px auto 20px auto;
   }
         </style>
+        
+        
+ <script type="text/javascript">
+ var clip = new ZeroClipboard( document.getElementById("copy-button"), {
+  moviePath: "/path/to/ZeroClipboard.swf"
+} );
+
+clip.on( "load", function(client) {
+  // alert( "movie is loaded" );
+
+  client.on( "complete", function(client, args) {
+    // `this` is the element that was clicked
+    this.style.display = "none";
+    alert("Copied text to clipboard: " + args.text );
+  } );
+} );
+</script>       
+        
+        
     </head>
 
     <!-- HTML code from Bootply.com editor -->
