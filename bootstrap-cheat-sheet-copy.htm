@@ -8,6 +8,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
         <link href="http://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css" rel="stylesheet">
         <link href="http://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css" type="text/css" rel="stylesheet">
+        <script src="http://code.jquery.com/jquery-2.0.3.min.js"></script>
         <!--[if lt IE 9]>
           <script src="//html5shim.googlecode.com/svn/trunk/html5.js"></script>
         <![endif]-->
@@ -76,6 +77,11 @@
         <span class="glyphicon-class">.glyphicon .glyphicon-adjust</span>
         <button id="copy-button" title="Click to copy me." type="button" data-clipboard-text="&#60;span class=&#34;glyphicon glyphicon-adjust&#34;&#62;&#60;/span&#62;" class="btn btn-primary">Copy</button>
       </li>
+      <li>
+        <span class="glyphicon glyphicon-align-center"></span>
+        <span class="glyphicon-class">.glyphicon .glyphicon-align-center</span>
+      <button id="copy-button2" title="Click to copy me." type="button" data-clipboard-text="&#60;span class=&#34;glyphicon glyphicon-align-center&#34;&#62;&#60;/span&#62;" class="btn btn-primary">Copy</button>
+      </li>
       
           <script type="text/javascript" src="/zeroclipboard/ZeroClipboard.js"></script>
 
@@ -89,16 +95,26 @@ clip.on( "load", function(client) {
 
   client.on( "complete", function(client, args) {
     // `this` is the element that was clicked
-    this.style.content = "Copied!";
-    alert("Copied text to clipboard: " + args.text );
+    this.style.backgroundColor = "#26B904";
+    alert("Adjust Glyphicon code copied to clipboard!" );
   } );
 } );
-</script> 
-      <li>
-        <span class="glyphicon glyphicon-align-center"></span>
-        <span class="glyphicon-class">.glyphicon .glyphicon-align-center</span>
-      <button type="button" class="btn btn-primary">Copy</button>
-      </li>
+
+ var clip2 = new ZeroClipboard( document.getElementById("copy-button2"), {
+  moviePath: "/zeroclipboard/ZeroClipboard.swf"
+} );
+
+clip2.on( "load", function(client) {
+  // alert( "movie is loaded" );
+
+  client.on( "complete", function(client, args) {
+    // `this` is the element that was clicked
+    this.style.backgroundColor = "#26B904";
+    alert("Align-center Glyphicon code copied to clipboard!" );
+  } );
+} );
+</script>       
+      
       <li>
         <span class="glyphicon glyphicon-align-justify"></span>
         <span class="glyphicon-class">.glyphicon .glyphicon-align-justify</span>
