@@ -83,11 +83,11 @@
       <button id="copy-button2" title="Click to copy me." type="button" data-clipboard-text="&#60;span class=&#34;glyphicon glyphicon-align-center&#34;&#62;&#60;/span&#62;" class="btn btn-primary">Copy</button>
       </li>
       
-          <script type="text/javascript" src="/zeroclipboard/ZeroClipboard.js"></script>
+          <script type="text/javascript" src="zeroclipboard/ZeroClipboard.js"></script>
 
  <script type="text/javascript">
- var clip = new ZeroClipboard( $('#copy-button', '#copy-button2'), {
-  moviePath: "/zeroclipboard/ZeroClipboard.swf"
+ var clip = new ZeroClipboard( $('#copy-button, #copy-button2'), {
+  moviePath: "zeroclipboard/ZeroClipboard.swf"
 } );
 
 clip.on( "load", function(client) {
