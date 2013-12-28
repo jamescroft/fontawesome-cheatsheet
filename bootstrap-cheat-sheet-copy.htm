@@ -86,7 +86,7 @@
           <script type="text/javascript" src="/zeroclipboard/ZeroClipboard.js"></script>
 
  <script type="text/javascript">
- var clip = new ZeroClipboard( document.getElementById("copy-button"), {
+ var clip = new ZeroClipboard( document.getElementById("copy-button"), document.getElementById("copy-button2"), {
   moviePath: "/zeroclipboard/ZeroClipboard.swf"
 } );
 
@@ -96,23 +96,10 @@ clip.on( "load", function(client) {
   client.on( "complete", function(client, args) {
     // `this` is the element that was clicked
     this.style.backgroundColor = "#26B904";
-    alert("Adjust Glyphicon code copied to clipboard!" );
+    alert("Code copied to clipboard!" );
   } );
 } );
 
- var clip2 = new ZeroClipboard( document.getElementById("copy-button2"), {
-  moviePath: "/zeroclipboard/ZeroClipboard.swf"
-} );
-
-clip2.on( "load", function(client) {
-  // alert( "movie is loaded" );
-
-  client.on( "complete", function(client, args) {
-    // `this` is the element that was clicked
-    this.style.backgroundColor = "#26B904";
-    alert("Align-center Glyphicon code copied to clipboard!" );
-  } );
-} );
 </script>       
       
       <li>
