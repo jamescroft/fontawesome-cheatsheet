@@ -57,22 +57,6 @@
     margin: 5px auto 20px auto;
   }
         </style>
- 
- <script type="text/javascript">
-        $(document).ready(function() {
-            var clip = new ZeroClipboard($('.glyphicon'), { moviePath: "zeroclipboard/ZeroClipboard.swf" });
-            clip.on('mousedown', function(client, args) {
-                switch(this.id) {
-                    case 'button_1':
-                        clip.setText('&#60;span class=&#34;glyphicon glyphicon-align-center&#34;&#62;&#60;/span&#62;');
-                        break;
-                    case 'button_2':
-                        clip.setText('&#60;span class=&#34;glyphicon glyphicon-align-center&#34;&#62;&#60;/span&#62;');
-                        break;
-                }
-            });
-        });
-    </script>
         
     </head>
 
@@ -91,15 +75,32 @@
       <li>
         <span class="glyphicon glyphicon-adjust"></span>
         <span class="glyphicon-class">.glyphicon .glyphicon-adjust</span>
-        <button id="button_1" title="Click to copy me." type="button" data-clipboard-text="&#60;span class=&#34;glyphicon glyphicon-adjust&#34;&#62;&#60;/span&#62;" class="btn btn-primary">Copy</button>
+        <button id="copy-button" title="Click to copy me." type="button" data-clipboard-text="&#60;span class=&#34;glyphicon glyphicon-adjust&#34;&#62;&#60;/span&#62;" class="btn btn-primary">Copy</button>
       </li>
       <li>
         <span class="glyphicon glyphicon-align-center"></span>
         <span class="glyphicon-class">.glyphicon .glyphicon-align-center</span>
-      <button id="button_2" title="Click to copy me." type="button" data-clipboard-text="&#60;span class=&#34;glyphicon glyphicon-align-center&#34;&#62;&#60;/span&#62;" class="btn btn-primary">Copy</button>
+      <button id="copy-button2" title="Click to copy me." type="button" data-clipboard-text="&#60;span class=&#34;glyphicon glyphicon-align-center&#34;&#62;&#60;/span&#62;" class="btn btn-primary">Copy</button>
       </li>
       
-          <script type="text/javascript" src="zeroclipboard/ZeroClipboard.js"></script>
+          <script type="text/javascript" src="/zeroclipboard/ZeroClipboard.js"></script>
+
+ <script type="text/javascript">
+ var clip = new ZeroClipboard( $('#copy-button', '#copy-button2'), {
+  moviePath: "/zeroclipboard/ZeroClipboard.swf"
+} );
+
+clip.on( "load", function(client) {
+  // alert( "movie is loaded" );
+
+  client.on( "complete", function(client, args) {
+    // `this` is the element that was clicked
+    this.style.backgroundColor = "#26B904";
+    alert("Code copied to clipboard!" );
+  } );
+} );
+
+</script>       
       
       <li>
         <span class="glyphicon glyphicon-align-justify"></span>
