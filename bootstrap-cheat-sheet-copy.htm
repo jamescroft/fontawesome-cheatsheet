@@ -23,39 +23,44 @@
 
 	<style type="text/css">
 	
+		html {
+			overflow-x: hidden; /* Prevent scroll on narrow devices */
+	}
+
+	
+	
 		body {
 			background-color: #553d7c;
 			color: #fff;
+			overflow-x:hidden;
+		}
+	
+		h1 {
+			font-family: 'Source Sans Pro', sans-serif;
+			text-transform:uppercase;
+			font-weight: bold;
+			font-size:42px;	
+			position: relative;
+			top:-15px;	
 		}
 		
-		 
-		
-			h1 {
-				font-family: 'Source Sans Pro', sans-serif;
-				text-transform:uppercase;
-				font-weight: bold;
-				font-size:42px;	
-				position: relative;
-				top:-15px;	
-			}
-			
-			h2 {
-				font-family: 'Source Sans Pro', sans-serif;
-				text-transform:uppercase;
-				font-size:16px;
-				z-index:999;
-			}
-			h2 a, h2 a:hover {
-				color: #fff;
-				text-decoration: none;
-			}
-			
-			h2 span.glyphicon-align-justify {
-			font-size:12px;
-			position:relative;
-			top: -1px;
-			
+		h2 {
+			font-family: 'Source Sans Pro', sans-serif;
+			text-transform:uppercase;
+			font-size:16px;
+			z-index:999;
 		}
+		h1 a, h1 a:hover, h2 a, h2 a:hover {
+			color: #fff;
+			text-decoration: none;
+		}
+		
+		h2 span.glyphicon-align-justify {
+		font-size:8px;
+		position:relative;
+		top: -2px;
+		
+	}
 
 		
 		@media screen and (min-width: 768px) { 
@@ -88,7 +93,7 @@
 		}
 			
 		.glyphicons li {
-		  height: 165px;
+		  height: 175px;
 		  padding: 10px;
 		  font-size: 12px;
 		  font-family:Consolas, "Andale Mono", "Lucida Console", "Lucida Sans Typewriter", Monaco, "Courier New", monospace;
@@ -105,7 +110,7 @@
 		
 		}
 		.glyphicons .glyphicon {
-			font-size: 24px;
+			font-size: 36px;
 			display: block;
 			text-align: center;
 			margin: 5px auto 10px auto;
@@ -133,7 +138,7 @@
     <body>
         <div class="container">
 <h2 class="text-center tagline"><span class="glyphicon glyphicon-align-justify"></span> <a href="https://bootstrapcheatsheets.squarespace.com"> Bootstrap Cheat Sheets </a><span class="glyphicon glyphicon-align-justify"></span></h2>
-<h1 class="text-center">Glyphicons</h1>
+<h1 class="text-center"><a href="https://bootstrapcheatsheets.squarespace.com">Glyphicons</a></h1>
 
 <div>
   <ul class="glyphicons">
@@ -194,52 +199,52 @@
       <li class="col-md-1 col-md-offset-1 col-sm-2 col-sm-offset-1 col-xs-6">
         <span class="glyphicon glyphicon-backward"></span>
         <span class="glyphicon-class">.glyphicon .glyphicon-backward</span>
-      <button title="Click to copy me." type="button" data-clipboard-text="&#60;span class=&#34;glyphicon glyphicon-adjust&#34;&#62;&#60;/span&#62;" class="btn btn-xs copy-button">Copy</button>
+      <button title="Click to copy me." type="button" data-clipboard-text="&#60;span class=&#34;glyphicon glyphicon-backward&#34;&#62;&#60;/span&#62;" class="btn btn-xs copy-button">Copy</button>
       </li>
       <li class="col-md-1 col-sm-2 col-xs-6">
         <span class="glyphicon glyphicon-ban-circle"></span>
         <span class="glyphicon-class">.glyphicon .glyphicon-ban-circle</span>
-      <button title="Click to copy me." type="button" data-clipboard-text="&#60;span class=&#34;glyphicon glyphicon-adjust&#34;&#62;&#60;/span&#62;" class="btn btn-xs copy-button">Copy</button>
+      <button title="Click to copy me." type="button" data-clipboard-text="&#60;span class=&#34;glyphicon glyphicon-ban-circle&#34;&#62;&#60;/span&#62;" class="btn btn-xs copy-button">Copy</button>
       </li>
       <li class="col-md-1 col-sm-2 col-xs-6">
         <span class="glyphicon glyphicon-barcode"></span>
         <span class="glyphicon-class">.glyphicon .glyphicon-barcode</span>
-      <button title="Click to copy me." type="button" data-clipboard-text="&#60;span class=&#34;glyphicon glyphicon-adjust&#34;&#62;&#60;/span&#62;" class="btn btn-xs copy-button">Copy</button>
+      <button title="Click to copy me." type="button" data-clipboard-text="&#60;span class=&#34;glyphicon glyphicon-barcode&#34;&#62;&#60;/span&#62;" class="btn btn-xs copy-button">Copy</button>
       </li>
       <li class="col-md-1 col-sm-2 col-xs-6">
         <span class="glyphicon glyphicon-bell"></span>
         <span class="glyphicon-class">.glyphicon .glyphicon-bell</span>
-      <button title="Click to copy me." type="button" data-clipboard-text="&#60;span class=&#34;glyphicon glyphicon-adjust&#34;&#62;&#60;/span&#62;" class="btn btn-xs copy-button">Copy</button>
+      <button title="Click to copy me." type="button" data-clipboard-text="&#60;span class=&#34;glyphicon glyphicon-bell&#34;&#62;&#60;/span&#62;" class="btn btn-xs copy-button">Copy</button>
       </li>
       <li class="col-md-1 col-sm-2 col-xs-6">
         <span class="glyphicon glyphicon-bold"></span>
         <span class="glyphicon-class">.glyphicon .glyphicon-bold</span>
-      <button title="Click to copy me." type="button" data-clipboard-text="&#60;span class=&#34;glyphicon glyphicon-adjust&#34;&#62;&#60;/span&#62;" class="btn btn-xs copy-button">Copy</button>
+      <button title="Click to copy me." type="button" data-clipboard-text="&#60;span class=&#34;glyphicon glyphicon-bold&#34;&#62;&#60;/span&#62;" class="btn btn-xs copy-button">Copy</button>
       </li>
       <li class="col-md-1 col-md-offset-0 col-sm-2 col-sm-offset-1 col-xs-6 col-xs-offset-0">
         <span class="glyphicon glyphicon-book"></span>
         <span class="glyphicon-class">.glyphicon .glyphicon-book</span>
-      <button title="Click to copy me." type="button" data-clipboard-text="&#60;span class=&#34;glyphicon glyphicon-adjust&#34;&#62;&#60;/span&#62;" class="btn btn-xs copy-button">Copy</button>
+      <button title="Click to copy me." type="button" data-clipboard-text="&#60;span class=&#34;glyphicon glyphicon-book&#34;&#62;&#60;/span&#62;" class="btn btn-xs copy-button">Copy</button>
       </li>
        <li class="col-md-1 col-sm-2 col-xs-6">
         <span class="glyphicon glyphicon-bookmark"></span>
         <span class="glyphicon-class">.glyphicon .glyphicon-bookmark</span>
-      <button title="Click to copy me." type="button" data-clipboard-text="&#60;span class=&#34;glyphicon glyphicon-adjust&#34;&#62;&#60;/span&#62;" class="btn btn-xs copy-button">Copy</button>
+      <button title="Click to copy me." type="button" data-clipboard-text="&#60;span class=&#34;glyphicon glyphicon-bookmark&#34;&#62;&#60;/span&#62;" class="btn btn-xs copy-button">Copy</button>
       </li>
        <li class="col-md-1 col-sm-2 col-xs-6">
         <span class="glyphicon glyphicon-briefcase"></span>
         <span class="glyphicon-class">.glyphicon .glyphicon-briefcase</span>
-      <button title="Click to copy me." type="button" data-clipboard-text="&#60;span class=&#34;glyphicon glyphicon-adjust&#34;&#62;&#60;/span&#62;" class="btn btn-xs copy-button">Copy</button>
+      <button title="Click to copy me." type="button" data-clipboard-text="&#60;span class=&#34;glyphicon glyphicon-briefcase&#34;&#62;&#60;/span&#62;" class="btn btn-xs copy-button">Copy</button>
       </li>
        <li class="col-md-1 col-sm-2 col-xs-6">
         <span class="glyphicon glyphicon-bullhorn"></span>
         <span class="glyphicon-class">.glyphicon .glyphicon-bullhorn</span>
-      <button title="Click to copy me." type="button" data-clipboard-text="&#60;span class=&#34;glyphicon glyphicon-adjust&#34;&#62;&#60;/span&#62;" class="btn btn-xs copy-button">Copy</button>
+      <button title="Click to copy me." type="button" data-clipboard-text="&#60;span class=&#34;glyphicon glyphicon-bullhorn&#34;&#62;&#60;/span&#62;" class="btn btn-xs copy-button">Copy</button>
       </li>
        <li class="col-md-1 col-sm-2 col-xs-6">
         <span class="glyphicon glyphicon-calendar"></span>
         <span class="glyphicon-class">.glyphicon .glyphicon-calendar</span>
-      <button title="Click to copy me." type="button" data-clipboard-text="&#60;span class=&#34;glyphicon glyphicon-adjust&#34;&#62;&#60;/span&#62;" class="btn btn-xs copy-button">Copy</button>
+      <button title="Click to copy me." type="button" data-clipboard-text="&#60;span class=&#34;glyphicon glyphicon-calendar&#34;&#62;&#60;/span&#62;" class="btn btn-xs copy-button">Copy</button>
       </li>
       
       </div>
@@ -247,52 +252,52 @@
       <li class="col-md-1 col-md-offset-1 col-sm-2 col-sm-offset-1 col-xs-6">
         <span class="glyphicon glyphicon-camera"></span>
         <span class="glyphicon-class">.glyphicon .glyphicon-camera</span>
-      <button title="Click to copy me." type="button" data-clipboard-text="&#60;span class=&#34;glyphicon glyphicon-adjust&#34;&#62;&#60;/span&#62;" class="btn btn-xs copy-button">Copy</button>
+      <button title="Click to copy me." type="button" data-clipboard-text="&#60;span class=&#34;glyphicon glyphicon-camera&#34;&#62;&#60;/span&#62;" class="btn btn-xs copy-button">Copy</button>
       </li>
       <li class="col-md-1 col-sm-2 col-xs-6">
         <span class="glyphicon glyphicon-certificate"></span>
         <span class="glyphicon-class">.glyphicon .glyphicon-certificate</span>
-      <button title="Click to copy me." type="button" data-clipboard-text="&#60;span class=&#34;glyphicon glyphicon-adjust&#34;&#62;&#60;/span&#62;" class="btn btn-xs copy-button">Copy</button>
+      <button title="Click to copy me." type="button" data-clipboard-text="&#60;span class=&#34;glyphicon glyphicon-certificate&#34;&#62;&#60;/span&#62;" class="btn btn-xs copy-button">Copy</button>
       </li>
       <li class="col-md-1 col-sm-2 col-xs-6">
         <span class="glyphicon glyphicon-check"></span>
         <span class="glyphicon-class">.glyphicon .glyphicon-check</span>
-      <button title="Click to copy me." type="button" data-clipboard-text="&#60;span class=&#34;glyphicon glyphicon-adjust&#34;&#62;&#60;/span&#62;" class="btn btn-xs copy-button">Copy</button>
+      <button title="Click to copy me." type="button" data-clipboard-text="&#60;span class=&#34;glyphicon glyphicon-check&#34;&#62;&#60;/span&#62;" class="btn btn-xs copy-button">Copy</button>
       </li>
       <li class="col-md-1 col-sm-2 col-xs-6">
         <span class="glyphicon glyphicon-chevron-down"></span>
         <span class="glyphicon-class">.glyphicon .glyphicon-chevron-down</span>
-      <button title="Click to copy me." type="button" data-clipboard-text="&#60;span class=&#34;glyphicon glyphicon-adjust&#34;&#62;&#60;/span&#62;" class="btn btn-xs copy-button">Copy</button>
+      <button title="Click to copy me." type="button" data-clipboard-text="&#60;span class=&#34;glyphicon glyphicon-chevron-down&#34;&#62;&#60;/span&#62;" class="btn btn-xs copy-button">Copy</button>
       </li>
       <li class="col-md-1 col-sm-2 col-xs-6">
         <span class="glyphicon glyphicon-chevron-left"></span>
         <span class="glyphicon-class">.glyphicon .glyphicon-chevron-left</span>
-      <button title="Click to copy me." type="button" data-clipboard-text="&#60;span class=&#34;glyphicon glyphicon-adjust&#34;&#62;&#60;/span&#62;" class="btn btn-xs copy-button">Copy</button>
+      <button title="Click to copy me." type="button" data-clipboard-text="&#60;span class=&#34;glyphicon glyphicon-chevron-left&#34;&#62;&#60;/span&#62;" class="btn btn-xs copy-button">Copy</button>
       </li>
       <li class="col-md-1 col-md-offset-0 col-sm-2 col-sm-offset-1 col-xs-6 col-xs-offset-0">
         <span class="glyphicon glyphicon-chevron-right"></span>
         <span class="glyphicon-class">.glyphicon .glyphicon-chevron-right</span>
-      <button title="Click to copy me." type="button" data-clipboard-text="&#60;span class=&#34;glyphicon glyphicon-adjust&#34;&#62;&#60;/span&#62;" class="btn btn-xs copy-button">Copy</button>
+      <button title="Click to copy me." type="button" data-clipboard-text="&#60;span class=&#34;glyphicon glyphicon-chevron-right&#34;&#62;&#60;/span&#62;" class="btn btn-xs copy-button">Copy</button>
       </li>
       <li class="col-md-1 col-sm-2 col-xs-6">
         <span class="glyphicon glyphicon-chevron-up"></span>
         <span class="glyphicon-class">.glyphicon .glyphicon-chevron-up</span>
-      <button title="Click to copy me." type="button" data-clipboard-text="&#60;span class=&#34;glyphicon glyphicon-adjust&#34;&#62;&#60;/span&#62;" class="btn btn-xs copy-button">Copy</button>
+      <button title="Click to copy me." type="button" data-clipboard-text="&#60;span class=&#34;glyphicon glyphicon-chevron-up&#34;&#62;&#60;/span&#62;" class="btn btn-xs copy-button">Copy</button>
       </li>
       <li class="col-md-1 col-sm-2 col-xs-6">
         <span class="glyphicon glyphicon-circle-arrow-down"></span>
         <span class="glyphicon-class">.glyphicon .glyphicon-circle-arrow-down</span>
-      <button title="Click to copy me." type="button" data-clipboard-text="&#60;span class=&#34;glyphicon glyphicon-adjust&#34;&#62;&#60;/span&#62;" class="btn btn-xs copy-button">Copy</button>
+      <button title="Click to copy me." type="button" data-clipboard-text="&#60;span class=&#34;glyphicon glyphicon-circle-arrow-down&#34;&#62;&#60;/span&#62;" class="btn btn-xs copy-button">Copy</button>
       </li>
       <li class="col-md-1 col-sm-2 col-xs-6">
         <span class="glyphicon glyphicon-circle-arrow-left"></span>
         <span class="glyphicon-class">.glyphicon .glyphicon-circle-arrow-left</span>
-      <button title="Click to copy me." type="button" data-clipboard-text="&#60;span class=&#34;glyphicon glyphicon-adjust&#34;&#62;&#60;/span&#62;" class="btn btn-xs copy-button">Copy</button>
+      <button title="Click to copy me." type="button" data-clipboard-text="&#60;span class=&#34;glyphicon glyphicon-circle-arrow-left&#34;&#62;&#60;/span&#62;" class="btn btn-xs copy-button">Copy</button>
       </li>
       <li class="col-md-1 col-sm-2 col-xs-6">
         <span class="glyphicon glyphicon-circle-arrow-right"></span>
         <span class="glyphicon-class">.glyphicon .glyphicon-circle-arrow-right</span>
-      <button title="Click to copy me." type="button" data-clipboard-text="&#60;span class=&#34;glyphicon glyphicon-adjust&#34;&#62;&#60;/span&#62;" class="btn btn-xs copy-button">Copy</button>
+      <button title="Click to copy me." type="button" data-clipboard-text="&#60;span class=&#34;glyphicon glyphicon-circle-arrow-right&#34;&#62;&#60;/span&#62;" class="btn btn-xs copy-button">Copy</button>
       </li>
       
       </div>
@@ -302,52 +307,52 @@
       <li class="col-md-1 col-md-offset-1 col-sm-2 col-sm-offset-1 col-xs-6">
         <span class="glyphicon glyphicon-circle-arrow-up"></span>
         <span class="glyphicon-class">.glyphicon .glyphicon-circle-arrow-up</span>
-      <button title="Click to copy me." type="button" data-clipboard-text="&#60;span class=&#34;glyphicon glyphicon-adjust&#34;&#62;&#60;/span&#62;" class="btn btn-xs copy-button">Copy</button>
+      <button title="Click to copy me." type="button" data-clipboard-text="&#60;span class=&#34;glyphicon glyphicon-circle-arrow-up&#34;&#62;&#60;/span&#62;" class="btn btn-xs copy-button">Copy</button>
       </li>
       <li class="col-md-1 col-sm-2 col-xs-6">
         <span class="glyphicon glyphicon-cloud"></span>
         <span class="glyphicon-class">.glyphicon .glyphicon-cloud</span>
-      <button title="Click to copy me." type="button" data-clipboard-text="&#60;span class=&#34;glyphicon glyphicon-adjust&#34;&#62;&#60;/span&#62;" class="btn btn-xs copy-button">Copy</button>
+      <button title="Click to copy me." type="button" data-clipboard-text="&#60;span class=&#34;glyphicon glyphicon-cloud&#34;&#62;&#60;/span&#62;" class="btn btn-xs copy-button">Copy</button>
       </li>
       <li class="col-md-1 col-sm-2 col-xs-6">
         <span class="glyphicon glyphicon-cloud-download"></span>
         <span class="glyphicon-class">.glyphicon .glyphicon-cloud-download</span>
-      <button title="Click to copy me." type="button" data-clipboard-text="&#60;span class=&#34;glyphicon glyphicon-adjust&#34;&#62;&#60;/span&#62;" class="btn btn-xs copy-button">Copy</button>
+      <button title="Click to copy me." type="button" data-clipboard-text="&#60;span class=&#34;glyphicon glyphicon-cloud-download&#34;&#62;&#60;/span&#62;" class="btn btn-xs copy-button">Copy</button>
       </li>
       <li class="col-md-1 col-sm-2 col-xs-6">
         <span class="glyphicon glyphicon-cloud-upload"></span>
         <span class="glyphicon-class">.glyphicon .glyphicon-cloud-upload</span>
-      <button title="Click to copy me." type="button" data-clipboard-text="&#60;span class=&#34;glyphicon glyphicon-adjust&#34;&#62;&#60;/span&#62;" class="btn btn-xs copy-button">Copy</button>
+      <button title="Click to copy me." type="button" data-clipboard-text="&#60;span class=&#34;glyphicon glyphicon-cloud-upload&#34;&#62;&#60;/span&#62;" class="btn btn-xs copy-button">Copy</button>
       </li>
       <li class="col-md-1 col-sm-2 col-xs-6">
         <span class="glyphicon glyphicon-cog"></span>
         <span class="glyphicon-class">.glyphicon .glyphicon-cog</span>
-      <button title="Click to copy me." type="button" data-clipboard-text="&#60;span class=&#34;glyphicon glyphicon-adjust&#34;&#62;&#60;/span&#62;" class="btn btn-xs copy-button">Copy</button>
+      <button title="Click to copy me." type="button" data-clipboard-text="&#60;span class=&#34;glyphicon glyphicon-cog&#34;&#62;&#60;/span&#62;" class="btn btn-xs copy-button">Copy</button>
       </li>
       <li class="col-md-1 col-md-offset-0 col-sm-2 col-sm-offset-1 col-xs-6 col-xs-offset-0">
         <span class="glyphicon glyphicon-collapse-down"></span>
         <span class="glyphicon-class">.glyphicon .glyphicon-collapse-down</span>
-      <button title="Click to copy me." type="button" data-clipboard-text="&#60;span class=&#34;glyphicon glyphicon-adjust&#34;&#62;&#60;/span&#62;" class="btn btn-xs copy-button">Copy</button>
+      <button title="Click to copy me." type="button" data-clipboard-text="&#60;span class=&#34;glyphicon glyphicon-collapse-down&#34;&#62;&#60;/span&#62;" class="btn btn-xs copy-button">Copy</button>
       </li>
       <li class="col-md-1 col-sm-2 col-xs-6">
         <span class="glyphicon glyphicon-collapse-up"></span>
         <span class="glyphicon-class">.glyphicon .glyphicon-collapse-up</span>
-      <button title="Click to copy me." type="button" data-clipboard-text="&#60;span class=&#34;glyphicon glyphicon-adjust&#34;&#62;&#60;/span&#62;" class="btn btn-xs copy-button">Copy</button>
+      <button title="Click to copy me." type="button" data-clipboard-text="&#60;span class=&#34;glyphicon glyphicon-collapse-up&#34;&#62;&#60;/span&#62;" class="btn btn-xs copy-button">Copy</button>
       </li>
       <li class="col-md-1 col-sm-2 col-xs-6">
         <span class="glyphicon glyphicon-comment"></span>
         <span class="glyphicon-class">.glyphicon .glyphicon-comment</span>
-      <button title="Click to copy me." type="button" data-clipboard-text="&#60;span class=&#34;glyphicon glyphicon-adjust&#34;&#62;&#60;/span&#62;" class="btn btn-xs copy-button">Copy</button>
+      <button title="Click to copy me." type="button" data-clipboard-text="&#60;span class=&#34;glyphicon glyphicon-comment&#34;&#62;&#60;/span&#62;" class="btn btn-xs copy-button">Copy</button>
       </li>
       <li class="col-md-1 col-sm-2 col-xs-6">
         <span class="glyphicon glyphicon-compressed"></span>
         <span class="glyphicon-class">.glyphicon .glyphicon-compressed</span>
-      <button title="Click to copy me." type="button" data-clipboard-text="&#60;span class=&#34;glyphicon glyphicon-adjust&#34;&#62;&#60;/span&#62;" class="btn btn-xs copy-button">Copy</button>
+      <button title="Click to copy me." type="button" data-clipboard-text="&#60;span class=&#34;glyphicon glyphicon-compressed&#34;&#62;&#60;/span&#62;" class="btn btn-xs copy-button">Copy</button>
       </li>
       <li class="col-md-1 col-sm-2 col-xs-6">
         <span class="glyphicon glyphicon-copyright-mark"></span>
         <span class="glyphicon-class">.glyphicon .glyphicon-copyright-mark</span>
-      <button title="Click to copy me." type="button" data-clipboard-text="&#60;span class=&#34;glyphicon glyphicon-adjust&#34;&#62;&#60;/span&#62;" class="btn btn-xs copy-button">Copy</button>
+      <button title="Click to copy me." type="button" data-clipboard-text="&#60;span class=&#34;glyphicon glyphicon-copyright-mark&#34;&#62;&#60;/span&#62;" class="btn btn-xs copy-button">Copy</button>
       </li>
       </div>
       
@@ -356,52 +361,52 @@
       <li class="col-md-1 col-md-offset-1 col-sm-2 col-sm-offset-1 col-xs-6">
         <span class="glyphicon glyphicon-credit-card"></span>
         <span class="glyphicon-class">.glyphicon .glyphicon-credit-card</span>
-      <button title="Click to copy me." type="button" data-clipboard-text="&#60;span class=&#34;glyphicon glyphicon-adjust&#34;&#62;&#60;/span&#62;" class="btn btn-xs copy-button">Copy</button>
+      <button title="Click to copy me." type="button" data-clipboard-text="&#60;span class=&#34;glyphicon glyphicon-credit-card&#34;&#62;&#60;/span&#62;" class="btn btn-xs copy-button">Copy</button>
       </li>
       <li class="col-md-1 col-sm-2 col-xs-6">
         <span class="glyphicon glyphicon-cutlery"></span>
         <span class="glyphicon-class">.glyphicon .glyphicon-cutlery</span>
-      <button title="Click to copy me." type="button" data-clipboard-text="&#60;span class=&#34;glyphicon glyphicon-adjust&#34;&#62;&#60;/span&#62;" class="btn btn-xs copy-button">Copy</button>
+      <button title="Click to copy me." type="button" data-clipboard-text="&#60;span class=&#34;glyphicon glyphicon-cutlery&#34;&#62;&#60;/span&#62;" class="btn btn-xs copy-button">Copy</button>
       </li>
       <li class="col-md-1 col-sm-2 col-xs-6">
         <span class="glyphicon glyphicon-dashboard"></span>
         <span class="glyphicon-class">.glyphicon .glyphicon-dashboard</span>
-      <button title="Click to copy me." type="button" data-clipboard-text="&#60;span class=&#34;glyphicon glyphicon-adjust&#34;&#62;&#60;/span&#62;" class="btn btn-xs copy-button">Copy</button>
+      <button title="Click to copy me." type="button" data-clipboard-text="&#60;span class=&#34;glyphicon glyphicon-dashboard&#34;&#62;&#60;/span&#62;" class="btn btn-xs copy-button">Copy</button>
       </li>
       <li class="col-md-1 col-sm-2 col-xs-6">
         <span class="glyphicon glyphicon-download"></span>
         <span class="glyphicon-class">.glyphicon .glyphicon-download</span>
-      <button title="Click to copy me." type="button" data-clipboard-text="&#60;span class=&#34;glyphicon glyphicon-adjust&#34;&#62;&#60;/span&#62;" class="btn btn-xs copy-button">Copy</button>
+      <button title="Click to copy me." type="button" data-clipboard-text="&#60;span class=&#34;glyphicon glyphicon-download&#34;&#62;&#60;/span&#62;" class="btn btn-xs copy-button">Copy</button>
       </li>
       <li class="col-md-1 col-sm-2 col-xs-6">
         <span class="glyphicon glyphicon-download-alt"></span>
         <span class="glyphicon-class">.glyphicon .glyphicon-download-alt</span>
-      <button title="Click to copy me." type="button" data-clipboard-text="&#60;span class=&#34;glyphicon glyphicon-adjust&#34;&#62;&#60;/span&#62;" class="btn btn-xs copy-button">Copy</button>
+      <button title="Click to copy me." type="button" data-clipboard-text="&#60;span class=&#34;glyphicon glyphicon-download-alt&#34;&#62;&#60;/span&#62;" class="btn btn-xs copy-button">Copy</button>
       </li>
       <li class="col-md-1 col-md-offset-0 col-sm-2 col-sm-offset-1 col-xs-6 col-xs-offset-0">
         <span class="glyphicon glyphicon-earphone"></span>
         <span class="glyphicon-class">.glyphicon .glyphicon-earphone</span>
-      <button title="Click to copy me." type="button" data-clipboard-text="&#60;span class=&#34;glyphicon glyphicon-adjust&#34;&#62;&#60;/span&#62;" class="btn btn-xs copy-button">Copy</button>
+      <button title="Click to copy me." type="button" data-clipboard-text="&#60;span class=&#34;glyphicon glyphicon-earphone&#34;&#62;&#60;/span&#62;" class="btn btn-xs copy-button">Copy</button>
       </li>
       <li class="col-md-1 col-sm-2 col-xs-6">
         <span class="glyphicon glyphicon-edit"></span>
         <span class="glyphicon-class">.glyphicon .glyphicon-edit</span>
-      <button title="Click to copy me." type="button" data-clipboard-text="&#60;span class=&#34;glyphicon glyphicon-adjust&#34;&#62;&#60;/span&#62;" class="btn btn-xs copy-button">Copy</button>
+      <button title="Click to copy me." type="button" data-clipboard-text="&#60;span class=&#34;glyphicon glyphicon-edit&#34;&#62;&#60;/span&#62;" class="btn btn-xs copy-button">Copy</button>
       </li>
       <li class="col-md-1 col-sm-2 col-xs-6">
         <span class="glyphicon glyphicon-eject"></span>
         <span class="glyphicon-class">.glyphicon .glyphicon-eject</span>
-      <button title="Click to copy me." type="button" data-clipboard-text="&#60;span class=&#34;glyphicon glyphicon-adjust&#34;&#62;&#60;/span&#62;" class="btn btn-xs copy-button">Copy</button>
+      <button title="Click to copy me." type="button" data-clipboard-text="&#60;span class=&#34;glyphicon glyphicon-eject&#34;&#62;&#60;/span&#62;" class="btn btn-xs copy-button">Copy</button>
       </li>
       <li class="col-md-1 col-sm-2 col-xs-6">
         <span class="glyphicon glyphicon-envelope"></span>
         <span class="glyphicon-class">.glyphicon .glyphicon-envelope</span>
-      <button title="Click to copy me." type="button" data-clipboard-text="&#60;span class=&#34;glyphicon glyphicon-adjust&#34;&#62;&#60;/span&#62;" class="btn btn-xs copy-button">Copy</button>
+      <button title="Click to copy me." type="button" data-clipboard-text="&#60;span class=&#34;glyphicon glyphicon-envelope&#34;&#62;&#60;/span&#62;" class="btn btn-xs copy-button">Copy</button>
       </li>
       <li class="col-md-1 col-sm-2 col-xs-6">
         <span class="glyphicon glyphicon-euro"></span>
         <span class="glyphicon-class">.glyphicon .glyphicon-euro</span>
-      <button title="Click to copy me." type="button" data-clipboard-text="&#60;span class=&#34;glyphicon glyphicon-adjust&#34;&#62;&#60;/span&#62;" class="btn btn-xs copy-button">Copy</button>
+      <button title="Click to copy me." type="button" data-clipboard-text="&#60;span class=&#34;glyphicon glyphicon-euro&#34;&#62;&#60;/span&#62;" class="btn btn-xs copy-button">Copy</button>
       </li>
       </div>
       
@@ -410,52 +415,52 @@
       <li class="col-md-1 col-md-offset-1 col-sm-2 col-sm-offset-1 col-xs-6">
         <span class="glyphicon glyphicon-exclamation-sign"></span>
         <span class="glyphicon-class">.glyphicon .glyphicon-exclamation-sign</span>
-      <button title="Click to copy me." type="button" data-clipboard-text="&#60;span class=&#34;glyphicon glyphicon-adjust&#34;&#62;&#60;/span&#62;" class="btn btn-xs copy-button">Copy</button>
+      <button title="Click to copy me." type="button" data-clipboard-text="&#60;span class=&#34;glyphicon glyphicon-exclamation-sign&#34;&#62;&#60;/span&#62;" class="btn btn-xs copy-button">Copy</button>
       </li>
       <li class="col-md-1 col-sm-2 col-xs-6">
         <span class="glyphicon glyphicon-expand"></span>
         <span class="glyphicon-class">.glyphicon .glyphicon-expand</span>
-      <button title="Click to copy me." type="button" data-clipboard-text="&#60;span class=&#34;glyphicon glyphicon-adjust&#34;&#62;&#60;/span&#62;" class="btn btn-xs copy-button">Copy</button>
+      <button title="Click to copy me." type="button" data-clipboard-text="&#60;span class=&#34;glyphicon glyphicon-expand&#34;&#62;&#60;/span&#62;" class="btn btn-xs copy-button">Copy</button>
       </li>
       <li class="col-md-1 col-sm-2 col-xs-6">
         <span class="glyphicon glyphicon-export"></span>
         <span class="glyphicon-class">.glyphicon .glyphicon-export</span>
-      <button title="Click to copy me." type="button" data-clipboard-text="&#60;span class=&#34;glyphicon glyphicon-adjust&#34;&#62;&#60;/span&#62;" class="btn btn-xs copy-button">Copy</button>
+      <button title="Click to copy me." type="button" data-clipboard-text="&#60;span class=&#34;glyphicon glyphicon-export&#34;&#62;&#60;/span&#62;" class="btn btn-xs copy-button">Copy</button>
       </li>
       <li class="col-md-1 col-sm-2 col-xs-6">
         <span class="glyphicon glyphicon-eye-close"></span>
         <span class="glyphicon-class">.glyphicon .glyphicon-eye-close</span>
-      <button title="Click to copy me." type="button" data-clipboard-text="&#60;span class=&#34;glyphicon glyphicon-adjust&#34;&#62;&#60;/span&#62;" class="btn btn-xs copy-button">Copy</button>
+      <button title="Click to copy me." type="button" data-clipboard-text="&#60;span class=&#34;glyphicon glyphicon-eye-close&#34;&#62;&#60;/span&#62;" class="btn btn-xs copy-button">Copy</button>
       </li>
       <li class="col-md-1 col-sm-2 col-xs-6">
         <span class="glyphicon glyphicon-eye-open"></span>
         <span class="glyphicon-class">.glyphicon .glyphicon-eye-open</span>
-      <button title="Click to copy me." type="button" data-clipboard-text="&#60;span class=&#34;glyphicon glyphicon-adjust&#34;&#62;&#60;/span&#62;" class="btn btn-xs copy-button">Copy</button>
+      <button title="Click to copy me." type="button" data-clipboard-text="&#60;span class=&#34;glyphicon glyphicon-eye-open&#34;&#62;&#60;/span&#62;" class="btn btn-xs copy-button">Copy</button>
       </li>
       <li class="col-md-1 col-md-offset-0 col-sm-2 col-sm-offset-1 col-xs-6 col-xs-offset-0">
         <span class="glyphicon glyphicon-facetime-video"></span>
         <span class="glyphicon-class">.glyphicon .glyphicon-facetime-video</span>
-      <button title="Click to copy me." type="button" data-clipboard-text="&#60;span class=&#34;glyphicon glyphicon-adjust&#34;&#62;&#60;/span&#62;" class="btn btn-xs copy-button">Copy</button>
+      <button title="Click to copy me." type="button" data-clipboard-text="&#60;span class=&#34;glyphicon glyphicon-facetime-video&#34;&#62;&#60;/span&#62;" class="btn btn-xs copy-button">Copy</button>
       </li>
       <li class="col-md-1 col-sm-2 col-xs-6">
         <span class="glyphicon glyphicon-fast-backward"></span>
         <span class="glyphicon-class">.glyphicon .glyphicon-fast-backward</span>
-      <button title="Click to copy me." type="button" data-clipboard-text="&#60;span class=&#34;glyphicon glyphicon-adjust&#34;&#62;&#60;/span&#62;" class="btn btn-xs copy-button">Copy</button>
+      <button title="Click to copy me." type="button" data-clipboard-text="&#60;span class=&#34;glyphicon glyphicon-fast-backward&#34;&#62;&#60;/span&#62;" class="btn btn-xs copy-button">Copy</button>
       </li>
       <li class="col-md-1 col-sm-2 col-xs-6">
         <span class="glyphicon glyphicon-fast-forward"></span>
         <span class="glyphicon-class">.glyphicon .glyphicon-fast-forward</span>
-      <button title="Click to copy me." type="button" data-clipboard-text="&#60;span class=&#34;glyphicon glyphicon-adjust&#34;&#62;&#60;/span&#62;" class="btn btn-xs copy-button">Copy</button>
+      <button title="Click to copy me." type="button" data-clipboard-text="&#60;span class=&#34;glyphicon glyphicon-fast-forward&#34;&#62;&#60;/span&#62;" class="btn btn-xs copy-button">Copy</button>
       </li>
       <li class="col-md-1 col-sm-2 col-xs-6">
         <span class="glyphicon glyphicon-file"></span>
         <span class="glyphicon-class">.glyphicon .glyphicon-file</span>
-      <button title="Click to copy me." type="button" data-clipboard-text="&#60;span class=&#34;glyphicon glyphicon-adjust&#34;&#62;&#60;/span&#62;" class="btn btn-xs copy-button">Copy</button>
+      <button title="Click to copy me." type="button" data-clipboard-text="&#60;span class=&#34;glyphicon glyphicon-file&#34;&#62;&#60;/span&#62;" class="btn btn-xs copy-button">Copy</button>
       </li>
       <li class="col-md-1 col-sm-2 col-xs-6">
         <span class="glyphicon glyphicon-film"></span>
         <span class="glyphicon-class">.glyphicon .glyphicon-film</span>
-      <button title="Click to copy me." type="button" data-clipboard-text="&#60;span class=&#34;glyphicon glyphicon-adjust&#34;&#62;&#60;/span&#62;" class="btn btn-xs copy-button">Copy</button>
+      <button title="Click to copy me." type="button" data-clipboard-text="&#60;span class=&#34;glyphicon glyphicon-film&#34;&#62;&#60;/span&#62;" class="btn btn-xs copy-button">Copy</button>
       </li>
       </div>
       
@@ -465,52 +470,52 @@
       <li class="col-md-1 col-md-offset-1 col-sm-2 col-sm-offset-1 col-xs-6">
         <span class="glyphicon glyphicon-filter"></span>
         <span class="glyphicon-class">.glyphicon .glyphicon-filter</span>
-      <button title="Click to copy me." type="button" data-clipboard-text="&#60;span class=&#34;glyphicon glyphicon-adjust&#34;&#62;&#60;/span&#62;" class="btn btn-xs copy-button">Copy</button>
+      <button title="Click to copy me." type="button" data-clipboard-text="&#60;span class=&#34;glyphicon glyphicon-filter&#34;&#62;&#60;/span&#62;" class="btn btn-xs copy-button">Copy</button>
       </li>
       <li class="col-md-1 col-sm-2 col-xs-6">
         <span class="glyphicon glyphicon-fire"></span>
         <span class="glyphicon-class">.glyphicon .glyphicon-fire</span>
-      <button title="Click to copy me." type="button" data-clipboard-text="&#60;span class=&#34;glyphicon glyphicon-adjust&#34;&#62;&#60;/span&#62;" class="btn btn-xs copy-button">Copy</button>
+      <button title="Click to copy me." type="button" data-clipboard-text="&#60;span class=&#34;glyphicon glyphicon-fire&#34;&#62;&#60;/span&#62;" class="btn btn-xs copy-button">Copy</button>
       </li>
       <li class="col-md-1 col-sm-2 col-xs-6">
         <span class="glyphicon glyphicon-flag"></span>
         <span class="glyphicon-class">.glyphicon .glyphicon-flag</span>
-      <button title="Click to copy me." type="button" data-clipboard-text="&#60;span class=&#34;glyphicon glyphicon-adjust&#34;&#62;&#60;/span&#62;" class="btn btn-xs copy-button">Copy</button>
+      <button title="Click to copy me." type="button" data-clipboard-text="&#60;span class=&#34;glyphicon glyphicon-flag&#34;&#62;&#60;/span&#62;" class="btn btn-xs copy-button">Copy</button>
       </li>
       <li class="col-md-1 col-sm-2 col-xs-6">
         <span class="glyphicon glyphicon-flash"></span>
         <span class="glyphicon-class">.glyphicon .glyphicon-flash</span>
-      <button title="Click to copy me." type="button" data-clipboard-text="&#60;span class=&#34;glyphicon glyphicon-adjust&#34;&#62;&#60;/span&#62;" class="btn btn-xs copy-button">Copy</button>
+      <button title="Click to copy me." type="button" data-clipboard-text="&#60;span class=&#34;glyphicon glyphicon-flash&#34;&#62;&#60;/span&#62;" class="btn btn-xs copy-button">Copy</button>
       </li>
       <li class="col-md-1 col-sm-2 col-xs-6">
         <span class="glyphicon glyphicon-floppy-disk"></span>
         <span class="glyphicon-class">.glyphicon .glyphicon-floppy-disk</span>
-      <button title="Click to copy me." type="button" data-clipboard-text="&#60;span class=&#34;glyphicon glyphicon-adjust&#34;&#62;&#60;/span&#62;" class="btn btn-xs copy-button">Copy</button>
+      <button title="Click to copy me." type="button" data-clipboard-text="&#60;span class=&#34;glyphicon glyphicon-floppy-disk&#34;&#62;&#60;/span&#62;" class="btn btn-xs copy-button">Copy</button>
       </li>
       <li class="col-md-1 col-md-offset-0 col-sm-2 col-sm-offset-1 col-xs-6 col-xs-offset-0">
         <span class="glyphicon glyphicon-floppy-open"></span>
         <span class="glyphicon-class">.glyphicon .glyphicon-floppy-open</span>
-      <button title="Click to copy me." type="button" data-clipboard-text="&#60;span class=&#34;glyphicon glyphicon-adjust&#34;&#62;&#60;/span&#62;" class="btn btn-xs copy-button">Copy</button>
+      <button title="Click to copy me." type="button" data-clipboard-text="&#60;span class=&#34;glyphicon glyphicon-floppy-open&#34;&#62;&#60;/span&#62;" class="btn btn-xs copy-button">Copy</button>
       </li>
       <li class="col-md-1 col-sm-2 col-xs-6">
         <span class="glyphicon glyphicon-floppy-remove"></span>
         <span class="glyphicon-class">.glyphicon .glyphicon-floppy-remove</span>
-      <button title="Click to copy me." type="button" data-clipboard-text="&#60;span class=&#34;glyphicon glyphicon-adjust&#34;&#62;&#60;/span&#62;" class="btn btn-xs copy-button">Copy</button>
+      <button title="Click to copy me." type="button" data-clipboard-text="&#60;span class=&#34;glyphicon glyphicon-floppy-remove&#34;&#62;&#60;/span&#62;" class="btn btn-xs copy-button">Copy</button>
       </li>
       <li class="col-md-1 col-sm-2 col-xs-6">
         <span class="glyphicon glyphicon-floppy-save"></span>
         <span class="glyphicon-class">.glyphicon .glyphicon-floppy-save</span>
-      <button title="Click to copy me." type="button" data-clipboard-text="&#60;span class=&#34;glyphicon glyphicon-adjust&#34;&#62;&#60;/span&#62;" class="btn btn-xs copy-button">Copy</button>
+      <button title="Click to copy me." type="button" data-clipboard-text="&#60;span class=&#34;glyphicon glyphicon-floppy-save&#34;&#62;&#60;/span&#62;" class="btn btn-xs copy-button">Copy</button>
       </li>
       <li class="col-md-1 col-sm-2 col-xs-6">
         <span class="glyphicon glyphicon-floppy-saved"></span>
         <span class="glyphicon-class">.glyphicon .glyphicon-floppy-saved</span>
-      <button title="Click to copy me." type="button" data-clipboard-text="&#60;span class=&#34;glyphicon glyphicon-adjust&#34;&#62;&#60;/span&#62;" class="btn btn-xs copy-button">Copy</button>
+      <button title="Click to copy me." type="button" data-clipboard-text="&#60;span class=&#34;glyphicon glyphicon-floppy-saved&#34;&#62;&#60;/span&#62;" class="btn btn-xs copy-button">Copy</button>
       </li>
       <li class="col-md-1 col-sm-2 col-xs-6">
         <span class="glyphicon glyphicon-folder-close"></span>
         <span class="glyphicon-class">.glyphicon .glyphicon-folder-close</span>
-      <button title="Click to copy me." type="button" data-clipboard-text="&#60;span class=&#34;glyphicon glyphicon-adjust&#34;&#62;&#60;/span&#62;" class="btn btn-xs copy-button">Copy</button>
+      <button title="Click to copy me." type="button" data-clipboard-text="&#60;span class=&#34;glyphicon glyphicon-folder-close&#34;&#62;&#60;/span&#62;" class="btn btn-xs copy-button">Copy</button>
       </li>
       </div>
  
@@ -519,52 +524,52 @@
       <li class="col-md-1 col-md-offset-1 col-sm-2 col-sm-offset-1 col-xs-6">
         <span class="glyphicon glyphicon-folder-open"></span>
         <span class="glyphicon-class">.glyphicon .glyphicon-folder-open</span>
-      <button title="Click to copy me." type="button" data-clipboard-text="&#60;span class=&#34;glyphicon glyphicon-adjust&#34;&#62;&#60;/span&#62;" class="btn btn-xs copy-button">Copy</button>
+      <button title="Click to copy me." type="button" data-clipboard-text="&#60;span class=&#34;glyphicon glyphicon-folder-open&#34;&#62;&#60;/span&#62;" class="btn btn-xs copy-button">Copy</button>
       </li>
       <li class="col-md-1 col-sm-2 col-xs-6">
         <span class="glyphicon glyphicon-font"></span>
         <span class="glyphicon-class">.glyphicon .glyphicon-font</span>
-      <button title="Click to copy me." type="button" data-clipboard-text="&#60;span class=&#34;glyphicon glyphicon-adjust&#34;&#62;&#60;/span&#62;" class="btn btn-xs copy-button">Copy</button>
+      <button title="Click to copy me." type="button" data-clipboard-text="&#60;span class=&#34;glyphicon glyphicon-font&#34;&#62;&#60;/span&#62;" class="btn btn-xs copy-button">Copy</button>
       </li>
       <li class="col-md-1 col-sm-2 col-xs-6">
         <span class="glyphicon glyphicon-forward"></span>
         <span class="glyphicon-class">.glyphicon .glyphicon-forward</span>
-      <button title="Click to copy me." type="button" data-clipboard-text="&#60;span class=&#34;glyphicon glyphicon-adjust&#34;&#62;&#60;/span&#62;" class="btn btn-xs copy-button">Copy</button>
+      <button title="Click to copy me." type="button" data-clipboard-text="&#60;span class=&#34;glyphicon glyphicon-forward&#34;&#62;&#60;/span&#62;" class="btn btn-xs copy-button">Copy</button>
       </li>
       <li class="col-md-1 col-sm-2 col-xs-6">
         <span class="glyphicon glyphicon-fullscreen"></span>
         <span class="glyphicon-class">.glyphicon .glyphicon-fullscreen</span>
-      <button title="Click to copy me." type="button" data-clipboard-text="&#60;span class=&#34;glyphicon glyphicon-adjust&#34;&#62;&#60;/span&#62;" class="btn btn-xs copy-button">Copy</button>
+      <button title="Click to copy me." type="button" data-clipboard-text="&#60;span class=&#34;glyphicon glyphicon-fullscreen&#34;&#62;&#60;/span&#62;" class="btn btn-xs copy-button">Copy</button>
       </li>
       <li class="col-md-1 col-sm-2 col-xs-6">
         <span class="glyphicon glyphicon-gbp"></span>
         <span class="glyphicon-class">.glyphicon .glyphicon-gbp</span>
-      <button title="Click to copy me." type="button" data-clipboard-text="&#60;span class=&#34;glyphicon glyphicon-adjust&#34;&#62;&#60;/span&#62;" class="btn btn-xs copy-button">Copy</button>
+      <button title="Click to copy me." type="button" data-clipboard-text="&#60;span class=&#34;glyphicon glyphicon-gbp&#34;&#62;&#60;/span&#62;" class="btn btn-xs copy-button">Copy</button>
       </li>
       <li class="col-md-1 col-md-offset-0 col-sm-2 col-sm-offset-1 col-xs-6 col-xs-offset-0">
         <span class="glyphicon glyphicon-gift"></span>
         <span class="glyphicon-class">.glyphicon .glyphicon-gift</span>
-      <button title="Click to copy me." type="button" data-clipboard-text="&#60;span class=&#34;glyphicon glyphicon-adjust&#34;&#62;&#60;/span&#62;" class="btn btn-xs copy-button">Copy</button>
+      <button title="Click to copy me." type="button" data-clipboard-text="&#60;span class=&#34;glyphicon glyphicon-gift&#34;&#62;&#60;/span&#62;" class="btn btn-xs copy-button">Copy</button>
       </li>
       <li class="col-md-1 col-sm-2 col-xs-6">
         <span class="glyphicon glyphicon-glass"></span>
         <span class="glyphicon-class">.glyphicon .glyphicon-glass</span>
-      <button title="Click to copy me." type="button" data-clipboard-text="&#60;span class=&#34;glyphicon glyphicon-adjust&#34;&#62;&#60;/span&#62;" class="btn btn-xs copy-button">Copy</button>
+      <button title="Click to copy me." type="button" data-clipboard-text="&#60;span class=&#34;glyphicon glyphicon-glass&#34;&#62;&#60;/span&#62;" class="btn btn-xs copy-button">Copy</button>
       </li>
       <li class="col-md-1 col-sm-2 col-xs-6">
         <span class="glyphicon glyphicon-globe"></span>
         <span class="glyphicon-class">.glyphicon .glyphicon-globe</span>
-      <button title="Click to copy me." type="button" data-clipboard-text="&#60;span class=&#34;glyphicon glyphicon-adjust&#34;&#62;&#60;/span&#62;" class="btn btn-xs copy-button">Copy</button>
+      <button title="Click to copy me." type="button" data-clipboard-text="&#60;span class=&#34;glyphicon glyphicon-globe&#34;&#62;&#60;/span&#62;" class="btn btn-xs copy-button">Copy</button>
       </li>
       <li class="col-md-1 col-sm-2 col-xs-6">
         <span class="glyphicon glyphicon-hand-down"></span>
         <span class="glyphicon-class">.glyphicon .glyphicon-hand-down</span>
-      <button title="Click to copy me." type="button" data-clipboard-text="&#60;span class=&#34;glyphicon glyphicon-adjust&#34;&#62;&#60;/span&#62;" class="btn btn-xs copy-button">Copy</button>
+      <button title="Click to copy me." type="button" data-clipboard-text="&#60;span class=&#34;glyphicon glyphicon-hand-down&#34;&#62;&#60;/span&#62;" class="btn btn-xs copy-button">Copy</button>
       </li>
       <li class="col-md-1 col-sm-2 col-xs-6">
         <span class="glyphicon glyphicon-hand-left"></span>
         <span class="glyphicon-class">.glyphicon .glyphicon-hand-left</span>
-      <button title="Click to copy me." type="button" data-clipboard-text="&#60;span class=&#34;glyphicon glyphicon-adjust&#34;&#62;&#60;/span&#62;" class="btn btn-xs copy-button">Copy</button>
+      <button title="Click to copy me." type="button" data-clipboard-text="&#60;span class=&#34;glyphicon glyphicon-hand-left&#34;&#62;&#60;/span&#62;" class="btn btn-xs copy-button">Copy</button>
       </li>
       </div>
       
@@ -573,52 +578,52 @@
       <li class="col-md-1 col-md-offset-1 col-sm-2 col-sm-offset-1 col-xs-6">
         <span class="glyphicon glyphicon-hand-right"></span>
         <span class="glyphicon-class">.glyphicon .glyphicon-hand-right</span>
-      <button title="Click to copy me." type="button" data-clipboard-text="&#60;span class=&#34;glyphicon glyphicon-adjust&#34;&#62;&#60;/span&#62;" class="btn btn-xs copy-button">Copy</button>
+      <button title="Click to copy me." type="button" data-clipboard-text="&#60;span class=&#34;glyphicon glyphicon-hand-right&#34;&#62;&#60;/span&#62;" class="btn btn-xs copy-button">Copy</button>
       </li>
       <li class="col-md-1 col-sm-2 col-xs-6">
         <span class="glyphicon glyphicon-hand-up"></span>
         <span class="glyphicon-class">.glyphicon .glyphicon-hand-up</span>
-      <button title="Click to copy me." type="button" data-clipboard-text="&#60;span class=&#34;glyphicon glyphicon-adjust&#34;&#62;&#60;/span&#62;" class="btn btn-xs copy-button">Copy</button>
+      <button title="Click to copy me." type="button" data-clipboard-text="&#60;span class=&#34;glyphicon glyphicon-hand-up&#34;&#62;&#60;/span&#62;" class="btn btn-xs copy-button">Copy</button>
       </li>
       <li class="col-md-1 col-sm-2 col-xs-6">
         <span class="glyphicon glyphicon-hd-video"></span>
         <span class="glyphicon-class">.glyphicon .glyphicon-hd-video</span>
-      <button title="Click to copy me." type="button" data-clipboard-text="&#60;span class=&#34;glyphicon glyphicon-adjust&#34;&#62;&#60;/span&#62;" class="btn btn-xs copy-button">Copy</button>
+      <button title="Click to copy me." type="button" data-clipboard-text="&#60;span class=&#34;glyphicon glyphicon-hd-video&#34;&#62;&#60;/span&#62;" class="btn btn-xs copy-button">Copy</button>
       </li>
       <li class="col-md-1 col-sm-2 col-xs-6">
         <span class="glyphicon glyphicon-hdd"></span>
         <span class="glyphicon-class">.glyphicon .glyphicon-hdd</span>
-      <button title="Click to copy me." type="button" data-clipboard-text="&#60;span class=&#34;glyphicon glyphicon-adjust&#34;&#62;&#60;/span&#62;" class="btn btn-xs copy-button">Copy</button>
+      <button title="Click to copy me." type="button" data-clipboard-text="&#60;span class=&#34;glyphicon glyphicon-hdd&#34;&#62;&#60;/span&#62;" class="btn btn-xs copy-button">Copy</button>
       </li>
       <li class="col-md-1 col-sm-2 col-xs-6">
         <span class="glyphicon glyphicon-header"></span>
         <span class="glyphicon-class">.glyphicon .glyphicon-header</span>
-      <button title="Click to copy me." type="button" data-clipboard-text="&#60;span class=&#34;glyphicon glyphicon-adjust&#34;&#62;&#60;/span&#62;" class="btn btn-xs copy-button">Copy</button>
+      <button title="Click to copy me." type="button" data-clipboard-text="&#60;span class=&#34;glyphicon glyphicon-header&#34;&#62;&#60;/span&#62;" class="btn btn-xs copy-button">Copy</button>
       </li>
       <li class="col-md-1 col-md-offset-0 col-sm-2 col-sm-offset-1 col-xs-6 col-xs-offset-0">
         <span class="glyphicon glyphicon-headphones"></span>
         <span class="glyphicon-class">.glyphicon .glyphicon-headphones</span>
-      <button title="Click to copy me." type="button" data-clipboard-text="&#60;span class=&#34;glyphicon glyphicon-adjust&#34;&#62;&#60;/span&#62;" class="btn btn-xs copy-button">Copy</button>
+      <button title="Click to copy me." type="button" data-clipboard-text="&#60;span class=&#34;glyphicon glyphicon-headphones&#34;&#62;&#60;/span&#62;" class="btn btn-xs copy-button">Copy</button>
       </li>
       <li class="col-md-1 col-sm-2 col-xs-6">
         <span class="glyphicon glyphicon-heart"></span>
         <span class="glyphicon-class">.glyphicon .glyphicon-heart</span>
-      <button title="Click to copy me." type="button" data-clipboard-text="&#60;span class=&#34;glyphicon glyphicon-adjust&#34;&#62;&#60;/span&#62;" class="btn btn-xs copy-button">Copy</button>
+      <button title="Click to copy me." type="button" data-clipboard-text="&#60;span class=&#34;glyphicon glyphicon-heart&#34;&#62;&#60;/span&#62;" class="btn btn-xs copy-button">Copy</button>
       </li>
       <li class="col-md-1 col-sm-2 col-xs-6">
         <span class="glyphicon glyphicon-heart-empty"></span>
         <span class="glyphicon-class">.glyphicon .glyphicon-heart-empty</span>
-      <button title="Click to copy me." type="button" data-clipboard-text="&#60;span class=&#34;glyphicon glyphicon-adjust&#34;&#62;&#60;/span&#62;" class="btn btn-xs copy-button">Copy</button>
+      <button title="Click to copy me." type="button" data-clipboard-text="&#60;span class=&#34;glyphicon glyphicon-heart-empty&#34;&#62;&#60;/span&#62;" class="btn btn-xs copy-button">Copy</button>
       </li>
       <li class="col-md-1 col-sm-2 col-xs-6">
         <span class="glyphicon glyphicon-home"></span>
         <span class="glyphicon-class">.glyphicon .glyphicon-home</span>
-      <button title="Click to copy me." type="button" data-clipboard-text="&#60;span class=&#34;glyphicon glyphicon-adjust&#34;&#62;&#60;/span&#62;" class="btn btn-xs copy-button">Copy</button>
+      <button title="Click to copy me." type="button" data-clipboard-text="&#60;span class=&#34;glyphicon glyphicon-home&#34;&#62;&#60;/span&#62;" class="btn btn-xs copy-button">Copy</button>
       </li>
       <li class="col-md-1 col-sm-2 col-xs-6">
         <span class="glyphicon glyphicon-import"></span>
         <span class="glyphicon-class">.glyphicon .glyphicon-import</span>
-      <button title="Click to copy me." type="button" data-clipboard-text="&#60;span class=&#34;glyphicon glyphicon-adjust&#34;&#62;&#60;/span&#62;" class="btn btn-xs copy-button">Copy</button>
+      <button title="Click to copy me." type="button" data-clipboard-text="&#60;span class=&#34;glyphicon glyphicon-import&#34;&#62;&#60;/span&#62;" class="btn btn-xs copy-button">Copy</button>
       </li>
       </div>
       
@@ -627,32 +632,32 @@
       <li class="col-md-1 col-md-offset-1 col-sm-2 col-sm-offset-1 col-xs-6">
         <span class="glyphicon glyphicon-inbox"></span>
         <span class="glyphicon-class">.glyphicon .glyphicon-inbox</span>
-      <button title="Click to copy me." type="button" data-clipboard-text="&#60;span class=&#34;glyphicon glyphicon-adjust&#34;&#62;&#60;/span&#62;" class="btn btn-xs copy-button">Copy</button>
+      <button title="Click to copy me." type="button" data-clipboard-text="&#60;span class=&#34;glyphicon glyphicon-inbox&#34;&#62;&#60;/span&#62;" class="btn btn-xs copy-button">Copy</button>
       </li>
       <li class="col-md-1 col-sm-2 col-xs-6">
         <span class="glyphicon glyphicon-indent-left"></span>
         <span class="glyphicon-class">.glyphicon .glyphicon-indent-left</span>
-      <button title="Click to copy me." type="button" data-clipboard-text="&#60;span class=&#34;glyphicon glyphicon-adjust&#34;&#62;&#60;/span&#62;" class="btn btn-xs copy-button">Copy</button>
+      <button title="Click to copy me." type="button" data-clipboard-text="&#60;span class=&#34;glyphicon glyphicon-indent-left&#34;&#62;&#60;/span&#62;" class="btn btn-xs copy-button">Copy</button>
       </li>
       <li class="col-md-1 col-sm-2 col-xs-6">
         <span class="glyphicon glyphicon-indent-right"></span>
         <span class="glyphicon-class">.glyphicon .glyphicon-indent-right</span>
-      <button title="Click to copy me." type="button" data-clipboard-text="&#60;span class=&#34;glyphicon glyphicon-adjust&#34;&#62;&#60;/span&#62;" class="btn btn-xs copy-button">Copy</button>
+      <button title="Click to copy me." type="button" data-clipboard-text="&#60;span class=&#34;glyphicon glyphicon-indent-right&#34;&#62;&#60;/span&#62;" class="btn btn-xs copy-button">Copy</button>
       </li>
       <li class="col-md-1 col-sm-2 col-xs-6">
         <span class="glyphicon glyphicon-info-sign"></span>
         <span class="glyphicon-class">.glyphicon .glyphicon-info-sign</span>
-      <button title="Click to copy me." type="button" data-clipboard-text="&#60;span class=&#34;glyphicon glyphicon-adjust&#34;&#62;&#60;/span&#62;" class="btn btn-xs copy-button">Copy</button>
+      <button title="Click to copy me." type="button" data-clipboard-text="&#60;span class=&#34;glyphicon glyphicon-info-sign&#34;&#62;&#60;/span&#62;" class="btn btn-xs copy-button">Copy</button>
       </li>
       <li class="col-md-1 col-sm-2 col-xs-6">
         <span class="glyphicon glyphicon-italic"></span>
         <span class="glyphicon-class">.glyphicon .glyphicon-italic</span>
-      <button title="Click to copy me." type="button" data-clipboard-text="&#60;span class=&#34;glyphicon glyphicon-adjust&#34;&#62;&#60;/span&#62;" class="btn btn-xs copy-button">Copy</button>
+      <button title="Click to copy me." type="button" data-clipboard-text="&#60;span class=&#34;glyphicon glyphicon-italic&#34;&#62;&#60;/span&#62;" class="btn btn-xs copy-button">Copy</button>
       </li>
       <li class="col-md-1 col-md-offset-0 col-sm-2 col-sm-offset-1 col-xs-6 col-xs-offset-0">
         <span class="glyphicon glyphicon-leaf"></span>
         <span class="glyphicon-class">.glyphicon .glyphicon-leaf</span>
-      <button title="Click to copy me." type="button" data-clipboard-text="&#60;span class=&#34;glyphicon glyphicon-adjust&#34;&#62;&#60;/span&#62;" class="btn btn-xs copy-button">Copy</button>
+      <button title="Click to copy me." type="button" data-clipboard-text="&#60;span class=&#34;glyphicon glyphicon-leaf&#34;&#62;&#60;/span&#62;" class="btn btn-xs copy-button">Copy</button>
       </li>
       <li class="col-md-1 col-sm-2 col-xs-6">
         <span class="glyphicon glyphicon-link"></span>
@@ -662,17 +667,17 @@
       <li class="col-md-1 col-sm-2 col-xs-6">
         <span class="glyphicon glyphicon-list"></span>
         <span class="glyphicon-class">.glyphicon .glyphicon-list</span>
-      <button title="Click to copy me." type="button" data-clipboard-text="&#60;span class=&#34;glyphicon glyphicon-adjust&#34;&#62;&#60;/span&#62;" class="btn btn-xs copy-button">Copy</button>
+      <button title="Click to copy me." type="button" data-clipboard-text="&#60;span class=&#34;glyphicon glyphicon-list&#34;&#62;&#60;/span&#62;" class="btn btn-xs copy-button">Copy</button>
       </li>
       <li class="col-md-1 col-sm-2 col-xs-6">
         <span class="glyphicon glyphicon-list-alt"></span>
         <span class="glyphicon-class">.glyphicon .glyphicon-list-alt</span>
-      <button title="Click to copy me." type="button" data-clipboard-text="&#60;span class=&#34;glyphicon glyphicon-adjust&#34;&#62;&#60;/span&#62;" class="btn btn-xs copy-button">Copy</button>
+      <button title="Click to copy me." type="button" data-clipboard-text="&#60;span class=&#34;glyphicon glyphicon-list-alt&#34;&#62;&#60;/span&#62;" class="btn btn-xs copy-button">Copy</button>
       </li>
       <li class="col-md-1 col-sm-2 col-xs-6">
         <span class="glyphicon glyphicon-lock"></span>
         <span class="glyphicon-class">.glyphicon .glyphicon-lock</span>
-      <button title="Click to copy me." type="button" data-clipboard-text="&#60;span class=&#34;glyphicon glyphicon-adjust&#34;&#62;&#60;/span&#62;" class="btn btn-xs copy-button">Copy</button>
+      <button title="Click to copy me." type="button" data-clipboard-text="&#60;span class=&#34;glyphicon glyphicon-lock&#34;&#62;&#60;/span&#62;" class="btn btn-xs copy-button">Copy</button>
       </li>
       </div>
       
@@ -681,52 +686,52 @@
       <li class="col-md-1 col-md-offset-1 col-sm-2 col-sm-offset-1 col-xs-6">
         <span class="glyphicon glyphicon-log-in"></span>
         <span class="glyphicon-class">.glyphicon .glyphicon-log-in</span>
-      <button title="Click to copy me." type="button" data-clipboard-text="&#60;span class=&#34;glyphicon glyphicon-adjust&#34;&#62;&#60;/span&#62;" class="btn btn-xs copy-button">Copy</button>
+      <button title="Click to copy me." type="button" data-clipboard-text="&#60;span class=&#34;glyphicon glyphicon-log-in&#34;&#62;&#60;/span&#62;" class="btn btn-xs copy-button">Copy</button>
       </li>
       <li class="col-md-1 col-sm-2 col-xs-6">
         <span class="glyphicon glyphicon-log-out"></span>
         <span class="glyphicon-class">.glyphicon .glyphicon-log-out</span>
-      <button title="Click to copy me." type="button" data-clipboard-text="&#60;span class=&#34;glyphicon glyphicon-adjust&#34;&#62;&#60;/span&#62;" class="btn btn-xs copy-button">Copy</button>
+      <button title="Click to copy me." type="button" data-clipboard-text="&#60;span class=&#34;glyphicon glyphicon-log-out&#34;&#62;&#60;/span&#62;" class="btn btn-xs copy-button">Copy</button>
       </li>
       <li class="col-md-1 col-sm-2 col-xs-6">
         <span class="glyphicon glyphicon-magnet"></span>
         <span class="glyphicon-class">.glyphicon .glyphicon-magnet</span>
-      <button title="Click to copy me." type="button" data-clipboard-text="&#60;span class=&#34;glyphicon glyphicon-adjust&#34;&#62;&#60;/span&#62;" class="btn btn-xs copy-button">Copy</button>
+      <button title="Click to copy me." type="button" data-clipboard-text="&#60;span class=&#34;glyphicon glyphicon-magnet&#34;&#62;&#60;/span&#62;" class="btn btn-xs copy-button">Copy</button>
       </li>
       <li class="col-md-1 col-sm-2 col-xs-6">
         <span class="glyphicon glyphicon-map-marker"></span>
         <span class="glyphicon-class">.glyphicon .glyphicon-map-marker</span>
-      <button title="Click to copy me." type="button" data-clipboard-text="&#60;span class=&#34;glyphicon glyphicon-adjust&#34;&#62;&#60;/span&#62;" class="btn btn-xs copy-button">Copy</button>
+      <button title="Click to copy me." type="button" data-clipboard-text="&#60;span class=&#34;glyphicon glyphicon-map-marker&#34;&#62;&#60;/span&#62;" class="btn btn-xs copy-button">Copy</button>
       </li>
       <li class="col-md-1 col-sm-2 col-xs-6">
         <span class="glyphicon glyphicon-minus"></span>
         <span class="glyphicon-class">.glyphicon .glyphicon-minus</span>
-      <button title="Click to copy me." type="button" data-clipboard-text="&#60;span class=&#34;glyphicon glyphicon-adjust&#34;&#62;&#60;/span&#62;" class="btn btn-xs copy-button">Copy</button>
+      <button title="Click to copy me." type="button" data-clipboard-text="&#60;span class=&#34;glyphicon glyphicon-minus&#34;&#62;&#60;/span&#62;" class="btn btn-xs copy-button">Copy</button>
       </li>
       <li class="col-md-1 col-md-offset-0 col-sm-2 col-sm-offset-1 col-xs-6 col-xs-offset-0">
         <span class="glyphicon glyphicon-minus-sign"></span>
         <span class="glyphicon-class">.glyphicon .glyphicon-minus-sign</span>
-      <button title="Click to copy me." type="button" data-clipboard-text="&#60;span class=&#34;glyphicon glyphicon-adjust&#34;&#62;&#60;/span&#62;" class="btn btn-xs copy-button">Copy</button>
+      <button title="Click to copy me." type="button" data-clipboard-text="&#60;span class=&#34;glyphicon glyphicon-minus-sign&#34;&#62;&#60;/span&#62;" class="btn btn-xs copy-button">Copy</button>
       </li>
       <li class="col-md-1 col-sm-2 col-xs-6">
         <span class="glyphicon glyphicon-move"></span>
         <span class="glyphicon-class">.glyphicon .glyphicon-move</span>
-      <button title="Click to copy me." type="button" data-clipboard-text="&#60;span class=&#34;glyphicon glyphicon-adjust&#34;&#62;&#60;/span&#62;" class="btn btn-xs copy-button">Copy</button>
+      <button title="Click to copy me." type="button" data-clipboard-text="&#60;span class=&#34;glyphicon glyphicon-move&#34;&#62;&#60;/span&#62;" class="btn btn-xs copy-button">Copy</button>
       </li>
       <li class="col-md-1 col-sm-2 col-xs-6">
         <span class="glyphicon glyphicon-music"></span>
         <span class="glyphicon-class">.glyphicon .glyphicon-music</span>
-      <button title="Click to copy me." type="button" data-clipboard-text="&#60;span class=&#34;glyphicon glyphicon-adjust&#34;&#62;&#60;/span&#62;" class="btn btn-xs copy-button">Copy</button>
+      <button title="Click to copy me." type="button" data-clipboard-text="&#60;span class=&#34;glyphicon glyphicon-music&#34;&#62;&#60;/span&#62;" class="btn btn-xs copy-button">Copy</button>
       </li>
       <li class="col-md-1 col-sm-2 col-xs-6">
         <span class="glyphicon glyphicon-new-window"></span>
         <span class="glyphicon-class">.glyphicon .glyphicon-new-window</span>
-      <button title="Click to copy me." type="button" data-clipboard-text="&#60;span class=&#34;glyphicon glyphicon-adjust&#34;&#62;&#60;/span&#62;" class="btn btn-xs copy-button">Copy</button>
+      <button title="Click to copy me." type="button" data-clipboard-text="&#60;span class=&#34;glyphicon glyphicon-new-window&#34;&#62;&#60;/span&#62;" class="btn btn-xs copy-button">Copy</button>
       </li>
       <li class="col-md-1 col-sm-2 col-xs-6">
         <span class="glyphicon glyphicon-off"></span>
         <span class="glyphicon-class">.glyphicon .glyphicon-off</span>
-      <button title="Click to copy me." type="button" data-clipboard-text="&#60;span class=&#34;glyphicon glyphicon-adjust&#34;&#62;&#60;/span&#62;" class="btn btn-xs copy-button">Copy</button>
+      <button title="Click to copy me." type="button" data-clipboard-text="&#60;span class=&#34;glyphicon glyphicon-off&#34;&#62;&#60;/span&#62;" class="btn btn-xs copy-button">Copy</button>
       </li>
       </div>
       
@@ -736,52 +741,52 @@
       <li class="col-md-1 col-md-offset-1 col-sm-2 col-sm-offset-1 col-xs-6">
         <span class="glyphicon glyphicon-ok"></span>
         <span class="glyphicon-class">.glyphicon .glyphicon-ok</span>
-      <button title="Click to copy me." type="button" data-clipboard-text="&#60;span class=&#34;glyphicon glyphicon-adjust&#34;&#62;&#60;/span&#62;" class="btn btn-xs copy-button">Copy</button>
+      <button title="Click to copy me." type="button" data-clipboard-text="&#60;span class=&#34;glyphicon glyphicon-ok&#34;&#62;&#60;/span&#62;" class="btn btn-xs copy-button">Copy</button>
       </li>
       <li class="col-md-1 col-sm-2 col-xs-6">
         <span class="glyphicon glyphicon-ok-circle"></span>
         <span class="glyphicon-class">.glyphicon .glyphicon-ok-circle</span>
-      <button title="Click to copy me." type="button" data-clipboard-text="&#60;span class=&#34;glyphicon glyphicon-adjust&#34;&#62;&#60;/span&#62;" class="btn btn-xs copy-button">Copy</button>
+      <button title="Click to copy me." type="button" data-clipboard-text="&#60;span class=&#34;glyphicon glyphicon-ok-circle&#34;&#62;&#60;/span&#62;" class="btn btn-xs copy-button">Copy</button>
       </li>
       <li class="col-md-1 col-sm-2 col-xs-6">
         <span class="glyphicon glyphicon-ok-sign"></span>
         <span class="glyphicon-class">.glyphicon .glyphicon-ok-sign</span>
-      <button title="Click to copy me." type="button" data-clipboard-text="&#60;span class=&#34;glyphicon glyphicon-adjust&#34;&#62;&#60;/span&#62;" class="btn btn-xs copy-button">Copy</button>
+      <button title="Click to copy me." type="button" data-clipboard-text="&#60;span class=&#34;glyphicon glyphicon-ok-sign&#34;&#62;&#60;/span&#62;" class="btn btn-xs copy-button">Copy</button>
       </li>
       <li class="col-md-1 col-sm-2 col-xs-6">
         <span class="glyphicon glyphicon-open"></span>
         <span class="glyphicon-class">.glyphicon .glyphicon-open</span>
-      <button title="Click to copy me." type="button" data-clipboard-text="&#60;span class=&#34;glyphicon glyphicon-adjust&#34;&#62;&#60;/span&#62;" class="btn btn-xs copy-button">Copy</button>
+      <button title="Click to copy me." type="button" data-clipboard-text="&#60;span class=&#34;glyphicon glyphicon-open&#34;&#62;&#60;/span&#62;" class="btn btn-xs copy-button">Copy</button>
       </li>
       <li class="col-md-1 col-sm-2 col-xs-6">
         <span class="glyphicon glyphicon-paperclip"></span>
         <span class="glyphicon-class">.glyphicon .glyphicon-paperclip</span>
-      <button title="Click to copy me." type="button" data-clipboard-text="&#60;span class=&#34;glyphicon glyphicon-adjust&#34;&#62;&#60;/span&#62;" class="btn btn-xs copy-button">Copy</button>
+      <button title="Click to copy me." type="button" data-clipboard-text="&#60;span class=&#34;glyphicon glyphicon-paperclip&#34;&#62;&#60;/span&#62;" class="btn btn-xs copy-button">Copy</button>
       </li>
       <li class="col-md-1 col-md-offset-0 col-sm-2 col-sm-offset-1 col-xs-6 col-xs-offset-0">
         <span class="glyphicon glyphicon-pause"></span>
         <span class="glyphicon-class">.glyphicon .glyphicon-pause</span>
-      <button title="Click to copy me." type="button" data-clipboard-text="&#60;span class=&#34;glyphicon glyphicon-adjust&#34;&#62;&#60;/span&#62;" class="btn btn-xs copy-button">Copy</button>
+      <button title="Click to copy me." type="button" data-clipboard-text="&#60;span class=&#34;glyphicon glyphicon-pause&#34;&#62;&#60;/span&#62;" class="btn btn-xs copy-button">Copy</button>
       </li>
       <li class="col-md-1 col-sm-2 col-xs-6">
         <span class="glyphicon glyphicon-pencil"></span>
         <span class="glyphicon-class">.glyphicon .glyphicon-pencil</span>
-      <button title="Click to copy me." type="button" data-clipboard-text="&#60;span class=&#34;glyphicon glyphicon-adjust&#34;&#62;&#60;/span&#62;" class="btn btn-xs copy-button">Copy</button>
+      <button title="Click to copy me." type="button" data-clipboard-text="&#60;span class=&#34;glyphicon glyphicon-pencil&#34;&#62;&#60;/span&#62;" class="btn btn-xs copy-button">Copy</button>
       </li>
       <li class="col-md-1 col-sm-2 col-xs-6">
         <span class="glyphicon glyphicon-phone"></span>
         <span class="glyphicon-class">.glyphicon .glyphicon-phone</span>
-      <button title="Click to copy me." type="button" data-clipboard-text="&#60;span class=&#34;glyphicon glyphicon-adjust&#34;&#62;&#60;/span&#62;" class="btn btn-xs copy-button">Copy</button>
+      <button title="Click to copy me." type="button" data-clipboard-text="&#60;span class=&#34;glyphicon glyphicon-phone&#34;&#62;&#60;/span&#62;" class="btn btn-xs copy-button">Copy</button>
       </li>
       <li class="col-md-1 col-sm-2 col-xs-6">
         <span class="glyphicon glyphicon-phone-alt"></span>
         <span class="glyphicon-class">.glyphicon .glyphicon-phone-alt</span>
-      <button title="Click to copy me." type="button" data-clipboard-text="&#60;span class=&#34;glyphicon glyphicon-adjust&#34;&#62;&#60;/span&#62;" class="btn btn-xs copy-button">Copy</button>
+      <button title="Click to copy me." type="button" data-clipboard-text="&#60;span class=&#34;glyphicon glyphicon-phone-alt&#34;&#62;&#60;/span&#62;" class="btn btn-xs copy-button">Copy</button>
       </li>
       <li class="col-md-1 col-sm-2 col-xs-6">
         <span class="glyphicon glyphicon-picture"></span>
         <span class="glyphicon-class">.glyphicon .glyphicon-picture</span>
-      <button title="Click to copy me." type="button" data-clipboard-text="&#60;span class=&#34;glyphicon glyphicon-adjust&#34;&#62;&#60;/span&#62;" class="btn btn-xs copy-button">Copy</button>
+      <button title="Click to copy me." type="button" data-clipboard-text="&#60;span class=&#34;glyphicon glyphicon-picture&#34;&#62;&#60;/span&#62;" class="btn btn-xs copy-button">Copy</button>
       </li>
       </div>
       
@@ -790,52 +795,52 @@
       <li class="col-md-1 col-md-offset-1 col-sm-2 col-sm-offset-1 col-xs-6">
         <span class="glyphicon glyphicon-plane"></span>
         <span class="glyphicon-class">.glyphicon .glyphicon-plane</span>
-      <button title="Click to copy me." type="button" data-clipboard-text="&#60;span class=&#34;glyphicon glyphicon-adjust&#34;&#62;&#60;/span&#62;" class="btn btn-xs copy-button">Copy</button>
+      <button title="Click to copy me." type="button" data-clipboard-text="&#60;span class=&#34;glyphicon glyphicon-plane&#34;&#62;&#60;/span&#62;" class="btn btn-xs copy-button">Copy</button>
       </li>
       <li class="col-md-1 col-sm-2 col-xs-6">
         <span class="glyphicon glyphicon-play"></span>
         <span class="glyphicon-class">.glyphicon .glyphicon-play</span>
-      <button title="Click to copy me." type="button" data-clipboard-text="&#60;span class=&#34;glyphicon glyphicon-adjust&#34;&#62;&#60;/span&#62;" class="btn btn-xs copy-button">Copy</button>
+      <button title="Click to copy me." type="button" data-clipboard-text="&#60;span class=&#34;glyphicon glyphicon-play&#34;&#62;&#60;/span&#62;" class="btn btn-xs copy-button">Copy</button>
       </li>
       <li class="col-md-1 col-sm-2 col-xs-6">
         <span class="glyphicon glyphicon-play-circle"></span>
         <span class="glyphicon-class">.glyphicon .glyphicon-play-circle</span>
-      <button title="Click to copy me." type="button" data-clipboard-text="&#60;span class=&#34;glyphicon glyphicon-adjust&#34;&#62;&#60;/span&#62;" class="btn btn-xs copy-button">Copy</button>
+      <button title="Click to copy me." type="button" data-clipboard-text="&#60;span class=&#34;glyphicon glyphicon-play-circle&#34;&#62;&#60;/span&#62;" class="btn btn-xs copy-button">Copy</button>
       </li>
       <li class="col-md-1 col-sm-2 col-xs-6">
         <span class="glyphicon glyphicon-plus"></span>
         <span class="glyphicon-class">.glyphicon .glyphicon-plus</span>
-      <button title="Click to copy me." type="button" data-clipboard-text="&#60;span class=&#34;glyphicon glyphicon-adjust&#34;&#62;&#60;/span&#62;" class="btn btn-xs copy-button">Copy</button>
+      <button title="Click to copy me." type="button" data-clipboard-text="&#60;span class=&#34;glyphicon glyphicon-plus&#34;&#62;&#60;/span&#62;" class="btn btn-xs copy-button">Copy</button>
       </li>
       <li class="col-md-1 col-sm-2 col-xs-6">
         <span class="glyphicon glyphicon-plus-sign"></span>
         <span class="glyphicon-class">.glyphicon .glyphicon-plus-sign</span>
-      <button title="Click to copy me." type="button" data-clipboard-text="&#60;span class=&#34;glyphicon glyphicon-adjust&#34;&#62;&#60;/span&#62;" class="btn btn-xs copy-button">Copy</button>
+      <button title="Click to copy me." type="button" data-clipboard-text="&#60;span class=&#34;glyphicon glyphicon-plus-sign&#34;&#62;&#60;/span&#62;" class="btn btn-xs copy-button">Copy</button>
       </li>
       <li class="col-md-1 col-md-offset-0 col-sm-2 col-sm-offset-1 col-xs-6 col-xs-offset-0">
         <span class="glyphicon glyphicon-print"></span>
         <span class="glyphicon-class">.glyphicon .glyphicon-print</span>
-      <button title="Click to copy me." type="button" data-clipboard-text="&#60;span class=&#34;glyphicon glyphicon-adjust&#34;&#62;&#60;/span&#62;" class="btn btn-xs copy-button">Copy</button>
+      <button title="Click to copy me." type="button" data-clipboard-text="&#60;span class=&#34;glyphicon glyphicon-print&#34;&#62;&#60;/span&#62;" class="btn btn-xs copy-button">Copy</button>
       </li>
       <li class="col-md-1 col-sm-2 col-xs-6">
         <span class="glyphicon glyphicon-pushpin"></span>
         <span class="glyphicon-class">.glyphicon .glyphicon-pushpin</span>
-      <button title="Click to copy me." type="button" data-clipboard-text="&#60;span class=&#34;glyphicon glyphicon-adjust&#34;&#62;&#60;/span&#62;" class="btn btn-xs copy-button">Copy</button>
+      <button title="Click to copy me." type="button" data-clipboard-text="&#60;span class=&#34;glyphicon glyphicon-pushpin&#34;&#62;&#60;/span&#62;" class="btn btn-xs copy-button">Copy</button>
       </li>
       <li class="col-md-1 col-sm-2 col-xs-6">
         <span class="glyphicon glyphicon-qrcode"></span>
         <span class="glyphicon-class">.glyphicon .glyphicon-qrcode</span>
-      <button title="Click to copy me." type="button" data-clipboard-text="&#60;span class=&#34;glyphicon glyphicon-adjust&#34;&#62;&#60;/span&#62;" class="btn btn-xs copy-button">Copy</button>
+      <button title="Click to copy me." type="button" data-clipboard-text="&#60;span class=&#34;glyphicon glyphicon-qrcode&#34;&#62;&#60;/span&#62;" class="btn btn-xs copy-button">Copy</button>
       </li>
       <li class="col-md-1 col-sm-2 col-xs-6">
         <span class="glyphicon glyphicon-question-sign"></span>
         <span class="glyphicon-class">.glyphicon .glyphicon-question-sign</span>
-      <button title="Click to copy me." type="button" data-clipboard-text="&#60;span class=&#34;glyphicon glyphicon-adjust&#34;&#62;&#60;/span&#62;" class="btn btn-xs copy-button">Copy</button>
+      <button title="Click to copy me." type="button" data-clipboard-text="&#60;span class=&#34;glyphicon glyphicon-question-sign&#34;&#62;&#60;/span&#62;" class="btn btn-xs copy-button">Copy</button>
       </li>
       <li class="col-md-1 col-sm-2 col-xs-6">
         <span class="glyphicon glyphicon-random"></span>
         <span class="glyphicon-class">.glyphicon .glyphicon-random</span>
-      <button title="Click to copy me." type="button" data-clipboard-text="&#60;span class=&#34;glyphicon glyphicon-adjust&#34;&#62;&#60;/span&#62;" class="btn btn-xs copy-button">Copy</button>
+      <button title="Click to copy me." type="button" data-clipboard-text="&#60;span class=&#34;glyphicon glyphicon-random&#34;&#62;&#60;/span&#62;" class="btn btn-xs copy-button">Copy</button>
       </li>
       </div>
       
@@ -844,52 +849,52 @@
       <li class="col-md-1 col-md-offset-1 col-sm-2 col-sm-offset-1 col-xs-6">
         <span class="glyphicon glyphicon-record"></span>
         <span class="glyphicon-class">.glyphicon .glyphicon-record</span>
-      <button title="Click to copy me." type="button" data-clipboard-text="&#60;span class=&#34;glyphicon glyphicon-adjust&#34;&#62;&#60;/span&#62;" class="btn btn-xs copy-button">Copy</button>
+      <button title="Click to copy me." type="button" data-clipboard-text="&#60;span class=&#34;glyphicon glyphicon-record&#34;&#62;&#60;/span&#62;" class="btn btn-xs copy-button">Copy</button>
       </li>
       <li class="col-md-1 col-sm-2 col-xs-6">
         <span class="glyphicon glyphicon-refresh"></span>
         <span class="glyphicon-class">.glyphicon .glyphicon-refresh</span>
-      <button title="Click to copy me." type="button" data-clipboard-text="&#60;span class=&#34;glyphicon glyphicon-adjust&#34;&#62;&#60;/span&#62;" class="btn btn-xs copy-button">Copy</button>
+      <button title="Click to copy me." type="button" data-clipboard-text="&#60;span class=&#34;glyphicon glyphicon-refresh&#34;&#62;&#60;/span&#62;" class="btn btn-xs copy-button">Copy</button>
       </li>
       <li class="col-md-1 col-sm-2 col-xs-6">
         <span class="glyphicon glyphicon-registration-mark"></span>
         <span class="glyphicon-class">.glyphicon .glyphicon-registration-mark</span>
-      <button title="Click to copy me." type="button" data-clipboard-text="&#60;span class=&#34;glyphicon glyphicon-adjust&#34;&#62;&#60;/span&#62;" class="btn btn-xs copy-button">Copy</button>
+      <button title="Click to copy me." type="button" data-clipboard-text="&#60;span class=&#34;glyphicon glyphicon-registration-mark&#34;&#62;&#60;/span&#62;" class="btn btn-xs copy-button">Copy</button>
       </li>
       <li class="col-md-1 col-sm-2 col-xs-6">
         <span class="glyphicon glyphicon-remove"></span>
         <span class="glyphicon-class">.glyphicon .glyphicon-remove</span>
-      <button title="Click to copy me." type="button" data-clipboard-text="&#60;span class=&#34;glyphicon glyphicon-adjust&#34;&#62;&#60;/span&#62;" class="btn btn-xs copy-button">Copy</button>
+      <button title="Click to copy me." type="button" data-clipboard-text="&#60;span class=&#34;glyphicon glyphicon-remove&#34;&#62;&#60;/span&#62;" class="btn btn-xs copy-button">Copy</button>
       </li>
       <li class="col-md-1 col-sm-2 col-xs-6">
         <span class="glyphicon glyphicon-remove-circle"></span>
         <span class="glyphicon-class">.glyphicon .glyphicon-remove-circle</span>
-      <button title="Click to copy me." type="button" data-clipboard-text="&#60;span class=&#34;glyphicon glyphicon-adjust&#34;&#62;&#60;/span&#62;" class="btn btn-xs copy-button">Copy</button>
+      <button title="Click to copy me." type="button" data-clipboard-text="&#60;span class=&#34;glyphicon glyphicon-remove-circle&#34;&#62;&#60;/span&#62;" class="btn btn-xs copy-button">Copy</button>
       </li>
       <li class="col-md-1 col-md-offset-0 col-sm-2 col-sm-offset-1 col-xs-6 col-xs-offset-0">
         <span class="glyphicon glyphicon-remove-sign"></span>
         <span class="glyphicon-class">.glyphicon .glyphicon-remove-sign</span>
-      <button title="Click to copy me." type="button" data-clipboard-text="&#60;span class=&#34;glyphicon glyphicon-adjust&#34;&#62;&#60;/span&#62;" class="btn btn-xs copy-button">Copy</button>
+      <button title="Click to copy me." type="button" data-clipboard-text="&#60;span class=&#34;glyphicon glyphicon-remove-sign&#34;&#62;&#60;/span&#62;" class="btn btn-xs copy-button">Copy</button>
       </li>
       <li class="col-md-1 col-sm-2 col-xs-6">
         <span class="glyphicon glyphicon-repeat"></span>
         <span class="glyphicon-class">.glyphicon .glyphicon-repeat</span>
-      <button title="Click to copy me." type="button" data-clipboard-text="&#60;span class=&#34;glyphicon glyphicon-adjust&#34;&#62;&#60;/span&#62;" class="btn btn-xs copy-button">Copy</button>
+      <button title="Click to copy me." type="button" data-clipboard-text="&#60;span class=&#34;glyphicon glyphicon-repeat&#34;&#62;&#60;/span&#62;" class="btn btn-xs copy-button">Copy</button>
       </li>
       <li class="col-md-1 col-sm-2 col-xs-6">
         <span class="glyphicon glyphicon-resize-full"></span>
         <span class="glyphicon-class">.glyphicon .glyphicon-resize-full</span>
-      <button title="Click to copy me." type="button" data-clipboard-text="&#60;span class=&#34;glyphicon glyphicon-adjust&#34;&#62;&#60;/span&#62;" class="btn btn-xs copy-button">Copy</button>
+      <button title="Click to copy me." type="button" data-clipboard-text="&#60;span class=&#34;glyphicon glyphicon-resize-full&#34;&#62;&#60;/span&#62;" class="btn btn-xs copy-button">Copy</button>
       </li>
       <li class="col-md-1 col-sm-2 col-xs-6">
         <span class="glyphicon glyphicon-resize-horizontal"></span>
         <span class="glyphicon-class">.glyphicon .glyphicon-resize-horizontal</span>
-      <button title="Click to copy me." type="button" data-clipboard-text="&#60;span class=&#34;glyphicon glyphicon-adjust&#34;&#62;&#60;/span&#62;" class="btn btn-xs copy-button">Copy</button>
+      <button title="Click to copy me." type="button" data-clipboard-text="&#60;span class=&#34;glyphicon glyphicon-resize-horizontal&#34;&#62;&#60;/span&#62;" class="btn btn-xs copy-button">Copy</button>
       </li>
       <li class="col-md-1 col-sm-2 col-xs-6">
         <span class="glyphicon glyphicon-resize-small"></span>
         <span class="glyphicon-class">.glyphicon .glyphicon-resize-small</span>
-      <button title="Click to copy me." type="button" data-clipboard-text="&#60;span class=&#34;glyphicon glyphicon-adjust&#34;&#62;&#60;/span&#62;" class="btn btn-xs copy-button">Copy</button>
+      <button title="Click to copy me." type="button" data-clipboard-text="&#60;span class=&#34;glyphicon glyphicon-resize-small&#34;&#62;&#60;/span&#62;" class="btn btn-xs copy-button">Copy</button>
       </li>
       </div>
       
@@ -898,52 +903,52 @@
       <li class="col-md-1 col-md-offset-1 col-sm-2 col-sm-offset-1 col-xs-6">
         <span class="glyphicon glyphicon-resize-vertical"></span>
         <span class="glyphicon-class">.glyphicon .glyphicon-resize-vertical</span>
-      <button title="Click to copy me." type="button" data-clipboard-text="&#60;span class=&#34;glyphicon glyphicon-adjust&#34;&#62;&#60;/span&#62;" class="btn btn-xs copy-button">Copy</button>
+      <button title="Click to copy me." type="button" data-clipboard-text="&#60;span class=&#34;glyphicon glyphicon-resize-vertical&#34;&#62;&#60;/span&#62;" class="btn btn-xs copy-button">Copy</button>
       </li>
       <li class="col-md-1 col-sm-2 col-xs-6">
         <span class="glyphicon glyphicon-retweet"></span>
         <span class="glyphicon-class">.glyphicon .glyphicon-retweet</span>
-      <button title="Click to copy me." type="button" data-clipboard-text="&#60;span class=&#34;glyphicon glyphicon-adjust&#34;&#62;&#60;/span&#62;" class="btn btn-xs copy-button">Copy</button>
+      <button title="Click to copy me." type="button" data-clipboard-text="&#60;span class=&#34;glyphicon glyphicon-retweet&#34;&#62;&#60;/span&#62;" class="btn btn-xs copy-button">Copy</button>
       </li>
       <li class="col-md-1 col-sm-2 col-xs-6">
         <span class="glyphicon glyphicon-road"></span>
         <span class="glyphicon-class">.glyphicon .glyphicon-road</span>
-      <button title="Click to copy me." type="button" data-clipboard-text="&#60;span class=&#34;glyphicon glyphicon-adjust&#34;&#62;&#60;/span&#62;" class="btn btn-xs copy-button">Copy</button>
+      <button title="Click to copy me." type="button" data-clipboard-text="&#60;span class=&#34;glyphicon glyphicon-road&#34;&#62;&#60;/span&#62;" class="btn btn-xs copy-button">Copy</button>
       </li>
       <li class="col-md-1 col-sm-2 col-xs-6">
         <span class="glyphicon glyphicon-save"></span>
         <span class="glyphicon-class">.glyphicon .glyphicon-save</span>
-      <button title="Click to copy me." type="button" data-clipboard-text="&#60;span class=&#34;glyphicon glyphicon-adjust&#34;&#62;&#60;/span&#62;" class="btn btn-xs copy-button">Copy</button>
+      <button title="Click to copy me." type="button" data-clipboard-text="&#60;span class=&#34;glyphicon glyphicon-save&#34;&#62;&#60;/span&#62;" class="btn btn-xs copy-button">Copy</button>
       </li>
       <li class="col-md-1 col-sm-2 col-xs-6">
         <span class="glyphicon glyphicon-saved"></span>
         <span class="glyphicon-class">.glyphicon .glyphicon-saved</span>
-      <button title="Click to copy me." type="button" data-clipboard-text="&#60;span class=&#34;glyphicon glyphicon-adjust&#34;&#62;&#60;/span&#62;" class="btn btn-xs copy-button">Copy</button>
+      <button title="Click to copy me." type="button" data-clipboard-text="&#60;span class=&#34;glyphicon glyphicon-saved&#34;&#62;&#60;/span&#62;" class="btn btn-xs copy-button">Copy</button>
       </li>
       <li class="col-md-1 col-md-offset-0 col-sm-2 col-sm-offset-1 col-xs-6 col-xs-offset-0">
         <span class="glyphicon glyphicon-screenshot"></span>
         <span class="glyphicon-class">.glyphicon .glyphicon-screenshot</span>
-      <button title="Click to copy me." type="button" data-clipboard-text="&#60;span class=&#34;glyphicon glyphicon-adjust&#34;&#62;&#60;/span&#62;" class="btn btn-xs copy-button">Copy</button>
+      <button title="Click to copy me." type="button" data-clipboard-text="&#60;span class=&#34;glyphicon glyphicon-screenshot&#34;&#62;&#60;/span&#62;" class="btn btn-xs copy-button">Copy</button>
       </li>
       <li class="col-md-1 col-sm-2 col-xs-6">
         <span class="glyphicon glyphicon-sd-video"></span>
         <span class="glyphicon-class">.glyphicon .glyphicon-sd-video</span>
-      <button title="Click to copy me." type="button" data-clipboard-text="&#60;span class=&#34;glyphicon glyphicon-adjust&#34;&#62;&#60;/span&#62;" class="btn btn-xs copy-button">Copy</button>
+      <button title="Click to copy me." type="button" data-clipboard-text="&#60;span class=&#34;glyphicon glyphicon-sd-video&#34;&#62;&#60;/span&#62;" class="btn btn-xs copy-button">Copy</button>
       </li>
       <li class="col-md-1 col-sm-2 col-xs-6">
         <span class="glyphicon glyphicon-search"></span>
         <span class="glyphicon-class">.glyphicon .glyphicon-search</span>
-      <button title="Click to copy me." type="button" data-clipboard-text="&#60;span class=&#34;glyphicon glyphicon-adjust&#34;&#62;&#60;/span&#62;" class="btn btn-xs copy-button">Copy</button>
+      <button title="Click to copy me." type="button" data-clipboard-text="&#60;span class=&#34;glyphicon glyphicon-search&#34;&#62;&#60;/span&#62;" class="btn btn-xs copy-button">Copy</button>
       </li>
       <li class="col-md-1 col-sm-2 col-xs-6">
         <span class="glyphicon glyphicon-send"></span>
         <span class="glyphicon-class">.glyphicon .glyphicon-send</span>
-      <button title="Click to copy me." type="button" data-clipboard-text="&#60;span class=&#34;glyphicon glyphicon-adjust&#34;&#62;&#60;/span&#62;" class="btn btn-xs copy-button">Copy</button>
+      <button title="Click to copy me." type="button" data-clipboard-text="&#60;span class=&#34;glyphicon glyphicon-send&#34;&#62;&#60;/span&#62;" class="btn btn-xs copy-button">Copy</button>
       </li>
       <li class="col-md-1 col-sm-2 col-xs-6">
         <span class="glyphicon glyphicon-share"></span>
         <span class="glyphicon-class">.glyphicon .glyphicon-share</span>
-      <button title="Click to copy me." type="button" data-clipboard-text="&#60;span class=&#34;glyphicon glyphicon-adjust&#34;&#62;&#60;/span&#62;" class="btn btn-xs copy-button">Copy</button>
+      <button title="Click to copy me." type="button" data-clipboard-text="&#60;span class=&#34;glyphicon glyphicon-share&#34;&#62;&#60;/span&#62;" class="btn btn-xs copy-button">Copy</button>
       </li>
       </div>
       
@@ -952,52 +957,52 @@
       <li class="col-md-1 col-md-offset-1 col-sm-2 col-sm-offset-1 col-xs-6">
         <span class="glyphicon glyphicon-share-alt"></span>
         <span class="glyphicon-class">.glyphicon .glyphicon-share-alt</span>
-      <button title="Click to copy me." type="button" data-clipboard-text="&#60;span class=&#34;glyphicon glyphicon-adjust&#34;&#62;&#60;/span&#62;" class="btn btn-xs copy-button">Copy</button>
+      <button title="Click to copy me." type="button" data-clipboard-text="&#60;span class=&#34;glyphicon glyphicon-share-alt&#34;&#62;&#60;/span&#62;" class="btn btn-xs copy-button">Copy</button>
       </li>
       <li class="col-md-1 col-sm-2 col-xs-6">
         <span class="glyphicon glyphicon-shopping-cart"></span>
         <span class="glyphicon-class">.glyphicon .glyphicon-shopping-cart</span>
-      <button title="Click to copy me." type="button" data-clipboard-text="&#60;span class=&#34;glyphicon glyphicon-adjust&#34;&#62;&#60;/span&#62;" class="btn btn-xs copy-button">Copy</button>
+      <button title="Click to copy me." type="button" data-clipboard-text="&#60;span class=&#34;glyphicon glyphicon-shopping-cart&#34;&#62;&#60;/span&#62;" class="btn btn-xs copy-button">Copy</button>
       </li>
       <li class="col-md-1 col-sm-2 col-xs-6">
         <span class="glyphicon glyphicon-signal"></span>
         <span class="glyphicon-class">.glyphicon .glyphicon-signal</span>
-      <button title="Click to copy me." type="button" data-clipboard-text="&#60;span class=&#34;glyphicon glyphicon-adjust&#34;&#62;&#60;/span&#62;" class="btn btn-xs copy-button">Copy</button>
+      <button title="Click to copy me." type="button" data-clipboard-text="&#60;span class=&#34;glyphicon glyphicon-signal&#34;&#62;&#60;/span&#62;" class="btn btn-xs copy-button">Copy</button>
       </li>
       <li class="col-md-1 col-sm-2 col-xs-6">
         <span class="glyphicon glyphicon-sort"></span>
         <span class="glyphicon-class">.glyphicon .glyphicon-sort</span>
-      <button title="Click to copy me." type="button" data-clipboard-text="&#60;span class=&#34;glyphicon glyphicon-adjust&#34;&#62;&#60;/span&#62;" class="btn btn-xs copy-button">Copy</button>
+      <button title="Click to copy me." type="button" data-clipboard-text="&#60;span class=&#34;glyphicon glyphicon-sort&#34;&#62;&#60;/span&#62;" class="btn btn-xs copy-button">Copy</button>
       </li>
       <li class="col-md-1 col-sm-2 col-xs-6">
         <span class="glyphicon glyphicon-sort-by-alphabet"></span>
         <span class="glyphicon-class">.glyphicon .glyphicon-sort-by-alphabet</span>
-      <button title="Click to copy me." type="button" data-clipboard-text="&#60;span class=&#34;glyphicon glyphicon-adjust&#34;&#62;&#60;/span&#62;" class="btn btn-xs copy-button">Copy</button>
+      <button title="Click to copy me." type="button" data-clipboard-text="&#60;span class=&#34;glyphicon glyphicon-sort-by-alphabet&#34;&#62;&#60;/span&#62;" class="btn btn-xs copy-button">Copy</button>
       </li>
       <li class="col-md-1 col-md-offset-0 col-sm-2 col-sm-offset-1 col-xs-6 col-xs-offset-0">
         <span class="glyphicon glyphicon-sort-by-alphabet-alt"></span>
         <span class="glyphicon-class">.glyphicon .glyphicon-sort-by-alphabet-alt</span>
-      <button title="Click to copy me." type="button" data-clipboard-text="&#60;span class=&#34;glyphicon glyphicon-adjust&#34;&#62;&#60;/span&#62;" class="btn btn-xs copy-button">Copy</button>
+      <button title="Click to copy me." type="button" data-clipboard-text="&#60;span class=&#34;glyphicon glyphicon-sort-by-alphabet-alt&#34;&#62;&#60;/span&#62;" class="btn btn-xs copy-button">Copy</button>
       </li>
       <li class="col-md-1 col-sm-2 col-xs-6">
         <span class="glyphicon glyphicon-sort-by-attributes"></span>
         <span class="glyphicon-class">.glyphicon .glyphicon-sort-by-attributes</span>
-      <button title="Click to copy me." type="button" data-clipboard-text="&#60;span class=&#34;glyphicon glyphicon-adjust&#34;&#62;&#60;/span&#62;" class="btn btn-xs copy-button">Copy</button>
+      <button title="Click to copy me." type="button" data-clipboard-text="&#60;span class=&#34;glyphicon glyphicon-sort-by-attributes&#34;&#62;&#60;/span&#62;" class="btn btn-xs copy-button">Copy</button>
       </li>
       <li class="col-md-1 col-sm-2 col-xs-6">
         <span class="glyphicon glyphicon-sort-by-attributes-alt"></span>
         <span class="glyphicon-class">.glyphicon .glyphicon-sort-by-attributes-alt</span>
-      <button title="Click to copy me." type="button" data-clipboard-text="&#60;span class=&#34;glyphicon glyphicon-adjust&#34;&#62;&#60;/span&#62;" class="btn btn-xs copy-button">Copy</button>
+      <button title="Click to copy me." type="button" data-clipboard-text="&#60;span class=&#34;glyphicon glyphicon-sort-by-attributes-alt&#34;&#62;&#60;/span&#62;" class="btn btn-xs copy-button">Copy</button>
       </li>
       <li class="col-md-1 col-sm-2 col-xs-6">
         <span class="glyphicon glyphicon-sort-by-order"></span>
         <span class="glyphicon-class">.glyphicon .glyphicon-sort-by-order</span>
-      <button title="Click to copy me." type="button" data-clipboard-text="&#60;span class=&#34;glyphicon glyphicon-adjust&#34;&#62;&#60;/span&#62;" class="btn btn-xs copy-button">Copy</button>
+      <button title="Click to copy me." type="button" data-clipboard-text="&#60;span class=&#34;glyphicon glyphicon-sort-by-order&#34;&#62;&#60;/span&#62;" class="btn btn-xs copy-button">Copy</button>
       </li>
       <li class="col-md-1 col-sm-2 col-xs-6">
         <span class="glyphicon glyphicon-sort-by-order-alt"></span>
         <span class="glyphicon-class">.glyphicon .glyphicon-sort-by-order-alt</span>
-      <button title="Click to copy me." type="button" data-clipboard-text="&#60;span class=&#34;glyphicon glyphicon-adjust&#34;&#62;&#60;/span&#62;" class="btn btn-xs copy-button">Copy</button>
+      <button title="Click to copy me." type="button" data-clipboard-text="&#60;span class=&#34;glyphicon glyphicon-sort-by-order-alt&#34;&#62;&#60;/span&#62;" class="btn btn-xs copy-button">Copy</button>
       </li>
       </div>
       
@@ -1006,52 +1011,52 @@
       <li class="col-md-1 col-md-offset-1 col-sm-2 col-sm-offset-1 col-xs-6">
         <span class="glyphicon glyphicon-sound-5-1"></span>
         <span class="glyphicon-class">.glyphicon .glyphicon-sound-5-1</span>
-      <button title="Click to copy me." type="button" data-clipboard-text="&#60;span class=&#34;glyphicon glyphicon-adjust&#34;&#62;&#60;/span&#62;" class="btn btn-xs copy-button">Copy</button>
+      <button title="Click to copy me." type="button" data-clipboard-text="&#60;span class=&#34;glyphicon glyphicon-sound-5-1&#34;&#62;&#60;/span&#62;" class="btn btn-xs copy-button">Copy</button>
       </li>
       <li class="col-md-1 col-sm-2 col-xs-6">
         <span class="glyphicon glyphicon-sound-6-1"></span>
         <span class="glyphicon-class">.glyphicon .glyphicon-sound-6-1</span>
-      <button title="Click to copy me." type="button" data-clipboard-text="&#60;span class=&#34;glyphicon glyphicon-adjust&#34;&#62;&#60;/span&#62;" class="btn btn-xs copy-button">Copy</button>
+      <button title="Click to copy me." type="button" data-clipboard-text="&#60;span class=&#34;glyphicon glyphicon-sound-6-1&#34;&#62;&#60;/span&#62;" class="btn btn-xs copy-button">Copy</button>
       </li>
       <li class="col-md-1 col-sm-2 col-xs-6">
         <span class="glyphicon glyphicon-sound-7-1"></span>
         <span class="glyphicon-class">.glyphicon .glyphicon-sound-7-1</span>
-      <button title="Click to copy me." type="button" data-clipboard-text="&#60;span class=&#34;glyphicon glyphicon-adjust&#34;&#62;&#60;/span&#62;" class="btn btn-xs copy-button">Copy</button>
+      <button title="Click to copy me." type="button" data-clipboard-text="&#60;span class=&#34;glyphicon glyphicon-sound-7-1&#34;&#62;&#60;/span&#62;" class="btn btn-xs copy-button">Copy</button>
       </li>
       <li class="col-md-1 col-sm-2 col-xs-6">
         <span class="glyphicon glyphicon-sound-dolby"></span>
         <span class="glyphicon-class">.glyphicon .glyphicon-sound-dolby</span>
-      <button title="Click to copy me." type="button" data-clipboard-text="&#60;span class=&#34;glyphicon glyphicon-adjust&#34;&#62;&#60;/span&#62;" class="btn btn-xs copy-button">Copy</button>
+      <button title="Click to copy me." type="button" data-clipboard-text="&#60;span class=&#34;glyphicon glyphicon-sound-dolby&#34;&#62;&#60;/span&#62;" class="btn btn-xs copy-button">Copy</button>
       </li>
       <li class="col-md-1 col-sm-2 col-xs-6">
         <span class="glyphicon glyphicon-sound-stereo"></span>
         <span class="glyphicon-class">.glyphicon .glyphicon-sound-stereo</span>
-      <button title="Click to copy me." type="button" data-clipboard-text="&#60;span class=&#34;glyphicon glyphicon-adjust&#34;&#62;&#60;/span&#62;" class="btn btn-xs copy-button">Copy</button>
+      <button title="Click to copy me." type="button" data-clipboard-text="&#60;span class=&#34;glyphicon glyphicon-sound-stereo&#34;&#62;&#60;/span&#62;" class="btn btn-xs copy-button">Copy</button>
       </li>
       <li class="col-md-1 col-md-offset-0 col-sm-2 col-sm-offset-1 col-xs-6 col-xs-offset-0">
         <span class="glyphicon glyphicon-star"></span>
         <span class="glyphicon-class">.glyphicon .glyphicon-star</span>
-      <button title="Click to copy me." type="button" data-clipboard-text="&#60;span class=&#34;glyphicon glyphicon-adjust&#34;&#62;&#60;/span&#62;" class="btn btn-xs copy-button">Copy</button>
+      <button title="Click to copy me." type="button" data-clipboard-text="&#60;span class=&#34;glyphicon glyphicon-star&#34;&#62;&#60;/span&#62;" class="btn btn-xs copy-button">Copy</button>
       </li>
       <li class="col-md-1 col-sm-2 col-xs-6">
         <span class="glyphicon glyphicon-star-empty"></span>
         <span class="glyphicon-class">.glyphicon .glyphicon-star-empty</span>
-      <button title="Click to copy me." type="button" data-clipboard-text="&#60;span class=&#34;glyphicon glyphicon-adjust&#34;&#62;&#60;/span&#62;" class="btn btn-xs copy-button">Copy</button>
+      <button title="Click to copy me." type="button" data-clipboard-text="&#60;span class=&#34;glyphicon glyphicon-star-empty&#34;&#62;&#60;/span&#62;" class="btn btn-xs copy-button">Copy</button>
       </li>
       <li class="col-md-1 col-sm-2 col-xs-6">
         <span class="glyphicon glyphicon-stats"></span>
         <span class="glyphicon-class">.glyphicon .glyphicon-stats</span>
-      <button title="Click to copy me." type="button" data-clipboard-text="&#60;span class=&#34;glyphicon glyphicon-adjust&#34;&#62;&#60;/span&#62;" class="btn btn-xs copy-button">Copy</button>
+      <button title="Click to copy me." type="button" data-clipboard-text="&#60;span class=&#34;glyphicon glyphicon-stats&#34;&#62;&#60;/span&#62;" class="btn btn-xs copy-button">Copy</button>
       </li>
       <li class="col-md-1 col-sm-2 col-xs-6">
         <span class="glyphicon glyphicon-step-backward"></span>
         <span class="glyphicon-class">.glyphicon .glyphicon-step-backward</span>
-      <button title="Click to copy me." type="button" data-clipboard-text="&#60;span class=&#34;glyphicon glyphicon-adjust&#34;&#62;&#60;/span&#62;" class="btn btn-xs copy-button">Copy</button>
+      <button title="Click to copy me." type="button" data-clipboard-text="&#60;span class=&#34;glyphicon glyphicon-step-backward&#34;&#62;&#60;/span&#62;" class="btn btn-xs copy-button">Copy</button>
       </li>
       <li class="col-md-1 col-sm-2 col-xs-6">
         <span class="glyphicon glyphicon-step-forward"></span>
         <span class="glyphicon-class">.glyphicon .glyphicon-step-forward</span>
-      <button title="Click to copy me." type="button" data-clipboard-text="&#60;span class=&#34;glyphicon glyphicon-adjust&#34;&#62;&#60;/span&#62;" class="btn btn-xs copy-button">Copy</button>
+      <button title="Click to copy me." type="button" data-clipboard-text="&#60;span class=&#34;glyphicon glyphicon-step-forward&#34;&#62;&#60;/span&#62;" class="btn btn-xs copy-button">Copy</button>
       </li>
       </div>
       
@@ -1061,52 +1066,52 @@
       <li class="col-md-1 col-md-offset-1 col-sm-2 col-sm-offset-1 col-xs-6">
         <span class="glyphicon glyphicon-stop"></span>
         <span class="glyphicon-class">.glyphicon .glyphicon-stop</span>
-      <button title="Click to copy me." type="button" data-clipboard-text="&#60;span class=&#34;glyphicon glyphicon-adjust&#34;&#62;&#60;/span&#62;" class="btn btn-xs copy-button">Copy</button>
+      <button title="Click to copy me." type="button" data-clipboard-text="&#60;span class=&#34;glyphicon glyphicon-stop&#34;&#62;&#60;/span&#62;" class="btn btn-xs copy-button">Copy</button>
       </li>
       <li class="col-md-1 col-sm-2 col-xs-6">
         <span class="glyphicon glyphicon-subtitles"></span>
         <span class="glyphicon-class">.glyphicon .glyphicon-subtitles</span>
-      <button title="Click to copy me." type="button" data-clipboard-text="&#60;span class=&#34;glyphicon glyphicon-adjust&#34;&#62;&#60;/span&#62;" class="btn btn-xs copy-button">Copy</button>
+      <button title="Click to copy me." type="button" data-clipboard-text="&#60;span class=&#34;glyphicon glyphicon-subtitles&#34;&#62;&#60;/span&#62;" class="btn btn-xs copy-button">Copy</button>
       </li>
       <li class="col-md-1 col-sm-2 col-xs-6">
         <span class="glyphicon glyphicon-tag"></span>
         <span class="glyphicon-class">.glyphicon .glyphicon-tag</span>
-      <button title="Click to copy me." type="button" data-clipboard-text="&#60;span class=&#34;glyphicon glyphicon-adjust&#34;&#62;&#60;/span&#62;" class="btn btn-xs copy-button">Copy</button>
+      <button title="Click to copy me." type="button" data-clipboard-text="&#60;span class=&#34;glyphicon glyphicon-tag&#34;&#62;&#60;/span&#62;" class="btn btn-xs copy-button">Copy</button>
       </li>
       <li class="col-md-1 col-sm-2 col-xs-6">
         <span class="glyphicon glyphicon-tags"></span>
         <span class="glyphicon-class">.glyphicon .glyphicon-tags</span>
-      <button title="Click to copy me." type="button" data-clipboard-text="&#60;span class=&#34;glyphicon glyphicon-adjust&#34;&#62;&#60;/span&#62;" class="btn btn-xs copy-button">Copy</button>
+      <button title="Click to copy me." type="button" data-clipboard-text="&#60;span class=&#34;glyphicon glyphicon-tags&#34;&#62;&#60;/span&#62;" class="btn btn-xs copy-button">Copy</button>
       </li>
       <li class="col-md-1 col-sm-2 col-xs-6">
         <span class="glyphicon glyphicon-tasks"></span>
         <span class="glyphicon-class">.glyphicon .glyphicon-tasks</span>
-      <button title="Click to copy me." type="button" data-clipboard-text="&#60;span class=&#34;glyphicon glyphicon-adjust&#34;&#62;&#60;/span&#62;" class="btn btn-xs copy-button">Copy</button>
+      <button title="Click to copy me." type="button" data-clipboard-text="&#60;span class=&#34;glyphicon glyphicon-tasks&#34;&#62;&#60;/span&#62;" class="btn btn-xs copy-button">Copy</button>
       </li>
       <li class="col-md-1 col-md-offset-0 col-sm-2 col-sm-offset-1 col-xs-6 col-xs-offset-0">
         <span class="glyphicon glyphicon-text-height"></span>
         <span class="glyphicon-class">.glyphicon .glyphicon-text-height</span>
-      <button title="Click to copy me." type="button" data-clipboard-text="&#60;span class=&#34;glyphicon glyphicon-adjust&#34;&#62;&#60;/span&#62;" class="btn btn-xs copy-button">Copy</button>
+      <button title="Click to copy me." type="button" data-clipboard-text="&#60;span class=&#34;glyphicon glyphicon-text-height&#34;&#62;&#60;/span&#62;" class="btn btn-xs copy-button">Copy</button>
       </li>
       <li class="col-md-1 col-sm-2 col-xs-6">
         <span class="glyphicon glyphicon-text-width"></span>
         <span class="glyphicon-class">.glyphicon .glyphicon-text-width</span>
-      <button title="Click to copy me." type="button" data-clipboard-text="&#60;span class=&#34;glyphicon glyphicon-adjust&#34;&#62;&#60;/span&#62;" class="btn btn-xs copy-button">Copy</button>
+      <button title="Click to copy me." type="button" data-clipboard-text="&#60;span class=&#34;glyphicon glyphicon-text-width&#34;&#62;&#60;/span&#62;" class="btn btn-xs copy-button">Copy</button>
       </li>
       <li class="col-md-1 col-sm-2 col-xs-6">
         <span class="glyphicon glyphicon-th"></span>
         <span class="glyphicon-class">.glyphicon .glyphicon-th</span>
-      <button title="Click to copy me." type="button" data-clipboard-text="&#60;span class=&#34;glyphicon glyphicon-adjust&#34;&#62;&#60;/span&#62;" class="btn btn-xs copy-button">Copy</button>
+      <button title="Click to copy me." type="button" data-clipboard-text="&#60;span class=&#34;glyphicon glyphicon-th&#34;&#62;&#60;/span&#62;" class="btn btn-xs copy-button">Copy</button>
       </li>
       <li class="col-md-1 col-sm-2 col-xs-6">
         <span class="glyphicon glyphicon-th-large"></span>
         <span class="glyphicon-class">.glyphicon .glyphicon-th-large</span>
-      <button title="Click to copy me." type="button" data-clipboard-text="&#60;span class=&#34;glyphicon glyphicon-adjust&#34;&#62;&#60;/span&#62;" class="btn btn-xs copy-button">Copy</button>
+      <button title="Click to copy me." type="button" data-clipboard-text="&#60;span class=&#34;glyphicon glyphicon-th-large&#34;&#62;&#60;/span&#62;" class="btn btn-xs copy-button">Copy</button>
       </li>
       <li class="col-md-1 col-sm-2 col-xs-6">
         <span class="glyphicon glyphicon-th-list"></span>
         <span class="glyphicon-class">.glyphicon .glyphicon-th-list</span>
-      <button title="Click to copy me." type="button" data-clipboard-text="&#60;span class=&#34;glyphicon glyphicon-adjust&#34;&#62;&#60;/span&#62;" class="btn btn-xs copy-button">Copy</button>
+      <button title="Click to copy me." type="button" data-clipboard-text="&#60;span class=&#34;glyphicon glyphicon-th-list&#34;&#62;&#60;/span&#62;" class="btn btn-xs copy-button">Copy</button>
       </li>
       </div>
       
@@ -1115,52 +1120,52 @@
       <li class="col-md-1 col-md-offset-1 col-sm-2 col-sm-offset-1 col-xs-6">
         <span class="glyphicon glyphicon-thumbs-down"></span>
         <span class="glyphicon-class">.glyphicon .glyphicon-thumbs-down</span>
-      <button title="Click to copy me." type="button" data-clipboard-text="&#60;span class=&#34;glyphicon glyphicon-adjust&#34;&#62;&#60;/span&#62;" class="btn btn-xs copy-button">Copy</button>
+      <button title="Click to copy me." type="button" data-clipboard-text="&#60;span class=&#34;glyphicon glyphicon-thumbs-down&#34;&#62;&#60;/span&#62;" class="btn btn-xs copy-button">Copy</button>
       </li>
       <li class="col-md-1 col-sm-2 col-xs-6">
         <span class="glyphicon glyphicon-thumbs-up"></span>
         <span class="glyphicon-class">.glyphicon .glyphicon-thumbs-up</span>
-      <button title="Click to copy me." type="button" data-clipboard-text="&#60;span class=&#34;glyphicon glyphicon-adjust&#34;&#62;&#60;/span&#62;" class="btn btn-xs copy-button">Copy</button>
+      <button title="Click to copy me." type="button" data-clipboard-text="&#60;span class=&#34;glyphicon glyphicon-thumbs-up&#34;&#62;&#60;/span&#62;" class="btn btn-xs copy-button">Copy</button>
       </li>
       <li class="col-md-1 col-sm-2 col-xs-6">
         <span class="glyphicon glyphicon-time"></span>
         <span class="glyphicon-class">.glyphicon .glyphicon-time</span>
-      <button title="Click to copy me." type="button" data-clipboard-text="&#60;span class=&#34;glyphicon glyphicon-adjust&#34;&#62;&#60;/span&#62;" class="btn btn-xs copy-button">Copy</button>
+      <button title="Click to copy me." type="button" data-clipboard-text="&#60;span class=&#34;glyphicon glyphicon-time&#34;&#62;&#60;/span&#62;" class="btn btn-xs copy-button">Copy</button>
       </li>
       <li class="col-md-1 col-sm-2 col-xs-6">
         <span class="glyphicon glyphicon-tint"></span>
         <span class="glyphicon-class">.glyphicon .glyphicon-tint</span>
-      <button title="Click to copy me." type="button" data-clipboard-text="&#60;span class=&#34;glyphicon glyphicon-adjust&#34;&#62;&#60;/span&#62;" class="btn btn-xs copy-button">Copy</button>
+      <button title="Click to copy me." type="button" data-clipboard-text="&#60;span class=&#34;glyphicon glyphicon-tint&#34;&#62;&#60;/span&#62;" class="btn btn-xs copy-button">Copy</button>
       </li>
       <li class="col-md-1 col-sm-2 col-xs-6">
         <span class="glyphicon glyphicon-tower"></span>
         <span class="glyphicon-class">.glyphicon .glyphicon-tower</span>
-      <button title="Click to copy me." type="button" data-clipboard-text="&#60;span class=&#34;glyphicon glyphicon-adjust&#34;&#62;&#60;/span&#62;" class="btn btn-xs copy-button">Copy</button>
+      <button title="Click to copy me." type="button" data-clipboard-text="&#60;span class=&#34;glyphicon glyphicon-tower&#34;&#62;&#60;/span&#62;" class="btn btn-xs copy-button">Copy</button>
       </li>
       <li class="col-md-1 col-md-offset-0 col-sm-2 col-sm-offset-1 col-xs-6 col-xs-offset-0">
         <span class="glyphicon glyphicon-transfer"></span>
         <span class="glyphicon-class">.glyphicon .glyphicon-transfer</span>
-      <button title="Click to copy me." type="button" data-clipboard-text="&#60;span class=&#34;glyphicon glyphicon-adjust&#34;&#62;&#60;/span&#62;" class="btn btn-xs copy-button">Copy</button>
+      <button title="Click to copy me." type="button" data-clipboard-text="&#60;span class=&#34;glyphicon glyphicon-transfer&#34;&#62;&#60;/span&#62;" class="btn btn-xs copy-button">Copy</button>
       </li>
       <li class="col-md-1 col-sm-2 col-xs-6">
         <span class="glyphicon glyphicon-trash"></span>
         <span class="glyphicon-class">.glyphicon .glyphicon-trash</span>
-      <button title="Click to copy me." type="button" data-clipboard-text="&#60;span class=&#34;glyphicon glyphicon-adjust&#34;&#62;&#60;/span&#62;" class="btn btn-xs copy-button">Copy</button>
+      <button title="Click to copy me." type="button" data-clipboard-text="&#60;span class=&#34;glyphicon glyphicon-trash&#34;&#62;&#60;/span&#62;" class="btn btn-xs copy-button">Copy</button>
       </li>
       <li class="col-md-1 col-sm-2 col-xs-6">
         <span class="glyphicon glyphicon-tree-conifer"></span>
         <span class="glyphicon-class">.glyphicon .glyphicon-tree-conifer</span>
-      <button title="Click to copy me." type="button" data-clipboard-text="&#60;span class=&#34;glyphicon glyphicon-adjust&#34;&#62;&#60;/span&#62;" class="btn btn-xs copy-button">Copy</button>
+      <button title="Click to copy me." type="button" data-clipboard-text="&#60;span class=&#34;glyphicon glyphicon-tree-conifer&#34;&#62;&#60;/span&#62;" class="btn btn-xs copy-button">Copy</button>
       </li>
       <li class="col-md-1 col-sm-2 col-xs-6">
         <span class="glyphicon glyphicon-tree-deciduous"></span>
         <span class="glyphicon-class">.glyphicon .glyphicon-tree-deciduous</span>
-      <button title="Click to copy me." type="button" data-clipboard-text="&#60;span class=&#34;glyphicon glyphicon-adjust&#34;&#62;&#60;/span&#62;" class="btn btn-xs copy-button">Copy</button>
+      <button title="Click to copy me." type="button" data-clipboard-text="&#60;span class=&#34;glyphicon glyphicon-tree-deciduous&#34;&#62;&#60;/span&#62;" class="btn btn-xs copy-button">Copy</button>
       </li>
       <li class="col-md-1 col-sm-2 col-xs-6">
         <span class="glyphicon glyphicon-unchecked"></span>
         <span class="glyphicon-class">.glyphicon .glyphicon-unchecked</span>
-      <button title="Click to copy me." type="button" data-clipboard-text="&#60;span class=&#34;glyphicon glyphicon-adjust&#34;&#62;&#60;/span&#62;" class="btn btn-xs copy-button">Copy</button>
+      <button title="Click to copy me." type="button" data-clipboard-text="&#60;span class=&#34;glyphicon glyphicon-unchecked&#34;&#62;&#60;/span&#62;" class="btn btn-xs copy-button">Copy</button>
       </li>
       </div>
       
@@ -1169,52 +1174,52 @@
       <li class="col-md-1 col-md-offset-1 col-sm-2 col-sm-offset-1 col-xs-6">
         <span class="glyphicon glyphicon-upload"></span>
         <span class="glyphicon-class">.glyphicon .glyphicon-upload</span>
-      <button title="Click to copy me." type="button" data-clipboard-text="&#60;span class=&#34;glyphicon glyphicon-adjust&#34;&#62;&#60;/span&#62;" class="btn btn-xs copy-button">Copy</button>
+      <button title="Click to copy me." type="button" data-clipboard-text="&#60;span class=&#34;glyphicon glyphicon-upload&#34;&#62;&#60;/span&#62;" class="btn btn-xs copy-button">Copy</button>
       </li>
       <li class="col-md-1 col-sm-2 col-xs-6">
         <span class="glyphicon glyphicon-usd"></span>
         <span class="glyphicon-class">.glyphicon .glyphicon-usd</span>
-      <button title="Click to copy me." type="button" data-clipboard-text="&#60;span class=&#34;glyphicon glyphicon-adjust&#34;&#62;&#60;/span&#62;" class="btn btn-xs copy-button">Copy</button>
+      <button title="Click to copy me." type="button" data-clipboard-text="&#60;span class=&#34;glyphicon glyphicon-usd&#34;&#62;&#60;/span&#62;" class="btn btn-xs copy-button">Copy</button>
       </li>
       <li class="col-md-1 col-sm-2 col-xs-6">
         <span class="glyphicon glyphicon-user"></span>
         <span class="glyphicon-class">.glyphicon .glyphicon-user</span>
-      <button title="Click to copy me." type="button" data-clipboard-text="&#60;span class=&#34;glyphicon glyphicon-adjust&#34;&#62;&#60;/span&#62;" class="btn btn-xs copy-button">Copy</button>
+      <button title="Click to copy me." type="button" data-clipboard-text="&#60;span class=&#34;glyphicon glyphicon-user&#34;&#62;&#60;/span&#62;" class="btn btn-xs copy-button">Copy</button>
       </li>
       <li class="col-md-1 col-sm-2 col-xs-6">
         <span class="glyphicon glyphicon-volume-down"></span>
         <span class="glyphicon-class">.glyphicon .glyphicon-volume-down</span>
-      <button title="Click to copy me." type="button" data-clipboard-text="&#60;span class=&#34;glyphicon glyphicon-adjust&#34;&#62;&#60;/span&#62;" class="btn btn-xs copy-button">Copy</button>
+      <button title="Click to copy me." type="button" data-clipboard-text="&#60;span class=&#34;glyphicon glyphicon-volume-down&#34;&#62;&#60;/span&#62;" class="btn btn-xs copy-button">Copy</button>
       </li>
       <li class="col-md-1 col-sm-2 col-xs-6">
         <span class="glyphicon glyphicon-volume-off"></span>
         <span class="glyphicon-class">.glyphicon .glyphicon-volume-off</span>
-      <button title="Click to copy me." type="button" data-clipboard-text="&#60;span class=&#34;glyphicon glyphicon-adjust&#34;&#62;&#60;/span&#62;" class="btn btn-xs copy-button">Copy</button>
+      <button title="Click to copy me." type="button" data-clipboard-text="&#60;span class=&#34;glyphicon glyphicon-volume-off&#34;&#62;&#60;/span&#62;" class="btn btn-xs copy-button">Copy</button>
       </li>
       <li class="col-md-1 col-md-offset-0 col-sm-2 col-sm-offset-1 col-xs-6 col-xs-offset-0">
         <span class="glyphicon glyphicon-volume-up"></span>
         <span class="glyphicon-class">.glyphicon .glyphicon-volume-up</span>
-      <button title="Click to copy me." type="button" data-clipboard-text="&#60;span class=&#34;glyphicon glyphicon-adjust&#34;&#62;&#60;/span&#62;" class="btn btn-xs copy-button">Copy</button>
+      <button title="Click to copy me." type="button" data-clipboard-text="&#60;span class=&#34;glyphicon glyphicon-volume-up&#34;&#62;&#60;/span&#62;" class="btn btn-xs copy-button">Copy</button>
       </li>
       <li class="col-md-1 col-sm-2 col-xs-6">
         <span class="glyphicon glyphicon-warning-sign"></span>
         <span class="glyphicon-class">.glyphicon .glyphicon-warning-sign</span>
-      <button title="Click to copy me." type="button" data-clipboard-text="&#60;span class=&#34;glyphicon glyphicon-adjust&#34;&#62;&#60;/span&#62;" class="btn btn-xs copy-button">Copy</button>
+      <button title="Click to copy me." type="button" data-clipboard-text="&#60;span class=&#34;glyphicon glyphicon-warning-sign&#34;&#62;&#60;/span&#62;" class="btn btn-xs copy-button">Copy</button>
       </li>
       <li class="col-md-1 col-sm-2 col-xs-6">
         <span class="glyphicon glyphicon-wrench"></span>
         <span class="glyphicon-class">.glyphicon .glyphicon-wrench</span>
-      <button title="Click to copy me." type="button" data-clipboard-text="&#60;span class=&#34;glyphicon glyphicon-adjust&#34;&#62;&#60;/span&#62;" class="btn btn-xs copy-button">Copy</button>
+      <button title="Click to copy me." type="button" data-clipboard-text="&#60;span class=&#34;glyphicon glyphicon-wrench&#34;&#62;&#60;/span&#62;" class="btn btn-xs copy-button">Copy</button>
       </li>
       <li class="col-md-1 col-sm-2 col-xs-6">
         <span class="glyphicon glyphicon-zoom-in"></span>
         <span class="glyphicon-class">.glyphicon .glyphicon-zoom-in</span>
-      <button title="Click to copy me." type="button" data-clipboard-text="&#60;span class=&#34;glyphicon glyphicon-adjust&#34;&#62;&#60;/span&#62;" class="btn btn-xs copy-button">Copy</button>
+      <button title="Click to copy me." type="button" data-clipboard-text="&#60;span class=&#34;glyphicon glyphicon-zoom-in&#34;&#62;&#60;/span&#62;" class="btn btn-xs copy-button">Copy</button>
       </li>
       <li class="col-md-1 col-sm-2 col-xs-6">
         <span class="glyphicon glyphicon-zoom-out"></span>
         <span class="glyphicon-class">.glyphicon .glyphicon-zoom-out</span>
-      <button title="Click to copy me." type="button" data-clipboard-text="&#60;span class=&#34;glyphicon glyphicon-adjust&#34;&#62;&#60;/span&#62;" class="btn btn-xs copy-button">Copy</button>
+      <button title="Click to copy me." type="button" data-clipboard-text="&#60;span class=&#34;glyphicon glyphicon-zoom-out&#34;&#62;&#60;/span&#62;" class="btn btn-xs copy-button">Copy</button>
       </li>
       </div>
     </ul>
