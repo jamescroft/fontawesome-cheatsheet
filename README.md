@@ -8,7 +8,7 @@ Glyphs are great! They're one of my favourite additions to native [Bootstrap 3](
 
 ###Cheat sheet?
 
-Yeah! It's basically a big grid with all the glyphicons on it.
+Yeah! It's basically a big grid with all the glyphicons on it. Similar to the [official Bootstrap documentation on Glyphicons](http://getbootstrap.com/components/#glyphicons), except this cheat sheet has copy buttons.
 
 To use [this cheat sheet](http://jamescroft.github.io/bootstrap-cheatsheets), simply find the glyphicon you want to use on the page and click the copy button. This will add the complete HTML code for that glyphicon (span tag and all) to your clipboard, ready to paste into your web development tool of choice.
 
