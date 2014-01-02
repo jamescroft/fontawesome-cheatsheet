@@ -8,11 +8,11 @@ Glyphs are great! They're one of my favourite additions to native [Bootstrap 3](
 
 ###Cheat sheet?
 
-Yeah! It's basically a big grid with all the glyphicons on it. It's similar to the [official Bootstrap documentation on Glyphicons](http://getbootstrap.com/components/#glyphicons), except this cheat sheet has handy-dandy copy buttons.
+Yeah! It's basically a big grid with all the glyphicons on it. It's similar to the [official Bootstrap documentation on Glyphicons](http://getbootstrap.com/components/#glyphicons), except [this cheat sheet](http://jamescroft.github.io/bootstrap-cheatsheets) has handy-dandy copy buttons.
 
-To use [this cheat sheet](http://jamescroft.github.io/bootstrap-cheatsheets), simply find the glyphicon you want to use on the page and click the copy button. This will add the complete HTML code for that glyphicon (span tag and all) to your clipboard, ready to paste into your web development tool of choice.
+To use it, simply find the glyphicon you want to use on the page and click the copy button. That's it! This will add the complete HTML code for that glyphicon (span tag and all) to your clipboard, ready to paste into your web development tool of choice.
 
- They've also got the descriptive class tags on them, so you can Ctrl/Cmd + F and find by keyword.
+There are also descriptive class tags on them, so you can Ctrl/Cmd + F and find an icon by keyword.
 
 ###What are Glyphicons exactly?
 [Glyphicons](http://glyphicons.com/) are basically little symbols, icons, or glyphs (whatever you prefer to call them) that you can use in a webpage, just like a font. If you're creating a site based on Bootstrap 3, you already have access to 200 of them.
