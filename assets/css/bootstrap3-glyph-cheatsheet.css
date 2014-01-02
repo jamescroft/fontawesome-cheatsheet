@@ -184,6 +184,11 @@
 			  border-radius: 0;
 			  border-width: 0 0 1px;
 			}
+			
+		footer.footer {
+			padding: 30px 10px;
+		}
+
 
 		/* Make the examples and snippets not full-width */
 		@media (min-width: 768px) {
@@ -213,8 +218,7 @@
 		.example ul.nav {
 			margin-bottom: 10px;
 		}
-		  
-		  
+		  		  
 		@media screen and (min-width: 768px) { 
 			.glyphicons li {
 		  		height: 182px;
