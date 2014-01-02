@@ -4,7 +4,7 @@ Go check out the [published Bootstrap 3 Glyphs cheat sheet page](http://jamescro
 
 ###About Bootstrap 3 Glyphs
 
-Glyphs are great! They're one of my favourite additions to native [Bootstrap 3](getbootstrap.com), and are made by the very talented Jan Kovařík over at [Glyphicons](http://glyphicons.com/). I've been working with these glyphs quite a lot, so I thought I'd make a cheat sheet for myself.
+Glyphs are great! They're one of my favourite additions to native [Bootstrap 3](http://getbootstrap.com), and are made by the very talented Jan Kovařík over at [Glyphicons](http://glyphicons.com/). I've been working with these glyphs quite a lot, so I thought I'd make a cheat sheet for myself.
 
 ###Cheat sheet?
 
@@ -15,6 +15,6 @@ To use it, simply find the glyphicon you want to use on the page and click the c
 There are also descriptive class tags on them, so you can Ctrl/Cmd + F and find an icon by keyword.
 
 ###What are Glyphicons exactly?
-[Glyphicons](http://glyphicons.com/) are basically little symbols, icons, or glyphs (whatever you prefer to call them) that you can use in a webpage, just like a font. If you're creating a site based on Bootstrap 3, you already have access to 200 of them.
+[Glyphicons](http://glyphicons.com/) are basically little symbols, icons, or glyphs (whatever you prefer to call them) that you can use in a webpage, just like a font. If you're creating a site based on Bootstrap 3, [you already have access to 200 of them](http://getbootstrap.com/components/#glyphicons).
 
 Don't know how to set up Bootstrap? Go check out the [offical getting started guide](http://getbootstrap.com/getting-started/).
