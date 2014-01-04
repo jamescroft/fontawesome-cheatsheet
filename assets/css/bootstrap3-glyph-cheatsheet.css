@@ -19,7 +19,7 @@
 			font-size: 16px;
 		}
 		.main {
-			margin: 61px auto 100px auto;
+			margin: 81px auto 100px auto;
 		}
 		
 		.anchor {
@@ -34,15 +34,24 @@
 			font-family: 'Source Sans Pro', sans-serif;
 			text-transform:uppercase;
 			font-weight: bold;
-			font-size:42px;	
-			position: relative;
-			top:-15px;	
+			font-size:42px;		
+			z-index: 1;
 		}
+		
+		.subtitle-container {
+				position:absolute;
+				left: 50%;
+				top: 62px;
+			}
+		
 		h2.subtitle {
 			font-family: 'Source Sans Pro', sans-serif;
 			text-transform:uppercase;
-			font-size:16px;
-			z-index:999;
+			font-size:14px;
+			z-index:2;
+			position: relative;
+			left: -50%;
+
 		}
 		h2.subtitle span.glyphicon-align-justify {
 			font-size:8px;
@@ -65,14 +74,13 @@
 		}
 			
 		.glyphicons li {
-		  height: 145px;
-		  padding: 0px;
+		  
 		  font-size: 12px;
 		  font-family:Consolas, "Andale Mono", "Lucida Console", "Lucida Sans Typewriter", Monaco, "Courier New", monospace;
 		  line-height: 1.4;
 		  text-align: center;
 		  color: #ccbede;
-		  margin-bottom: 20px;
+		  padding: 0;
 		}
 		.row {
 			margin-top:15px;
@@ -98,10 +106,12 @@
 			background-color:rgba(255,255,255,0.1);
 			width: 100%;
 			padding: 10px 15px 0;
+			height: 70px;
 		}
 		.btn-container {
 				padding: 10px 0 1px 0;
 				background-color:rgba(255,255,255,0.1);
+
 			}
 		.btn-container .btn {
 			display:block;
@@ -221,17 +231,18 @@
 		  		  
 		@media screen and (min-width: 768px) { 
 			.glyphicons li {
-		  		height: 182px;
+		  		height: 198px;
 			}
 			span.glyphicon-class {
-				height: 53px;
+				height: 69px;
 				padding: 5px 0 0 0;
 			}
 			h1.title {
 				font-size:82px;
 				line-height: 62px;
-				margin: 0 auto 10px auto;
+				margin: 22px auto 10px auto;
 			}
+			
 			h2.subtitle {
 				font-size:24px;
 			}
