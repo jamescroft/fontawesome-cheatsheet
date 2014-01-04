@@ -198,6 +198,10 @@
 		footer.footer {
 			padding: 30px 10px;
 		}
+		footer.footer a, footer.footer a:hover {
+			color: #fff;
+			font-weight:600;
+		}
 
 
 		/* Make the examples and snippets not full-width */
