@@ -13,7 +13,7 @@
 
 $(document).ready(function (){
 	var fixedNavHeight = $(".navbar").height();
-	$('body').scrollspy({ target: '.navbar', offset: fixedNavHeight });
+	$('body').scrollspy({ target: '.navbar', offset: (fixedNavHeight - 1) });
 	
 	
 	$("#scroll-to-about").click(function() {
