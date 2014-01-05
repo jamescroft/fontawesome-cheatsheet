@@ -30,6 +30,7 @@
 			font-weight: 400;
 			font-style: normal;
 			padding-top: 20px;
+			padding-left: 10px;
 		}
 		.navbar ul li a {
 			font-family: Varela Round, arial, sans-serif;
@@ -42,7 +43,7 @@
 			padding-top: 20px;
 		}
 		.nav-contain {
-			max-width: 1040px;
+			max-width: 1030px;
 			padding: 0 0 0 20px;
 		}
 		
