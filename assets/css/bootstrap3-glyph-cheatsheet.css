@@ -18,6 +18,31 @@
 			font-family: 'Source Sans Pro', sans-serif;
 			font-size: 16px;
 		}
+		.navbar {
+			font-family: Varela Round, arial, sans-serif;
+		}
+		.navbar-brand {
+			font-size: 20px;
+			line-height: 1.2em;
+			text-transform: uppercase;
+			text-decoration: none;
+			letter-spacing: 3px;
+			font-weight: 400;
+			font-style: normal;
+		}
+		.navbar ul li a {
+			font-family: Varela Round, arial, sans-serif;
+			font-size: 12px;
+			line-height: 2em;
+			text-transform: uppercase;
+			letter-spacing: 2px;
+			font-weight: normal;
+			font-style: normal;
+		}
+		.nav-contain {
+			max-width: 1000px;
+		}
+		
 		.main {
 			margin: 81px auto 100px auto;
 		}
@@ -127,7 +152,7 @@
 		  }
 		   
 		  .about {
-			padding: 50px 0;
+			padding: 30px 0;
 			margin-top: 0;
 			margin-bottom: 0;
 			border-top: 1px solid #ccbede;

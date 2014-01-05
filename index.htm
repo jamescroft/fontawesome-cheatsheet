@@ -6,16 +6,16 @@
         <title>Bootstrap Cheat Sheets: Glyphicons</title>
         <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
         
-        <link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro:400,600,700,900,400italic,600italic,700italic' rel='stylesheet' type='text/css'>
+        <link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro:400,600,700,900,400italic,600italic,700italic|Varela+Round&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
         
-        <!-- Latest compiled and minified CSS -->
+        <script src="http://code.jquery.com/jquery-1.9.1.js"></script>
+        <script src="http://code.jquery.com/ui/1.10.3/jquery-ui.js"></script>
+ 
+         <!-- Latest compiled and minified CSS -->
         <link rel="stylesheet" href="http://netdna.bootstrapcdn.com/bootstrap/3.0.3/css/bootstrap.min.css">
         
         <!-- Latest compiled and minified JavaScript -->
         <script src="http://netdna.bootstrapcdn.com/bootstrap/3.0.3/js/bootstrap.min.js"></script>
-        
-        <script src="http://code.jquery.com/jquery-1.9.1.js"></script>
-        <script src="http://code.jquery.com/ui/1.10.3/jquery-ui.js"></script>
                 
         <!--[if lt IE 9]>
             <script src="//html5shim.googlecode.com/svn/trunk/html5.js"></script>
@@ -26,33 +26,29 @@
     
     </head>
 
-    <body data-spy="scroll" data-target="#nav-spy">
-    <nav id="nav-spy" class="navbar navbar-inverse navbar-fixed-top" role="navigation">
-      <div class="container">
-        <div class="navbar-header">
-          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-            <span class="sr-only">Toggle navigation</span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-          </button>
-          <a class="navbar-brand" href="http://bootstrapcheatsheets.com">Bootstrap Cheat Sheets</a>
-        </div>
-        <div class="collapse navbar-collapse">
-          <ul class="nav navbar-nav">
-            <li><a href="#home" id="scroll-to-home">Glyphs</a></li>
-            <li><a href="#about" id="scroll-to-about">About</a></li>
-            <li class="disabled muted"><a href="http://bootstrapcheatsheets.com/">Buy a Poster (coming soon) <span class="glyphicon glyphicon-share-alt"></span></a></li>
-          </ul>
-        </div><!--/.nav-collapse -->
-      </div>
-    </nav>
-        <div class="container main">
-            <h1 class="text-center title">Bootstrap 3 Glyphs</h1>
-            <div class="subtitle-container hidden-xs">
-            <h2 id="home" class="text-center subtitle anchor"><span class="glyphicon glyphicon-align-justify"></span> <a href="http://bootstrapcheatsheets.com" target="_blank">BootstrapCheatSheets.com</a> <span class="glyphicon glyphicon-align-justify"></span></h2>
+    <body>
+    <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">    
+          <div class="container nav-contain">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              <a class="navbar-brand" href="http://bootstrapcheatsheets.com">Bootstrap Cheat Sheets</a>
             </div>
-           
+            <div class="collapse navbar-collapse" id="my-nav">
+              <ul class="nav navbar-nav pull-right">
+                <li><a href="#home" id="scroll-to-home">Glyphs</a></li>
+                <li><a href="#about" id="scroll-to-about">How to use</a></li>
+                <li><a href="http://bootstrapcheatsheets.com/shop">Shop</a></li>
+              </ul>
+            </div><!--/.nav-collapse -->
+          </div>
+    </nav>
+        <div class="container main" id="home">
+            <h1 class="text-center title">Bootstrap 3 Glyphs</h1>           
   <ul class="glyphicons">
   <div class="row">
       <li class="col-md-1 col-md-offset-1 col-sm-2 col-sm-offset-1 col-xs-6">
@@ -938,10 +934,10 @@
     </ul>
 </div>
 
-    <div class="about">
+    <div class="about" id="about">
     <div class="container">
     <div class="col-md-8">
-    <h1 id="about" class="anchor">About Bootstrap 3 Glyphs</h1>
+    <h1>How to Use Bootstrap 3 Glyphs</h1>
   <p>Glyphs are great! They're one of my favourite additions to native Bootstrap 3, and are made by the very talented Jan Kovařík over at <a href="http://glyphicons.com/" target="_blank">Glyphicons</a>. I've been working with these glyphs quite a lot, so I thought I'd make a cheat sheet for myself.</p>
   <h2>Cheat sheet?</h2>
   <p>Yeah! To use this cheat sheet, simply find the glyphicon you want to use and click the copy button. This will add the complete HTML code for that glyphicon (span tag and all) to your clipboard, ready to paste into your web development tool of choice.</p>
@@ -1033,6 +1029,7 @@
       </pre>
         
       </div>
+      <h2>Additional Reading</h2>
     <p>Want more info on the Glyphicons in Bootstrap 3? Check out the <a href="http://getbootstrap.com/components/#glyphicons" target="_blank">official Bootstrap documentation</a>.
     </div>
     <div class="col-md-4">
@@ -1044,11 +1041,9 @@
     </div>
      </div>
      </div>
-<div class="row">
 	<footer class="col-md-12 text-center footer">
     <p>My thanks to <a href="http://getbootstrap.com" target="_blank">Bootstrap</a>, <a href="http://glyphicons.com" target="_blank">Glyphicons</a>, <a href="http://pages.github.com" target="_blank">Github Pages</a>, <a href="http://www.google.com/fonts" target="_blank">Google Fonts</a>, <a href="http://jquery.com" target="_blank">jQuery</a> and <a href="https://github.com/zeroclipboard/zeroclipboard" target="_blank">ZeroClipboard</a>.</p>
     </footer>
-</div>
 <script type="text/javascript" src="assets/zeroclipboard-1.2.3/ZeroClipboard.js"></script>
 <script type="text/javascript" src="assets/js/bootstrap3-glyph-cheatsheet.js">
 </script>       

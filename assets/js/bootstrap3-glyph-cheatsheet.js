@@ -9,16 +9,33 @@
 
 // Animated scroll to page anchors via nav
 
+
+
 $(document).ready(function (){
+	var fixedNavHeight = $(".navbar").height();
+	$('body').scrollspy({ target: '.navbar', offset: fixedNavHeight });
+	
+	
 	$("#scroll-to-about").click(function() {
+		var scrollPos = $('#about').offset().top - (fixedNavHeight - 1);
 		$('html, body').animate({
-			scrollTop: $("#about").offset().top
-		}, 500);
+			scrollTop: scrollPos
+		}, 500, function () {
+			if ($("div.navbar-collapse").hasClass("in")) {
+				$(".navbar-toggle").click();
+			} else {}
+    });
 	});
+	
 	$("#scroll-to-home").click(function() {
+		var scrollPos = $('#home').offset().top - (fixedNavHeight - 1);
 		$('html, body').animate({
-			scrollTop: $("#home").offset().top
-		}, 500);
+			scrollTop: scrollPos
+		}, 500, function () {
+			if ($("div.navbar-collapse").hasClass("in")) {
+				$(".navbar-toggle").click();
+			} else {}
+    });
 	});
 });
 
