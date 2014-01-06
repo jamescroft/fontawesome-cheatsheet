@@ -9,11 +9,9 @@
 
 // Animated scroll to page anchors via nav
 
-
-
 $(document).ready(function (){
 	var fixedNavHeight = $(".navbar").height();
-	$('body').scrollspy({ target: '.navbar', offset: (fixedNavHeight - 1) });
+	$('body').scrollspy({ target: '.navbar', offset: (fixedNavHeight - 1)    });
 	
 	
 	$("#scroll-to-about").click(function() {
@@ -35,17 +33,17 @@ $(document).ready(function (){
 			if ($("div.navbar-collapse").hasClass("in")) {
 				$(".navbar-toggle").click();
 			} else {}
-    });
+    	});
 	});
 	
-	//Very dodgy code that finds the classes of the previous font awesome icon and displays it underneath
- //var classCode = "." + $(".fa-class").prev().attr("class").slice(3);
- //console.log(classCode);
- //$(".fa-class").text(classCode);
+//Finds the classes of the previous font awesome icon and displays it underneath
+ 
+	$(".fa-class").each(function(index){
+		 var classCode = $(this).prev().attr("class").split(" ");
+		 $(this).text("." + classCode[1]);
+	});
  		
 });
-
-
 
 // Using ZeroClipboard to copy glyph codes to clipboard.
 

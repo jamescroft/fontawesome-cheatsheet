@@ -35,9 +35,18 @@ $(document).ready(function (){
 			if ($("div.navbar-collapse").hasClass("in")) {
 				$(".navbar-toggle").click();
 			} else {}
-    });
+    	});
 	});
+
+//Finds the classes of the previous font awesome icon and displays it underneath
+ 
+	$(".glyphicon-class").each(function(index){
+		 var classCode = $(this).prev().attr("class").split(" ");
+		 $(this).text("." + classCode[1]);
+	});
+ 		
 });
+
 
 // Using ZeroClipboard to copy glyph codes to clipboard.
 
