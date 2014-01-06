@@ -45,13 +45,22 @@ var clip = new ZeroClipboard( $('.copy-button'), {
   moviePath: "assets/zeroclipboard-1.2.3/ZeroClipboard.swf"
 } );
 
-clip.on( "load", function(client) {
-  // alert( "movie is loaded" );
+clip.on( "load", function(client, args) {
 
+	clip.on( 'mouseover', function ( client, args ) {
+	  //Set the HTML to be injected into the clipboard as the item on mouseover
+	  glyphHTML = $(this).parent().prevAll('.glyphicon')[0].outerHTML;	  
+	});
+	
+	clip.on( 'dataRequested', function (client, args) {
+	  //Inject the glyph HTML code into the clipboard
+	  client.setText(glyphHTML);
+	});
+  
   client.on( "complete", function(client, args) {
-	  
-    // `this` is the element that was clicked
-    that = this;
+    // `this` is the element that was clicked, we're setting $(this) to 'that' because $(this) doesn't work with the timeout function.
+    that = $(this);
+	// Animation to indicate element has been copied
 	$(that).text("Copied!");
 	$(that).removeClass("zeroclipboard-is-hover", 0, "linear");
 	$(that).addClass("btn-success", 100, "linear");	
@@ -61,4 +70,3 @@ clip.on( "load", function(client) {
     }, 600)	
   });
 });
-
