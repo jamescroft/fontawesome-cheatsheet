@@ -37,8 +37,15 @@ $(document).ready(function (){
 			} else {}
     });
 	});
-		
+	
+	//Very dodgy code that finds the classes of the previous font awesome icon and displays it underneath
+ //var classCode = "." + $(".fa-class").prev().attr("class").slice(3);
+ //console.log(classCode);
+ //$(".fa-class").text(classCode);
+ 		
 });
+
+
 
 // Using ZeroClipboard to copy glyph codes to clipboard.
 
@@ -50,7 +57,7 @@ clip.on( "load", function(client, args) {
 
 	clip.on( 'mouseover', function ( client, args ) {
 	  //Set the HTML to be injected into the clipboard as the item on mouseover
-	  glyphHTML = $(this).parent().prevAll('.glyphicon')[0].outerHTML;	  
+	  glyphHTML = $(this).parent().prevAll(".fa")[0].outerHTML;	  
 	});
 	
 	clip.on( 'dataRequested', function (client, args) {
