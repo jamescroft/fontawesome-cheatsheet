@@ -2,7 +2,7 @@
 
 Go check out the [published Bootstrap 3 Glyphs cheat sheet page](http://glyphs.bootstrapcheatsheets.com/).
 
-Note: The [Font Awesome version of this cheat sheet](http://jamescroft.github.io/bootstrap-cheatsheets/font-awesome.htm) is also available, but is currently in progress.
+**Note**: The [Font Awesome version of this cheat sheet](http://jamescroft.github.io/bootstrap-cheatsheets/font-awesome.htm) is also available, but is currently not quite finished.*
 
 ###About Bootstrap 3 Glyphs
 
