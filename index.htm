@@ -40,15 +40,17 @@
             </div>
             <div class="collapse navbar-collapse" id="my-nav">
               <ul class="nav navbar-nav pull-right">
-                <li class="active"><a href="#home" id="scroll-to-home">Glyphs</a></li>
+                <li class="active"><a href="#home" id="scroll-to-home">Glyphicons</a></li>
+                <li><a href="font-awesome.htm">Font Awesome</a></li>
                 <li><a href="#about" id="scroll-to-about">How to use</a></li>
                 <li><a href="http://bootstrapcheatsheets.com/shop">Shop</a></li>
               </ul>
             </div><!--/.nav-collapse -->
           </div>
     </nav>
-        <div class="container main" id="home">
-            <h1 class="text-center title">Bootstrap 3 Glyphs</h1>           
+        <div class="home" id="home">
+        <div class="container">
+            <h1 class="text-center title">Bootstrap 3 Glyphicons</h1>           
   <ul class="glyphicons">
   <div class="row">
       <li class="col-md-1 col-md-offset-1 col-sm-2 col-sm-offset-1 col-xs-6">
@@ -1131,17 +1133,25 @@
       </div>
     </ul>
 </div>
+</div>
 
     <div class="about" id="about">
     <div class="container">
     <div class="col-md-8">
-    <h1>How to Use Bootstrap 3 Glyphs</h1>
-  <p>Glyphs are great! They're one of my favourite additions to native Bootstrap 3, and are made by the very talented Jan Kovařík over at <a href="http://glyphicons.com/" target="_blank">Glyphicons</a>. I've been working with these glyphs quite a lot, so I thought I'd make a cheat sheet for myself.</p>
+    <h1>How to Use Bootstrap 3 Glyphicons</h1>
+  <p>Glyphicons are great! They're one of my favourite additions to native Bootstrap 3. I've been working with these glyphs quite a lot, so I thought I'd make a cheat sheet for myself.</p>
   <h2>Cheat sheet?</h2>
   <p>Yeah! To use this cheat sheet, simply find the glyphicon you want to use and click the copy button. This will add the complete HTML code for that glyphicon (span tag and all) to your clipboard, ready to paste into your web development tool of choice.</p>
-  <h2>What are Glyphicons exactly?</h2>
-  <p>Glyphicons are basically little symbols, icons, or pictograms (whatever you prefer to call them) that you can use in a webpage, just like a font. If you're creating a site based on Bootstrap 3, you already have access to 200 of them.</p> 
+  <h2>What are Glyphicons?</h2>
+  <p>Glyphicons are basically little symbols, icons, or pictograms (whatever you prefer to call them) that you can use in a webpage. They're implemented in Bootstrap as an icon font — a custom font that contains these glyphs instead of letters.</p>
+  <p>If you're creating a site based on Bootstrap 3, you already have access to all 200 glyphs in the Glyphicons set.</p> 
   <p>Don't know how to set up Bootstrap? Go check out the offical <a href="http://getbootstrap.com/getting-started/" target="_blank">getting started guide</a>.</p>
+    <div class="alert alert-info"><p><strong>Counterpoint</strong></p> <p>Icon fonts aren't the only way to implement icons on the web. If you're looking for a explanation of using icon fonts vs. SVG files (another possible method), I'd suggest reading this excellent post by Ian Feather: <a href="http://ianfeather.co.uk/ten-reasons-we-switched-from-an-icon-font-to-svg/"><em>Ten reasons we switched from an icon font to SVG</em>.</a></p></div> 
+  
+  <h2>Who made them?</h2>
+  <p>The glyphicons you see in Bootstrap are part of a set called <em>GLYPHICONS Halflings</em> and were created by the very talented Jan Kovařík over at <a href="http://glyphicons.com/" target="_blank">GLYPHICONS</a>.</p>
+  <h2>Am I allowed to use them?</h2> 
+  <p>Short answer: absolutely! Jan has kindly released them under the <a href="https://github.com/twbs/bootstrap#copyright-and-license" target="_blank">same MIT license as Bootstrap</a>. If you'd like more detail, please check out <a href="http://glyphicons.com/license/" target="_blank">Jan's licensing page</a>.</p>
   <h2>How do they work?</h2>
   <p>Bootstrap uses glyphicons in a format like this:</p>
   
@@ -1157,6 +1167,7 @@
     </div> 
     <h2>Examples</h2>
     <p>You can use glyphicons in a variety of ways; in buttons, button groups for a toolbar, navigation or prepended form inputs. Here are a few examples of glyphicons in action:</p>
+    <h3>Buttons</h3>
     <div class="well well-lg example">
         <p>
         <button type="button" class="btn btn-default btn-lg">
@@ -1168,6 +1179,7 @@
     <span class="code-yellow">&lt;/button&gt;</span>
     </pre>
     </div>
+    <h3>Toolbars</h3>
     <div class="well well-lg example">
     <div class="btn-toolbar" role="toolbar">
         <div class="btn-group">
@@ -1199,6 +1211,7 @@
       &lt;/div&gt; <br />    
       </pre>
       </div>
+      <h3>Navigation</h3>
       <div class="well well-lg example">
           <ul class="nav nav-pills">
               <li><a><span class="glyphicon glyphicon-home"></span> Home</a></li>
@@ -1225,8 +1238,40 @@
                    &nbsp;&nbsp;&lt;/li&gt;<br />
               &lt;/ul&gt;<br />
       </pre>
+   </div>
+    <h3>Form Inputs</h3> 
+    <div class="well well-lg example">
+    
+        <div class="input-group input-group-lg col-md-6 margin-bottom-sm">
+          <span class="input-group-addon"><span class="glyphicon glyphicon-envelope"></span></span>
+          <input class="form-control" type="text" placeholder="Email address">
+        </div>
+        <div class="input-group input-group-lg col-md-6 margin-bottom-sm">
+          <span class="input-group-addon"><span class="glyphicon glyphicon-lock"></span></span>
+          <input class="form-control" type="password" placeholder="Password">
+        </div> 
         
-      </div>
+        <pre>
+        	&lt;div class=<span class="code-blue">"input-group input-group-lg"</span>&gt;<br />
+          &nbsp;&nbsp;&lt;span class=<span class="code-blue">"input-group-addon"</span>&gt;<br />
+          &nbsp;&nbsp;&nbsp;&nbsp;&lt;span class=<span class="code-blue">"glyphicon glyphicon-envelope"</span>&gt;&lt;/span&gt;<br />
+          &nbsp;&nbsp;&lt;/span&gt;<br />
+          &nbsp;&nbsp;<span class="code-yellow">&lt;input class=</span><span class="code-blue">"form-control"</span> <span class="code-yellow">type=</span><span class="code-blue">"text"</span> <span class="code-yellow">placeholder=</span><span class="code-blue">"Email address"</span><span class="code-yellow">&gt;</span><br />
+        &lt;/div&gt;<br />
+        &lt;div class=<span class="code-blue">"input-group input-group-lg"</span>&gt;<br />
+          &nbsp;&nbsp;&lt;span class=<span class="code-blue">"input-group-addon"</span>&gt;<br />
+          &nbsp;&nbsp;&nbsp;&nbsp;&lt;span class=<span class="code-blue">"glyphicon glyphicon-lock"</span>&gt;&lt;/span&gt;<br />
+          &nbsp;&nbsp;&lt;/span&gt;<br />
+          &nbsp;&nbsp;<span class="code-yellow">&lt;input class=</span><span class="code-blue">"form-control"</span> <span class="code-yellow">type=</span><span class="code-blue">"password"</span> <span class="code-yellow">placeholder=</span><span class="code-blue">"Password"</span><span class="code-yellow">&gt;</span><br />
+        &lt;/div&gt; <br />
+        
+        </pre>
+        
+        
+     </div>    
+      
+      
+      
       <h2>Additional Reading</h2>
     <p>Want more info on the Glyphicons in Bootstrap 3? Check out the <a href="http://getbootstrap.com/components/#glyphicons" target="_blank">official Bootstrap documentation</a>.
     </div>

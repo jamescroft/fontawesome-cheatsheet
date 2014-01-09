@@ -17,6 +17,7 @@
 			overflow-x:hidden;
 			font-family: 'Source Sans Pro', sans-serif;
 			font-size: 16px;
+			-webkit-text-stroke: 1px rgba(255,255,255,0.1);
 		}
 		.navbar {
 			font-family: Varela Round, arial, sans-serif;
@@ -47,7 +48,7 @@
 			padding: 0 0 0 20px;
 		}
 		
-		.main {
+		.home {
 			margin: 81px auto 100px auto;
 		}
 		
@@ -154,13 +155,17 @@
 			padding: 30px 0;
 			margin-top: 0;
 			margin-bottom: 0;
-			border-top: 1px solid #1d9d74;
-			background-color: #1d9d74;
+			border-top: 1px solid #76F2CA;
+			background-color: #76F2CA;
 			font-size: 19px;
-			color: #fff;
+			color: #157355;
+			-webkit-text-stroke: 1px rgba(21,115,85,0.1);
 			font-family: 'Source Sans Pro', sans-serif;
 		  }
 		  
+		  .alert {
+			  margin-top: 20px;
+		  }
 		  
 		  code, pre {
 			padding: 4px 8px;

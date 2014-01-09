@@ -47,14 +47,11 @@
 			padding: 0 0 0 20px;
 		}
 		
-		.main {
+		.home {
 			margin: 81px auto 100px auto;
 		}
 		
-		.anchor {
-			padding-top: 80px!important;
-			margin-top: -60px!important;
-		}
+		
 		
 		h1, h2, h3, h4, h5, h6 {
 			font-family: 'Source Sans Pro', sans-serif;
@@ -130,7 +127,7 @@
 			margin: 10px auto 20px auto;
 			color: #fff;
 		}
-		span.glyphicon-class {
+		.glyphicon-class {
 			display: inline-block;			
 			background-color:rgba(255,255,255,0.1);
 			width: 100%;
@@ -166,6 +163,9 @@
 			font-family: 'Source Sans Pro', sans-serif;
 		  }
 		  
+		  .alert {
+			  margin-top: 20px;
+		  }
 		  
 		  code, pre {
 			padding: 4px 8px;
@@ -194,6 +194,10 @@
 			  color: #006648;
 		  }
 		  
+		  .margin-bottom-sm {
+			  margin-bottom: 10px;
+		  }
+		  
 		  .example {
 			  position: relative;
 			  padding: 45px 15px 15px;
@@ -204,6 +208,7 @@
 			  border-style: solid;
 			  border-width: 1px 0;
 			}
+			
 			/* Echo out a label for the example */
 			.example:after {
 			  content: "Example";
@@ -266,7 +271,7 @@
 			.glyphicons li {
 		  		height: 198px;
 			}
-			span.glyphicon-class {
+			.glyphicon-class {
 				height: 69px;
 				padding: 5px 0 0 0;
 			}
