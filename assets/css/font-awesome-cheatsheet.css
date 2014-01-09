@@ -123,12 +123,17 @@
 		}
 		
 		.font-awesome-icons .glyphicon, .font-awesome-icons .fa {
-			font-size: 36px;
+			font-size: 42px;
 			display: block;
 			text-align: center;
 			margin: 10px auto 20px auto;
 			color: #fff;
 		}
+		
+		.font-awesome-icons .glyphicon, .font-awesome-icons .fa:before {
+			content: ""!important;
+		}
+
 		span.fa-class {
 			display: inline-block;			
 			width: 100%;
@@ -235,6 +240,9 @@
 
 		/* Make the examples and snippets not full-width */
 		@media (min-width: 768px) {
+		  .nav-contain {
+				width: 100%;
+		  }
 		  .example {
 			margin-left: 0;
 			margin-right: 0;
@@ -263,6 +271,9 @@
 		}
 		  		  
 		@media screen and (min-width: 768px) { 
+			.nav-contain {
+				width: 100%;
+			}
 			.font-awesome-icons li {
 		  		height: 198px;
 			}
@@ -289,4 +300,12 @@
 			.font-awesome-icons li {
 				font-size: 11px;
 			}
+			code, pre {
+				  font-size: 70%;
+			  }
+		}
+		@media screen and (min-width: 1200px) {  
+		code, pre {
+			  font-size: 80%;
+		  }
 		}

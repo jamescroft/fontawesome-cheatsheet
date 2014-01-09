@@ -121,7 +121,7 @@
 		}
 		
 		.glyphicons .glyphicon {
-			font-size: 36px;
+			font-size: 42px;
 			display: block;
 			text-align: center;
 			margin: 10px auto 20px auto;
@@ -268,6 +268,9 @@
 		}
 		  		  
 		@media screen and (min-width: 768px) { 
+			.nav-contain {
+				width: 100%;
+			}
 			.glyphicons li {
 		  		height: 198px;
 			}
@@ -294,4 +297,12 @@
 			.glyphicons li {
 				font-size: 11px;
 			}
+			code, pre {
+				  font-size: 70%;
+			  }
+		}
+		@media screen and (min-width: 1200px) {  
+		code, pre {
+			  font-size: 80%;
+		  }
 		}
