@@ -51,7 +51,7 @@ $(document).ready(function (){
 // Using ZeroClipboard to copy glyph codes to clipboard.
 
 var clip = new ZeroClipboard( $('.copy-button'), {
-  moviePath: "assets/zeroclipboard-1.2.3/ZeroClipboard.swf"
+  moviePath: "../assets/zeroclipboard-1.2.3/ZeroClipboard.swf"
 } );
 
 clip.on( "load", function(client, args) {
