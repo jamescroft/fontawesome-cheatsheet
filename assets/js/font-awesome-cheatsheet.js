@@ -54,8 +54,9 @@ var clip = new ZeroClipboard( $('.copy-button'), {
 clip.on( "load", function(client, args) {
 
 	clip.on( 'mouseover', function ( client, args ) {
-	  //Set the HTML to be injected into the clipboard as the item on mouseover
-	  glyphHTML = $(this).parent().prevAll(".fa")[0].outerHTML;	  
+	  //Sets the HTML to be injected into the clipboard as the item on mouseover
+	  //Because of the unicode symbols rendered as contents in the <i> tag, a local clone must be taken and emptied to parse the correct clipboard value	
+	  glyphHTML = $(this).parent().prevAll(".fa").clone().empty()[0].outerHTML;
 	});
 	
 	clip.on( 'dataRequested', function (client, args) {
