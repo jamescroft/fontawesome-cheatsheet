@@ -1,6 +1,6 @@
 ###Using this cheat sheet
 
-Go check out the [published Bootstrap 3 Glyphs cheat sheet page](http://jamescroft.github.io/bootstrapcheatsheets/glyphicons).
+Go check out the [published Bootstrap 3 Glyphs cheat sheet page](http://jamescroft.github.io/bootstrap-cheatsheets/glyphicons).
 
 **Note**: The [Font Awesome version of this cheat sheet](http://jamescroft.github.io/bootstrap-cheatsheets/font-awesome) is also available, but is not quite finished just yet.
 
