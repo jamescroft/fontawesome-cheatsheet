@@ -199,6 +199,14 @@
 			  color: #006648;
 		  }
 		  
+		  .margin-bottom-sm {
+			  margin-bottom: 10px;
+		  }
+		  .example .input-group-addon .fa-lock {
+			  width: 18px;
+			  font-size: 22px;
+		  }
+		  
 		  .example {
 			  position: relative;
 			  padding: 45px 15px 15px;
