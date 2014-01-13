@@ -1,7 +1,7 @@
 /* 
    Bootstrap Cheat Sheets
    
-   Bootstrap 3 Glyphs
+   Bootstrap 3 Glyphicons
    
    By: James Croft (@jamescroft on Twitter)
    
@@ -51,11 +51,10 @@
 		.home {
 			margin: 81px auto 100px auto;
 		}
-		
-		.anchor {
-			padding-top: 80px!important;
-			margin-top: -60px!important;
+		.row-alt {
+			background-color:rgba(255,255,255,0.1);
 		}
+
 		
 		h1, h2, h3, h4, h5, h6 {
 			font-family: 'Source Sans Pro', sans-serif;
@@ -103,14 +102,13 @@
 		  overflow: hidden;		  
 		}
 			
-		.font-awesome-icons li {
-		  
+		.font-awesome-icons li {		  
 		  font-size: 12px;
 		  font-family:Consolas, "Andale Mono", "Lucida Console", "Lucida Sans Typewriter", Monaco, "Courier New", monospace;
 		  line-height: 1.4;
 		  text-align: center;
 		  color: #fff;
-		  padding: 0;
+		  padding: 20px 0 0 0;
 		}
 		.row {
 			margin-top:15px;
@@ -279,11 +277,13 @@
 		}
 		  		  
 		@media screen and (min-width: 768px) { 
+			.container {
+	          width: 100%;
+			  padding-left: 0;
+			  padding-right: 0;  
+		    }
 			.nav-contain {
 				width: 100%;
-			}
-			.font-awesome-icons li {
-		  		height: 198px;
 			}
 			span.fa-class {
 				height: 69px;
@@ -305,6 +305,11 @@
 			}
 		}
 		@media screen and (min-width: 992px) and (max-width: 1200px) {  
+		 .container {
+	        width: 100%;
+			padding-left: 0;
+			padding-right: 0;  
+		  }
 			.font-awesome-icons li {
 				font-size: 11px;
 			}
@@ -313,6 +318,13 @@
 			  }
 		}
 		@media screen and (min-width: 1200px) {  
+		  .container {
+	        width: 100%;
+			padding-left: 0;
+			padding-right: 0;  
+		  }
+
+		
 		code, pre {
 			  font-size: 80%;
 		  }

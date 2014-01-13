@@ -1,7 +1,7 @@
 /* 
    Bootstrap Cheat Sheets
    
-   Bootstrap 3 Glyphs
+   Bootstrap 3 Glyphicons
    
    By: James Croft (@jamescroft on Twitter)
    
@@ -49,6 +49,9 @@
 		
 		.home {
 			margin: 81px auto 100px auto;
+		}
+		.row-alt {
+			background-color:rgba(255,255,255,0.1);
 		}
 		
 		
@@ -106,13 +109,12 @@
 		  line-height: 1.4;
 		  text-align: center;
 		  color: #ccbede;
-		  padding: 0;
+		  padding: 20px 0 0 0;
 		}
 		.row {
 			margin-top:15px;
 		}
 		.glyphicons li:hover {
-		  background-color: #9269d6;
 		  color: #fff;
 		}
 		.hover {
@@ -129,15 +131,12 @@
 		}
 		.glyphicon-class {
 			display: inline-block;			
-			background-color:rgba(255,255,255,0.1);
 			width: 100%;
 			padding: 10px 15px 0;
 			height: 70px;
 		}
 		.btn-container {
 				padding: 10px 0 1px 0;
-				background-color:rgba(255,255,255,0.1);
-
 			}
 		.btn-container .btn {
 			display:block;
@@ -240,6 +239,12 @@
 
 		/* Make the examples and snippets not full-width */
 		@media (min-width: 768px) {
+		  .container {
+	        width: 100%;
+			padding-left: 0;
+			padding-right: 0;  
+		  }
+		  
 		  .example {
 			margin-left: 0;
 			margin-right: 0;
@@ -271,9 +276,6 @@
 			.nav-contain {
 				width: 100%;
 			}
-			.glyphicons li {
-		  		height: 198px;
-			}
 			.glyphicon-class {
 				height: 69px;
 				padding: 5px 0 0 0;
@@ -294,6 +296,12 @@
 			}
 		}
 		@media screen and (min-width: 992px) and (max-width: 1200px) {  
+		 .container {
+	        width: 100%;
+			padding-left: 0;
+			padding-right: 0;  
+		  }
+
 			.glyphicons li {
 				font-size: 11px;
 			}
@@ -302,6 +310,12 @@
 			  }
 		}
 		@media screen and (min-width: 1200px) {  
+			.container {
+	          width: 100%;
+			  padding-left: 0;
+			  padding-right: 0;  
+		  }
+
 		code, pre {
 			  font-size: 80%;
 		  }
