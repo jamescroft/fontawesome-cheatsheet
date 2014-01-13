@@ -2,11 +2,11 @@
 
 Go check out the [published Bootstrap 3 Glyphs cheat sheet page](http://jamescroft.github.io/bootstrap-cheatsheets/glyphicons).
 
-**Note**: The [Font Awesome version of this cheat sheet](http://jamescroft.github.io/bootstrap-cheatsheets/font-awesome) is also available, but is not quite finished just yet.
+The [Font Awesome version of this cheat sheet](http://jamescroft.github.io/bootstrap-cheatsheets/font-awesome) is also available.
 
 ###About Bootstrap 3 Glyphs
 
-Glyphs are great! They're one of my favourite additions to native [Bootstrap 3](http://getbootstrap.com), and are made by the very talented Jan Kovařík over at [Glyphicons](http://glyphicons.com/). I've been working with these glyphs quite a lot, so I thought I'd make a cheat sheet for myself.
+Glyphs are great! They're one of my favourite additions to [Bootstrap 3](http://getbootstrap.com), and are made by the very talented Jan Kovařík over at [Glyphicons](http://glyphicons.com/). I've been working with these glyphs quite a lot, so I thought I'd make a cheat sheet for myself.
 
 ###Cheat sheet?
 
