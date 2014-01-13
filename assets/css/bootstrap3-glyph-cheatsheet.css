@@ -239,10 +239,9 @@
 
 		/* Make the examples and snippets not full-width */
 		@media (min-width: 768px) {
-		  .container {
+		  .container-wide {
 	        width: 100%;
-			padding-left: 0;
-			padding-right: 0;  
+			padding: 10px 0;  
 		  }
 		  
 		  .example {
@@ -296,10 +295,9 @@
 			}
 		}
 		@media screen and (min-width: 992px) and (max-width: 1200px) {  
-		 .container {
+		 .container-wide {
 	        width: 100%;
-			padding-left: 0;
-			padding-right: 0;  
+			padding: 10px 0;  
 		  }
 
 			.glyphicons li {
@@ -310,10 +308,9 @@
 			  }
 		}
 		@media screen and (min-width: 1200px) {  
-			.container {
+			.container-wide {
 	          width: 100%;
-			  padding-left: 0;
-			  padding-right: 0;  
+			padding: 10px 0;  
 		  }
 
 		code, pre {

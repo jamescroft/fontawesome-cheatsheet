@@ -277,11 +277,10 @@
 		}
 		  		  
 		@media screen and (min-width: 768px) { 
-			.container {
+			.container-wide {
 	          width: 100%;
-			  padding-left: 0;
-			  padding-right: 0;  
-		    }
+			padding: 10px 0;  
+		  }
 			.nav-contain {
 				width: 100%;
 			}
@@ -305,10 +304,9 @@
 			}
 		}
 		@media screen and (min-width: 992px) and (max-width: 1200px) {  
-		 .container {
-	        width: 100%;
-			padding-left: 0;
-			padding-right: 0;  
+			.container-wide {
+	          width: 100%;
+			padding: 10px 0;  
 		  }
 			.font-awesome-icons li {
 				font-size: 11px;
@@ -318,10 +316,9 @@
 			  }
 		}
 		@media screen and (min-width: 1200px) {  
-		  .container {
-	        width: 100%;
-			padding-left: 0;
-			padding-right: 0;  
+			.container-wide {
+	          width: 100%;
+			padding: 10px 0;  
 		  }
 
 		
