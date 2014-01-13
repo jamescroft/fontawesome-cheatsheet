@@ -1,6 +1,6 @@
 /* Bootstrap Cheat Sheets
    
-   Bootstrap 3 Glyphs
+   Font Awesome Cheat Sheets
    
    By: James Croft (@jamescroft on Twitter)
    

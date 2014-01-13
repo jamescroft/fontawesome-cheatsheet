@@ -1,6 +1,6 @@
 /* Bootstrap Cheat Sheets
    
-   Bootstrap 3 Glyphs
+   Bootstrap 3 Glyphicons
    
    By: James Croft (@jamescroft on Twitter)
    
