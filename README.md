@@ -23,6 +23,6 @@ Don't know how to set up Bootstrap? Go check out the [offical getting started gu
 
 ###Task list
 
--Both: Add a search box to nav-contain using jquery filter
--FA: Add 'Copy unicode' button
--FA: Find a way to incorporate offical documentation categories, sort by alpha vs. sort by category etc
+- [ ] Both: Add a search box to nav-contain using jquery filter
+- [ ] Add 'Copy unicode' button
+- [ ] Find a way to incorporate offical documentation categories, sort by alpha vs. sort by category etc
