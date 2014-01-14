@@ -20,3 +20,9 @@ There are also descriptive class tags on them, so you can Ctrl/Cmd + F and find 
 [Glyphicons](http://glyphicons.com/) are basically little symbols, icons, or pictograms (whatever you prefer to call them) that you can use in a webpage, just like a font. If you're creating a site based on Bootstrap 3, [you already have access to 200 of them](http://getbootstrap.com/components/#glyphicons).
 
 Don't know how to set up Bootstrap? Go check out the [offical getting started guide](http://getbootstrap.com/getting-started/).
+
+###Task list
+
+-Both: Add a search box to nav-contain using jquery filter
+-FA: Add 'Copy unicode' button
+-FA: Find a way to incorporate offical documentation categories, sort by alpha vs. sort by category etc
