@@ -102,33 +102,40 @@
 		  overflow: hidden;		  
 		}
 			
-		.font-awesome-icons li {		  
+		.font-awesome-icons > li {		  
+		  padding: 20px 0 0 0;
+		  text-align: center;
+		}
+	    .fa-class {
 		  font-size: 12px;
 		  font-family:Consolas, "Andale Mono", "Lucida Console", "Lucida Sans Typewriter", Monaco, "Courier New", monospace;
 		  line-height: 1.4;
 		  text-align: center;
 		  color: #fff;
-		  padding: 20px 0 0 0;
 		}
 		.row {
 			margin-top:15px;
 		}
-		.font-awesome-icons li:hover {
+		.font-awesome-icons > li:hover {
 		  color: #fff;
 		}
 		.hover {
 		  color: #fff;
 		}
 		
-		.font-awesome-icons .glyphicon, .font-awesome-icons .fa {
+		.font-awesome-icons .glyphicon, .font-awesome-icons li > .fa {
 			font-size: 42px;
 			display: block;
 			text-align: center;
 			margin: 10px auto 20px auto;
 			color: #fff;
 		}
+		.btn-container .fa {
+			color:#000;
+			font-size: 16px;
+		}
 		
-		.font-awesome-icons .glyphicon, .font-awesome-icons .fa:before {
+		.font-awesome-icons .glyphicon, .font-awesome-icons li > .fa:before {
 			content: ""!important;
 		}
 
@@ -140,14 +147,12 @@
 		}
 		.btn-container {
 				padding: 10px 0 1px 0;
+				text-align:center;
 
 			}
 		.btn-container .btn {
-			display:block;
 			text-align:center;
-			margin: 10px auto 20px auto;
 			font-size:12px;
-			width: 60px;
 			font-family:Consolas, "Andale Mono", "Lucida Console", "Lucida Sans Typewriter", Monaco, "Courier New", monospace;
 		  } 
 		  button.zeroclipboard-is-hover {
