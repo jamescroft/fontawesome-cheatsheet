@@ -102,7 +102,7 @@
 		  overflow: hidden;		  
 		}
 			
-		.font-awesome-icons > li {		  
+		.font-awesome-icons .row > li {		  
 		  padding: 20px 0 0 0;
 		  text-align: center;
 		}
@@ -114,16 +114,16 @@
 		  color: #fff;
 		}
 		.row {
-			margin-top:15px;
+			padding: 25px 0;
 		}
-		.font-awesome-icons > li:hover {
+		.font-awesome-icons > .row li:hover {
 		  color: #fff;
 		}
 		.hover {
 		  color: #fff;
 		}
 		
-		.font-awesome-icons .glyphicon, .font-awesome-icons li > .fa {
+		.font-awesome-icons .glyphicon, .font-awesome-icons .row li > .fa {
 			font-size: 42px;
 			display: block;
 			text-align: center;
@@ -135,7 +135,7 @@
 			font-size: 16px;
 		}
 		
-		.font-awesome-icons .glyphicon, .font-awesome-icons li > .fa:before {
+		.font-awesome-icons .glyphicon, .font-awesome-icons .row li > .fa:before {
 			content: ""!important;
 		}
 
@@ -161,14 +161,19 @@
 		  .btn-container .btn-group .dropdown-menu li {
 			  text-align:left;
 		  }
-		  .btn-container .btn-group .dropdown-menu li.copy-html a:before {
+		  .btn-container .btn-group .dropdown-menu li a.copy-html:before {
 			  content: "\f121 \00a0";
 			  font-family:FontAwesome;
 		  }		  
-		  .btn-container .btn-group .dropdown-menu li.copy-unicode a:before {
+		  .btn-container .btn-group .dropdown-menu li a.copy-unicode-html:before {
 		    content: "\f05b \00a0";
 			font-family:FontAwesome;  
 		  }
+		  .btn-container .btn-group .dropdown-menu li a.copy-unicode-hex:before {
+		    content: "\f084 \00a0";
+			font-family:FontAwesome;  
+		  }
+
 		  
 		  
 		  

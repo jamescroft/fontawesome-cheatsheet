@@ -42,7 +42,7 @@ $(document).ready(function (){
 	//Find the unicode reference in the data-unicode attribute and render it as HTML inside the <i> tag		
 		glyphStore = $(this);
 		if ($(this).attr("data-unicode")) {
-				$(glyphStore).html("&#" + $(glyphStore).attr("data-unicode") + ";");
+				$(glyphStore).html("&#x" + $(glyphStore).attr("data-unicode") + ";");
 		};		
 	//Finds the class of the font awesome icon in the grid and display it underneath		
 		var classCode = glyphStore.attr("class").split(" ");
@@ -60,18 +60,39 @@ var clip = new ZeroClipboard( $('.copy-button'), {
 clip.on( "load", function(client, args) {
 
 	clip.on( 'mouseover', function ( client, args ) {
-	  //Sets the HTML to be injected into the clipboard as the item on mouseover
-	  //Because of the unicode symbols rendered as contents in the <i> tag, a local clone must be taken and emptied to parse the correct clipboard value	
-	  glyphStore = $(this).parents("li.grid-icon").children("i.fa")
-	  glyphHTML = glyphStore.clone().empty()[0].outerHTML;
-	  glyphUnicode = "&#" + glyphStore.data("unicode") + ";";
-	  glyphUnicodeHTML = "\\" + glyphStore.data("unicode");
-	  console.log (glyphStore, glyphHTML, glyphUnicode, glyphUnicodeHTML);
+	  //Sets the value to be injected into the clipboard as the item on mouseover
+	  	
+	  glyphStore = $(this).parents("li.grid-icon").children("i.fa");
+		var arrayOfClasses = $(this).attr("class").split(" ");
+	  //
+	  if (jQuery.inArray("parent-copy", arrayOfClasses)!==-1) {
+		  //Copy the HTML Tag into the clipboard
+		  //Because of the unicode symbols rendered as contents in the <i> tag, a local clone must be taken and emptied to parse the correct clipboard value
+		  glyphClipboard = glyphStore.clone().empty().removeAttr("data-unicode")[0].outerHTML;
+	  };
+	  if (jQuery.inArray("copy-html", arrayOfClasses)!==-1) {
+		  //Copy the HTML Tag into the clipboard
+		  //Because of the unicode symbols rendered as contents in the <i> tag, a local clone must be taken and emptied to parse the correct clipboard value
+		  glyphClipboard = glyphStore.clone().empty().removeAttr("data-unicode")[0].outerHTML;
+	  };
+	  //
+	  if (jQuery.inArray("copy-unicode-html", arrayOfClasses)!==-1) {
+	  	  //Copy the Unicode HTML Entity into the clipboard
+		  //The unicode HTML entity is prepended with "&#x" and appended with ";"
+		  glyphClipboard = "&#x" + glyphStore.data("unicode") + ";";
+	  };
+	  //
+	  if (jQuery.inArray("copy-unicode-hex", arrayOfClasses)!==-1) {
+	  	  //Copy the Escaped Unicode Hex (for CSS) into the clipboard
+		  //The unicode Hex entity is prepended with " content:"/ " and appended with " "; "
+		  glyphClipboard = "content:\"\\" + glyphStore.data("unicode") + "\";";
+	  };
+	  
 	});
 	
 	clip.on( 'dataRequested', function (client, args) {
 	  //Inject the glyph HTML code into the clipboard
-	  client.setText(glyphHTML);
+	  client.setText(glyphClipboard);
 	});
   
   client.on( "complete", function(client, args) {
