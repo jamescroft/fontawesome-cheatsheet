@@ -36,17 +36,17 @@ $(document).ready(function (){
     	});
 	});
 	
-//Finds the classes of the previous font awesome icon and displays it underneath
+	//For each of the icons in the grid 
  
-	$(".fa-class").each(function(index){
-		var glyphStore = $(this).prev("i.fa");
-		
-		if ($(glyphStore).attr("data-unicode")) {
+	$(".grid-icon i.fa").each(function(index){		
+	//Find the unicode reference in the data-unicode attribute and render it as HTML inside the <i> tag		
+		glyphStore = $(this);
+		if ($(this).attr("data-unicode")) {
 				$(glyphStore).html("&#" + $(glyphStore).attr("data-unicode") + ";");
-		};
+		};		
+	//Finds the class of the font awesome icon in the grid and display it underneath		
 		var classCode = glyphStore.attr("class").split(" ");
-		 $(this).text("." + classCode[1]);
-		 
+		 $(glyphStore).next(".fa-class").text("." + classCode[1]);		 
 	});
  		
 });
