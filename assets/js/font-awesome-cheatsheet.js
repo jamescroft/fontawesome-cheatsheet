@@ -39,8 +39,14 @@ $(document).ready(function (){
 //Finds the classes of the previous font awesome icon and displays it underneath
  
 	$(".fa-class").each(function(index){
-		 var classCode = $(this).prev().attr("class").split(" ");
+		var glyphStore = $(this).prev("i.fa");
+		
+		if ($(glyphStore).attr("data-unicode")) {
+				$(glyphStore).html("&#" + $(glyphStore).attr("data-unicode") + ";");
+		};
+		var classCode = glyphStore.attr("class").split(" ");
 		 $(this).text("." + classCode[1]);
+		 
 	});
  		
 });
@@ -56,7 +62,11 @@ clip.on( "load", function(client, args) {
 	clip.on( 'mouseover', function ( client, args ) {
 	  //Sets the HTML to be injected into the clipboard as the item on mouseover
 	  //Because of the unicode symbols rendered as contents in the <i> tag, a local clone must be taken and emptied to parse the correct clipboard value	
-	  glyphHTML = $(this).parent().prevAll(".fa").clone().empty()[0].outerHTML;
+	  glyphStore = $(this).parents("li.grid-icon").children("i.fa")
+	  glyphHTML = glyphStore.clone().empty()[0].outerHTML;
+	  glyphUnicode = "&#" + glyphStore.data("unicode") + ";";
+	  glyphUnicodeHTML = "\\" + glyphStore.data("unicode");
+	  console.log (glyphStore, glyphHTML, glyphUnicode, glyphUnicodeHTML);
 	});
 	
 	clip.on( 'dataRequested', function (client, args) {
@@ -67,13 +77,14 @@ clip.on( "load", function(client, args) {
   client.on( "complete", function(client, args) {
     // `this` is the element that was clicked, we're setting $(this) to 'that' because $(this) doesn't work with the timeout function.
     that = $(this);
+	btnString = that.contents();
 	// Animation to indicate element has been copied
 	$(that).text("Copied!");
 	$(that).removeClass("zeroclipboard-is-hover", 0, "linear");
 	$(that).addClass("btn-success", 100, "linear");	
     setTimeout(function() {
         $(that).removeClass("btn-success", 100, "linear"), 
-		$(that).text("Copy");
+		$(that).text(btnString.text());
     }, 600)	
   });
 });

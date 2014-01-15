@@ -161,9 +161,19 @@
 		  .btn-container .btn-group .dropdown-menu li {
 			  text-align:left;
 		  }
+		  .btn-container .btn-group .dropdown-menu li.copy-html a:before {
+			  content: "\f121 \00a0";
+			  font-family:FontAwesome;
+		  }		  
+		  .btn-container .btn-group .dropdown-menu li.copy-unicode a:before {
+		    content: "\f05b \00a0";
+			font-family:FontAwesome;  
+		  }
+		  
+		  
 		  
 		  button.zeroclipboard-is-hover {
-		  	  color: #fff;
+		  	  color: #1fa67a;
 		  }
 		   
 		  .about {
