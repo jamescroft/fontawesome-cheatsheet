@@ -21,8 +21,8 @@ $(document).ready(function (){
 		}, 500, function () {
 			if ($("div.navbar-collapse").hasClass("in")) {
 				$(".navbar-toggle").click();
-			} else {}
-    });
+			};
+    	});
 	});
 	
 	$("#scroll-to-home").click(function() {
@@ -32,9 +32,21 @@ $(document).ready(function (){
 		}, 500, function () {
 			if ($("div.navbar-collapse").hasClass("in")) {
 				$(".navbar-toggle").click();
-			} else {}
+			};
     	});
 	});
+	
+	/* initially hide list items */
+	
+	$('#glyph-search').on("keyup click input", function () {
+   var valThis = $(this).val().toLowerCase();
+    $('.font-awesome-icons>li .fa-class').each(function(){
+     var text = $(this).text().toLowerCase();
+        (text.indexOf(valThis) == 0) ? $(this).show() : $(this).hide();            
+   });
+});
+
+
 	
 	//For each of the icons in the grid 
  
@@ -59,36 +71,57 @@ var clip = new ZeroClipboard( $('.copy-button'), {
 
 clip.on( "load", function(client, args) {
 
+
+
 	clip.on( 'mouseover', function ( client, args ) {
 	  //Sets the value to be injected into the clipboard as the item on mouseover
 	  	
 	  glyphStore = $(this).parents("li.grid-icon").children("i.fa");
-		var arrayOfClasses = $(this).attr("class").split(" ");
-	  //
-	  if (jQuery.inArray("parent-copy", arrayOfClasses)!==-1) {
+	  if ($(this).hasClass("parent-copy")) {
 		  //Copy the HTML Tag into the clipboard
 		  //Because of the unicode symbols rendered as contents in the <i> tag, a local clone must be taken and emptied to parse the correct clipboard value
 		  glyphClipboard = glyphStore.clone().empty().removeAttr("data-unicode")[0].outerHTML;
 	  };
-	  if (jQuery.inArray("copy-html", arrayOfClasses)!==-1) {
+	  if ($(this).hasClass("copy-html")) {
 		  //Copy the HTML Tag into the clipboard
 		  //Because of the unicode symbols rendered as contents in the <i> tag, a local clone must be taken and emptied to parse the correct clipboard value
 		  glyphClipboard = glyphStore.clone().empty().removeAttr("data-unicode")[0].outerHTML;
+		  console.log($(glyphClipboard));
+		  $(this).html($("<code/>").text(glyphClipboard));
 	  };
-	  //
-	  if (jQuery.inArray("copy-unicode-html", arrayOfClasses)!==-1) {
+	  if ($(this).hasClass("copy-unicode-html")) {
 	  	  //Copy the Unicode HTML Entity into the clipboard
 		  //The unicode HTML entity is prepended with "&#x" and appended with ";"
 		  glyphClipboard = "&#x" + glyphStore.data("unicode") + ";";
+		  $(this).html($("<code/>").text(glyphClipboard));
 	  };
-	  //
-	  if (jQuery.inArray("copy-unicode-hex", arrayOfClasses)!==-1) {
+	  if ($(this).hasClass("copy-unicode-hex")) {
 	  	  //Copy the Escaped Unicode Hex (for CSS) into the clipboard
 		  //The unicode Hex entity is prepended with " content:"/ " and appended with " "; "
 		  glyphClipboard = "content:\"\\" + glyphStore.data("unicode") + "\";";
+		  $(this).html($("<code/>").text(glyphClipboard));
 	  };
 	  
 	});
+	
+	clip.on( 'mouseout', function (client, args) {
+	  //Revert the button label
+	  if ($(this).hasClass("copy-html")) {
+		  $(this).text("HTML Tag");
+	  };
+	  	  if ($(this).hasClass("copy-unicode-html")) {
+		  $(this).text("Unicode HTML Entity");
+	  };
+	  if ($(this).hasClass("copy-unicode-hex")) {
+		  $(this).text("CSS Rule");
+	  };
+
+
+	  
+	  
+	});
+
+	
 	
 	clip.on( 'dataRequested', function (client, args) {
 	  //Inject the glyph HTML code into the clipboard
@@ -105,7 +138,8 @@ clip.on( "load", function(client, args) {
 	$(that).addClass("btn-success", 100, "linear");	
     setTimeout(function() {
         $(that).removeClass("btn-success", 100, "linear"), 
-		$(that).text(btnString.text());
+		$(that).html($("<code/>").text(btnString.text()));
+
     }, 600)	
   });
 });

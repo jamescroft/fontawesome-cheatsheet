@@ -23,15 +23,19 @@
 			font-family: Varela Round, arial, sans-serif;
 		}
 		.navbar-brand {
-			font-size: 20px;
+			font-size: 12px;
 			line-height: 1.2em;
 			text-transform: uppercase;
 			text-decoration: none;
 			letter-spacing: 3px;
-			font-weight: 400;
+			font-weight: 700;
 			font-style: normal;
 			padding-top: 20px;
 			padding-left: 10px;
+		}
+		.navbar-form {
+			margin-right: 5px;
+			margin-top: 13px;
 		}
 		.navbar ul li a {
 			font-family: Varela Round, arial, sans-serif;
@@ -47,6 +51,7 @@
 			max-width: 1030px;
 			padding: 0 0 0 20px;
 		}
+		
 		
 		.home {
 			margin: 81px auto 100px auto;
@@ -155,11 +160,11 @@
 			font-family:Consolas, "Andale Mono", "Lucida Console", "Lucida Sans Typewriter", Monaco, "Courier New", monospace;
 		  } 
 		  .btn-container .btn-group .dropdown-menu {
-			  min-width:100px;
-			  left: 25px;
+			  min-width:220px;
 		  }
 		  .btn-container .btn-group .dropdown-menu li {
 			  text-align:left;
+			  margin: 5px 0;
 		  }
 		  .btn-container .btn-group .dropdown-menu li a.copy-html:before {
 			  content: "\f121 \00a0";
@@ -173,6 +178,14 @@
 		    content: "\f084 \00a0";
 			font-family:FontAwesome;  
 		  }
+		  .btn-container .btn-group .dropdown-menu li a {
+			  display:inline-block;
+			  width: 210px;
+			  overflow:hidden;
+			  white-space:nowrap;
+			  text-overflow:ellipsis;
+		  }
+
 
 		  
 		  
@@ -270,12 +283,21 @@
 			font-weight:600;
 		}
 
+		.navbar-brand {
+			  font-size: 12px;
+			  font-weight: 700;
+		  }
 
 		/* Make the examples and snippets not full-width */
 		@media (min-width: 768px) {
 		  .nav-contain {
 				width: 100%;
 		  }
+		  
+		 .navbar-brand {
+			font-size: 20px;
+			font-weight: 400;
+		}
 		  .example {
 			margin-left: 0;
 			margin-right: 0;
@@ -310,6 +332,9 @@
 		  }
 			.nav-contain {
 				width: 100%;
+			}
+			.navbar-nav {
+				float: right;
 			}
 			span.fa-class {
 				height: 69px;
