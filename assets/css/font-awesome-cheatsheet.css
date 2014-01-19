@@ -19,15 +19,19 @@
 			font-size: 16px;
 			-webkit-text-stroke: 1px rgba(255,255,255,0.1);
 		}
+		.container-wide {
+	          width: 100%;
+			padding: 10px 0;  
+		  }
 		.navbar {
 			font-family: Varela Round, arial, sans-serif;
 		}
 		.navbar-brand {
-			font-size: 12px;
+			font-size: 11px;
 			line-height: 1.2em;
 			text-transform: uppercase;
 			text-decoration: none;
-			letter-spacing: 3px;
+			letter-spacing: 2px;
 			font-weight: 700;
 			font-style: normal;
 			padding-top: 20px;
@@ -112,11 +116,12 @@
 		  text-align: center;
 		}
 	    .fa-class {
-		  font-size: 12px;
+		  font-size: 14px;
 		  font-family:Consolas, "Andale Mono", "Lucida Console", "Lucida Sans Typewriter", Monaco, "Courier New", monospace;
 		  line-height: 1.4;
 		  text-align: center;
 		  color: #fff;
+		  font-weight:700;
 		}
 		.row {
 			padding: 25px 0;
@@ -282,14 +287,20 @@
 			color: #fff;
 			font-weight:600;
 		}
-
-		.navbar-brand {
-			  font-size: 12px;
-			  font-weight: 700;
-		  }
+		
+		@media (max-width: 576px) {
+			.row {
+				margin: 0;
+			}
+		}
 
 		/* Make the examples and snippets not full-width */
 		@media (min-width: 768px) {
+		  .fa-class {
+			  font-weight:400;
+		  }
+
+		  
 		  .nav-contain {
 				width: 100%;
 		  }
@@ -297,6 +308,7 @@
 		 .navbar-brand {
 			font-size: 20px;
 			font-weight: 400;
+			letter-spacing: 3px;
 		}
 		  .example {
 			margin-left: 0;
@@ -356,10 +368,7 @@
 			}
 		}
 		@media screen and (min-width: 992px) and (max-width: 1200px) {  
-			.container-wide {
-	          width: 100%;
-			padding: 10px 0;  
-		  }
+			
 			.font-awesome-icons li {
 				font-size: 11px;
 			}

@@ -65,15 +65,13 @@ $(document).ready(function (){
 
 // Using ZeroClipboard to copy glyph codes to clipboard.
 
-var clip = new ZeroClipboard( $('.copy-button'), {
+var client = new ZeroClipboard( $('.copy-button'), {
   moviePath: "../assets/zeroclipboard-1.2.3/ZeroClipboard.swf"
 } );
 
-clip.on( "load", function(client, args) {
+client.on( "load", function(client, args) {
 
-
-
-	clip.on( 'mouseover', function ( client, args ) {
+	client.on( 'mouseover', function ( client, args ) {
 	  //Sets the value to be injected into the clipboard as the item on mouseover
 	  	
 	  glyphStore = $(this).parents("li.grid-icon").children("i.fa");
@@ -104,7 +102,7 @@ clip.on( "load", function(client, args) {
 	  
 	});
 	
-	clip.on( 'mouseout', function (client, args) {
+	client.on( 'mouseout', function (client, args) {
 	  //Revert the button label
 	  if ($(this).hasClass("copy-html")) {
 		  $(this).text("HTML Tag");
@@ -121,9 +119,15 @@ clip.on( "load", function(client, args) {
 	  
 	});
 
+	client.on( 'noflash', function ( client, args ) {
+		alert("no flash!");
+	});
+	client.on( 'wrongflash', function ( client, args ) {
+	  alert("Your flash is too old " + args.flashVersion);
+	} );
 	
 	
-	clip.on( 'dataRequested', function (client, args) {
+	client.on( 'dataRequested', function (client, args) {
 	  //Inject the glyph HTML code into the clipboard
 	  client.setText(glyphClipboard);
 	});
