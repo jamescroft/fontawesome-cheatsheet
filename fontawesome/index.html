@@ -8,7 +8,7 @@
 <link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro:400,600,700,900,400italic,600italic,700italic|Varela+Round&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
 <script src="http://code.jquery.com/jquery-1.9.1.js"></script>
 <script src="http://code.jquery.com/ui/1.10.3/jquery-ui.js"></script>
-<script src="../assets/js/jquery.fastLiveFilter.js"></script>
+<script src="../assets/js/jquery.quicksearch.min.js"></script>
 
 <!-- Latest compiled and minified CSS -->
 <link rel="stylesheet" href="http://netdna.bootstrapcdn.com/bootstrap/3.0.3/css/bootstrap.min.css">
@@ -16,8 +16,8 @@
 <!-- Latest compiled and minified JavaScript -->
 <script src="http://netdna.bootstrapcdn.com/bootstrap/3.0.3/js/bootstrap.min.js"></script>
 <!--[if lt IE 9]>
-            <script src="//html5shim.googlecode.com/svn/trunk/html5.js"></script>
-        <![endif]-->
+    <script src="//html5shim.googlecode.com/svn/trunk/html5.js"></script>
+<![endif]-->
 
 <!-- Cheat sheet CSS -->
 <link rel="stylesheet" href="../assets/css/font-awesome-cheatsheet.css">
@@ -54,8 +54,8 @@
   <div class="container container-wide">
     <h1 class="text-center title">Font Awesome</h1>
     <ul class="font-awesome-icons">
-      <div class="row">
-        <li class="col-md-1 col-md-offset-1 col-sm-2 col-sm-offset-1 col-xs-6 grid-icon"> <i class="fa fa-adjust" data-unicode="f042"></i> <span class="fa-class"></span>
+      <div class="row" id="first-row">
+        <li class="col-md-1 col-sm-2 col-xs-6 grid-icon"> <i class="fa fa-adjust" data-unicode="f042"></i> <span class="fa-class"></span>
           <div class="btn-container">
             <div class="btn-group">
               <button title="More options" type="button" class="btn btn-xs dropdown-toggle" data-toggle="dropdown"> Copy <span class="caret"></span> <span class="sr-only">Toggle Dropdown</span> </button>
@@ -115,7 +115,7 @@
             </div>
           </div>
         </li>
-        <li class="col-md-1 col-md-offset-0 col-sm-2 col-sm-offset-1 col-xs-6 col-xs-offset-0 grid-icon"> <i class="fa fa-align-right" data-unicode="f038"></i> <span class="fa-class"></span>
+        <li class="col-md-1 col-md-offset-0 col-sm-2 col-xs-6 col-xs-offset-0 grid-icon"> <i class="fa fa-align-right" data-unicode="f038"></i> <span class="fa-class"></span>
           <div class="btn-container">
             <div class="btn-group">
               <button title="More options" type="button" class="btn btn-xs dropdown-toggle" data-toggle="dropdown"> Copy <span class="caret"></span> <span class="sr-only">Toggle Dropdown</span> </button>
@@ -177,7 +177,7 @@
         </li>
       </div>
       <div class="row row-alt">
-        <li class="col-md-1 col-md-offset-1 col-sm-2 col-sm-offset-1 col-xs-6 grid-icon"> <i class="fa fa-angle-double-left" data-unicode="f100"></i> <span class="fa-class"></span>
+        <li class="col-md-1 col-sm-2 col-xs-6 grid-icon"> <i class="fa fa-angle-double-left" data-unicode="f100"></i> <span class="fa-class"></span>
           <div class="btn-container">
             <div class="btn-group">
               <button title="More options" type="button" class="btn btn-xs dropdown-toggle" data-toggle="dropdown"> Copy <span class="caret"></span> <span class="sr-only">Toggle Dropdown</span> </button>
@@ -237,7 +237,7 @@
             </div>
           </div>
         </li>
-        <li class="col-md-1 col-md-offset-0 col-sm-2 col-sm-offset-1 col-xs-6 col-xs-offset-0 grid-icon"> <i class="fa fa-angle-right" data-unicode="f105"></i> <span class="fa-class"></span>
+        <li class="col-md-1 col-md-offset-0 col-sm-2 col-xs-6 col-xs-offset-0 grid-icon"> <i class="fa fa-angle-right" data-unicode="f105"></i> <span class="fa-class"></span>
           <div class="btn-container">
             <div class="btn-group">
               <button title="More options" type="button" class="btn btn-xs dropdown-toggle" data-toggle="dropdown"> Copy <span class="caret"></span> <span class="sr-only">Toggle Dropdown</span> </button>
@@ -298,7 +298,7 @@
         </li>
       </div>
 <div class="row">
-        <li class="col-md-1 col-md-offset-1 col-sm-2 col-sm-offset-1 col-xs-6 grid-icon"> <i class="fa fa-arrow-circle-left" data-unicode="f0a8"></i> <span class="fa-class"></span>
+        <li class="col-md-1 col-sm-2 col-xs-6 grid-icon"> <i class="fa fa-arrow-circle-left" data-unicode="f0a8"></i> <span class="fa-class"></span>
           <div class="btn-container">
             <div class="btn-group">
               <button title="More options" type="button" class="btn btn-xs dropdown-toggle" data-toggle="dropdown"> Copy <span class="caret"></span> <span class="sr-only">Toggle Dropdown</span> </button>
@@ -358,7 +358,7 @@
             </div>
           </div>
         </li>
-        <li class="col-md-1 col-md-offset-0 col-sm-2 col-sm-offset-1 col-xs-6 col-xs-offset-0 grid-icon"> <i class="fa fa-arrow-circle-right" data-unicode="f0a9"></i> <span class="fa-class"></span>
+        <li class="col-md-1 col-md-offset-0 col-sm-2 col-xs-6 col-xs-offset-0 grid-icon"> <i class="fa fa-arrow-circle-right" data-unicode="f0a9"></i> <span class="fa-class"></span>
           <div class="btn-container">
             <div class="btn-group">
               <button title="More options" type="button" class="btn btn-xs dropdown-toggle" data-toggle="dropdown"> Copy <span class="caret"></span> <span class="sr-only">Toggle Dropdown</span> </button>
@@ -419,7 +419,7 @@
         </li>
       </div>
 <div class="row row-alt">
-        <li class="col-md-1 col-md-offset-1 col-sm-2 col-sm-offset-1 col-xs-6 grid-icon"> <i class="fa fa-arrow-up" data-unicode="f062"></i> <span class="fa-class"></span>
+        <li class="col-md-1 col-sm-2 col-xs-6 grid-icon"> <i class="fa fa-arrow-up" data-unicode="f062"></i> <span class="fa-class"></span>
           <div class="btn-container">
             <div class="btn-group">
               <button title="More options" type="button" class="btn btn-xs dropdown-toggle" data-toggle="dropdown"> Copy <span class="caret"></span> <span class="sr-only">Toggle Dropdown</span> </button>
@@ -479,7 +479,7 @@
             </div>
           </div>
         </li>
-        <li class="col-md-1 col-md-offset-0 col-sm-2 col-sm-offset-1 col-xs-6 col-xs-offset-0 grid-icon"> <i class="fa fa-asterisk" data-unicode="f069"></i> <span class="fa-class"></span>
+        <li class="col-md-1 col-md-offset-0 col-sm-2 col-xs-6 col-xs-offset-0 grid-icon"> <i class="fa fa-asterisk" data-unicode="f069"></i> <span class="fa-class"></span>
           <div class="btn-container">
             <div class="btn-group">
               <button title="More options" type="button" class="btn btn-xs dropdown-toggle" data-toggle="dropdown"> Copy <span class="caret"></span> <span class="sr-only">Toggle Dropdown</span> </button>
@@ -540,7 +540,7 @@
         </li>
       </div>
 <div class="row">
-        <li class="col-md-1 col-md-offset-1 col-sm-2 col-sm-offset-1 col-xs-6 grid-icon"> <i class="fa fa-bars" data-unicode="f0c9"></i> <span class="fa-class"></span>
+        <li class="col-md-1 col-sm-2 col-xs-6 grid-icon"> <i class="fa fa-bars" data-unicode="f0c9"></i> <span class="fa-class"></span>
           <div class="btn-container">
             <div class="btn-group">
               <button title="More options" type="button" class="btn btn-xs dropdown-toggle" data-toggle="dropdown"> Copy <span class="caret"></span> <span class="sr-only">Toggle Dropdown</span> </button>
@@ -600,7 +600,7 @@
             </div>
           </div>
         </li>
-        <li class="col-md-1 col-md-offset-0 col-sm-2 col-sm-offset-1 col-xs-6 col-xs-offset-0 grid-icon"> <i class="fa fa-bitbucket-square" data-unicode="f172"></i> <span class="fa-class"></span>
+        <li class="col-md-1 col-md-offset-0 col-sm-2 col-xs-6 col-xs-offset-0 grid-icon"> <i class="fa fa-bitbucket-square" data-unicode="f172"></i> <span class="fa-class"></span>
           <div class="btn-container">
             <div class="btn-group">
               <button title="More options" type="button" class="btn btn-xs dropdown-toggle" data-toggle="dropdown"> Copy <span class="caret"></span> <span class="sr-only">Toggle Dropdown</span> </button>
@@ -661,7 +661,7 @@
         </li>
       </div>
 <div class="row row-alt">
-        <li class="col-md-1 col-md-offset-1 col-sm-2 col-sm-offset-1 col-xs-6 grid-icon"> <i class="fa fa-bookmark-o" data-unicode="f097"></i> <span class="fa-class"></span>
+        <li class="col-md-1 col-sm-2 col-xs-6 grid-icon"> <i class="fa fa-bookmark-o" data-unicode="f097"></i> <span class="fa-class"></span>
           <div class="btn-container">
             <div class="btn-group">
               <button title="More options" type="button" class="btn btn-xs dropdown-toggle" data-toggle="dropdown"> Copy <span class="caret"></span> <span class="sr-only">Toggle Dropdown</span> </button>
@@ -721,7 +721,7 @@
             </div>
           </div>
         </li>
-        <li class="col-md-1 col-md-offset-0 col-sm-2 col-sm-offset-1 col-xs-6 col-xs-offset-0 grid-icon"> <i class="fa fa-bullhorn" data-unicode="f0a1"></i> <span class="fa-class"></span>
+        <li class="col-md-1 col-md-offset-0 col-sm-2 col-xs-6 col-xs-offset-0 grid-icon"> <i class="fa fa-bullhorn" data-unicode="f0a1"></i> <span class="fa-class"></span>
           <div class="btn-container">
             <div class="btn-group">
               <button title="More options" type="button" class="btn btn-xs dropdown-toggle" data-toggle="dropdown"> Copy <span class="caret"></span> <span class="sr-only">Toggle Dropdown</span> </button>
@@ -782,7 +782,7 @@
         </li>
       </div>
 <div class="row">
-        <li class="col-md-1 col-md-offset-1 col-sm-2 col-sm-offset-1 col-xs-6 grid-icon"> <i class="fa fa-camera-retro" data-unicode="f083"></i> <span class="fa-class"></span>
+        <li class="col-md-1 col-sm-2 col-xs-6 grid-icon"> <i class="fa fa-camera-retro" data-unicode="f083"></i> <span class="fa-class"></span>
           <div class="btn-container">
             <div class="btn-group">
               <button title="More options" type="button" class="btn btn-xs dropdown-toggle" data-toggle="dropdown"> Copy <span class="caret"></span> <span class="sr-only">Toggle Dropdown</span> </button>
@@ -842,7 +842,7 @@
             </div>
           </div>
         </li>
-        <li class="col-md-1 col-md-offset-0 col-sm-2 col-sm-offset-1 col-xs-6 col-xs-offset-0 grid-icon"> <i class="fa fa-caret-square-o-left" data-unicode="f191"></i> <span class="fa-class"></span>
+        <li class="col-md-1 col-md-offset-0 col-sm-2 col-xs-6 col-xs-offset-0 grid-icon"> <i class="fa fa-caret-square-o-left" data-unicode="f191"></i> <span class="fa-class"></span>
           <div class="btn-container">
             <div class="btn-group">
               <button title="More options" type="button" class="btn btn-xs dropdown-toggle" data-toggle="dropdown"> Copy <span class="caret"></span> <span class="sr-only">Toggle Dropdown</span> </button>
@@ -903,7 +903,7 @@
         </li>
       </div>
 <div class="row row-alt">
-        <li class="col-md-1 col-md-offset-1 col-sm-2 col-sm-offset-1 col-xs-6 grid-icon"> <i class="fa fa-chain-broken" data-unicode="f127"></i> <span class="fa-class"></span>
+        <li class="col-md-1 col-sm-2 col-xs-6 grid-icon"> <i class="fa fa-chain-broken" data-unicode="f127"></i> <span class="fa-class"></span>
           <div class="btn-container">
             <div class="btn-group">
               <button title="More options" type="button" class="btn btn-xs dropdown-toggle" data-toggle="dropdown"> Copy <span class="caret"></span> <span class="sr-only">Toggle Dropdown</span> </button>
@@ -963,7 +963,7 @@
             </div>
           </div>
         </li>
-        <li class="col-md-1 col-md-offset-0 col-sm-2 col-sm-offset-1 col-xs-6 col-xs-offset-0 grid-icon"> <i class="fa fa-check-square-o" data-unicode="f046"></i> <span class="fa-class"></span>
+        <li class="col-md-1 col-md-offset-0 col-sm-2 col-xs-6 col-xs-offset-0 grid-icon"> <i class="fa fa-check-square-o" data-unicode="f046"></i> <span class="fa-class"></span>
           <div class="btn-container">
             <div class="btn-group">
               <button title="More options" type="button" class="btn btn-xs dropdown-toggle" data-toggle="dropdown"> Copy <span class="caret"></span> <span class="sr-only">Toggle Dropdown</span> </button>
@@ -1024,7 +1024,7 @@
         </li>
       </div>
 <div class="row">
-        <li class="col-md-1 col-md-offset-1 col-sm-2 col-sm-offset-1 col-xs-6 grid-icon"> <i class="fa fa-chevron-down" data-unicode="f078"></i> <span class="fa-class"></span>
+        <li class="col-md-1 col-sm-2 col-xs-6 grid-icon"> <i class="fa fa-chevron-down" data-unicode="f078"></i> <span class="fa-class"></span>
           <div class="btn-container">
             <div class="btn-group">
               <button title="More options" type="button" class="btn btn-xs dropdown-toggle" data-toggle="dropdown"> Copy <span class="caret"></span> <span class="sr-only">Toggle Dropdown</span> </button>
@@ -1084,7 +1084,7 @@
             </div>
           </div>
         </li>
-        <li class="col-md-1 col-md-offset-0 col-sm-2 col-sm-offset-1 col-xs-6 col-xs-offset-0 grid-icon"> <i class="fa fa-circle-o" data-unicode="f10c"></i> <span class="fa-class"></span>
+        <li class="col-md-1 col-md-offset-0 col-sm-2 col-xs-6 col-xs-offset-0 grid-icon"> <i class="fa fa-circle-o" data-unicode="f10c"></i> <span class="fa-class"></span>
           <div class="btn-container">
             <div class="btn-group">
               <button title="More options" type="button" class="btn btn-xs dropdown-toggle" data-toggle="dropdown"> Copy <span class="caret"></span> <span class="sr-only">Toggle Dropdown</span> </button>
@@ -1145,7 +1145,7 @@
         </li>
       </div>
 <div class="row row-alt">
-        <li class="col-md-1 col-md-offset-1 col-sm-2 col-sm-offset-1 col-xs-6 grid-icon"> <i class="fa fa-cloud-upload" data-unicode="f0ee"></i> <span class="fa-class"></span>
+        <li class="col-md-1 col-sm-2 col-xs-6 grid-icon"> <i class="fa fa-cloud-upload" data-unicode="f0ee"></i> <span class="fa-class"></span>
           <div class="btn-container">
             <div class="btn-group">
               <button title="More options" type="button" class="btn btn-xs dropdown-toggle" data-toggle="dropdown"> Copy <span class="caret"></span> <span class="sr-only">Toggle Dropdown</span> </button>
@@ -1205,7 +1205,7 @@
             </div>
           </div>
         </li>
-        <li class="col-md-1 col-md-offset-0 col-sm-2 col-sm-offset-1 col-xs-6 col-xs-offset-0 grid-icon"> <i class="fa fa-cogs" data-unicode="f085"></i> <span class="fa-class"></span>
+        <li class="col-md-1 col-md-offset-0 col-sm-2 col-xs-6 col-xs-offset-0 grid-icon"> <i class="fa fa-cogs" data-unicode="f085"></i> <span class="fa-class"></span>
           <div class="btn-container">
             <div class="btn-group">
               <button title="More options" type="button" class="btn btn-xs dropdown-toggle" data-toggle="dropdown"> Copy <span class="caret"></span> <span class="sr-only">Toggle Dropdown</span> </button>
@@ -1266,7 +1266,7 @@
         </li>
       </div>
 <div class="row">
-        <li class="col-md-1 col-md-offset-1 col-sm-2 col-sm-offset-1 col-xs-6 grid-icon"> <i class="fa fa-comments-o" data-unicode="f0e6"></i> <span class="fa-class"></span>
+        <li class="col-md-1 col-sm-2 col-xs-6 grid-icon"> <i class="fa fa-comments-o" data-unicode="f0e6"></i> <span class="fa-class"></span>
           <div class="btn-container">
             <div class="btn-group">
               <button title="More options" type="button" class="btn btn-xs dropdown-toggle" data-toggle="dropdown"> Copy <span class="caret"></span> <span class="sr-only">Toggle Dropdown</span> </button>
@@ -1326,7 +1326,7 @@
             </div>
           </div>
         </li>
-        <li class="col-md-1 col-md-offset-0 col-sm-2 col-sm-offset-1 col-xs-6 col-xs-offset-0 grid-icon"> <i class="fa fa-crosshairs" data-unicode="f05b"></i> <span class="fa-class"></span>
+        <li class="col-md-1 col-md-offset-0 col-sm-2 col-xs-6 col-xs-offset-0 grid-icon"> <i class="fa fa-crosshairs" data-unicode="f05b"></i> <span class="fa-class"></span>
           <div class="btn-container">
             <div class="btn-group">
               <button title="More options" type="button" class="btn btn-xs dropdown-toggle" data-toggle="dropdown"> Copy <span class="caret"></span> <span class="sr-only">Toggle Dropdown</span> </button>
@@ -1387,7 +1387,7 @@
         </li>
       </div>
 <div class="row row-alt">
-        <li class="col-md-1 col-md-offset-1 col-sm-2 col-sm-offset-1 col-xs-6 grid-icon"> <i class="fa fa-download" data-unicode="f019"></i> <span class="fa-class"></span>
+        <li class="col-md-1 col-sm-2 col-xs-6 grid-icon"> <i class="fa fa-download" data-unicode="f019"></i> <span class="fa-class"></span>
           <div class="btn-container">
             <div class="btn-group">
               <button title="More options" type="button" class="btn btn-xs dropdown-toggle" data-toggle="dropdown"> Copy <span class="caret"></span> <span class="sr-only">Toggle Dropdown</span> </button>
@@ -1447,7 +1447,7 @@
             </div>
           </div>
         </li>
-        <li class="col-md-1 col-md-offset-0 col-sm-2 col-sm-offset-1 col-xs-6 col-xs-offset-0 grid-icon"> <i class="fa fa-ellipsis-v" data-unicode="f142"></i> <span class="fa-class"></span>
+        <li class="col-md-1 col-md-offset-0 col-sm-2 col-xs-6 col-xs-offset-0 grid-icon"> <i class="fa fa-ellipsis-v" data-unicode="f142"></i> <span class="fa-class"></span>
           <div class="btn-container">
             <div class="btn-group">
               <button title="More options" type="button" class="btn btn-xs dropdown-toggle" data-toggle="dropdown"> Copy <span class="caret"></span> <span class="sr-only">Toggle Dropdown</span> </button>
@@ -1508,7 +1508,7 @@
         </li>
       </div>
 <div class="row">
-        <li class="col-md-1 col-md-offset-1 col-sm-2 col-sm-offset-1 col-xs-6 grid-icon"> <i class="fa fa-exchange" data-unicode="f0ec"></i> <span class="fa-class"></span>
+        <li class="col-md-1 col-sm-2 col-xs-6 grid-icon"> <i class="fa fa-exchange" data-unicode="f0ec"></i> <span class="fa-class"></span>
           <div class="btn-container">
             <div class="btn-group">
               <button title="More options" type="button" class="btn btn-xs dropdown-toggle" data-toggle="dropdown"> Copy <span class="caret"></span> <span class="sr-only">Toggle Dropdown</span> </button>
@@ -1568,7 +1568,7 @@
             </div>
           </div>
         </li>
-        <li class="col-md-1 col-md-offset-0 col-sm-2 col-sm-offset-1 col-xs-6 col-xs-offset-0 grid-icon"> <i class="fa fa-external-link" data-unicode="f08e"></i> <span class="fa-class"></span>
+        <li class="col-md-1 col-md-offset-0 col-sm-2 col-xs-6 col-xs-offset-0 grid-icon"> <i class="fa fa-external-link" data-unicode="f08e"></i> <span class="fa-class"></span>
           <div class="btn-container">
             <div class="btn-group">
               <button title="More options" type="button" class="btn btn-xs dropdown-toggle" data-toggle="dropdown"> Copy <span class="caret"></span> <span class="sr-only">Toggle Dropdown</span> </button>
@@ -1629,7 +1629,7 @@
         </li>
       </div>
 <div class="row row-alt">
-        <li class="col-md-1 col-md-offset-1 col-sm-2 col-sm-offset-1 col-xs-6 grid-icon"> <i class="fa fa-facebook-square" data-unicode="f082"></i> <span class="fa-class"></span>
+        <li class="col-md-1 col-sm-2 col-xs-6 grid-icon"> <i class="fa fa-facebook-square" data-unicode="f082"></i> <span class="fa-class"></span>
           <div class="btn-container">
             <div class="btn-group">
               <button title="More options" type="button" class="btn btn-xs dropdown-toggle" data-toggle="dropdown"> Copy <span class="caret"></span> <span class="sr-only">Toggle Dropdown</span> </button>
@@ -1689,7 +1689,7 @@
             </div>
           </div>
         </li>
-        <li class="col-md-1 col-md-offset-0 col-sm-2 col-sm-offset-1 col-xs-6 col-xs-offset-0 grid-icon"> <i class="fa fa-file" data-unicode="f15b"></i> <span class="fa-class"></span>
+        <li class="col-md-1 col-md-offset-0 col-sm-2 col-xs-6 col-xs-offset-0 grid-icon"> <i class="fa fa-file" data-unicode="f15b"></i> <span class="fa-class"></span>
           <div class="btn-container">
             <div class="btn-group">
               <button title="More options" type="button" class="btn btn-xs dropdown-toggle" data-toggle="dropdown"> Copy <span class="caret"></span> <span class="sr-only">Toggle Dropdown</span> </button>
@@ -1750,7 +1750,7 @@
         </li>
       </div>
 <div class="row">
-        <li class="col-md-1 col-md-offset-1 col-sm-2 col-sm-offset-1 col-xs-6 grid-icon"> <i class="fa fa-film" data-unicode="f008"></i> <span class="fa-class"></span>
+        <li class="col-md-1 col-sm-2 col-xs-6 grid-icon"> <i class="fa fa-film" data-unicode="f008"></i> <span class="fa-class"></span>
           <div class="btn-container">
             <div class="btn-group">
               <button title="More options" type="button" class="btn btn-xs dropdown-toggle" data-toggle="dropdown"> Copy <span class="caret"></span> <span class="sr-only">Toggle Dropdown</span> </button>
@@ -1810,7 +1810,7 @@
             </div>
           </div>
         </li>
-        <li class="col-md-1 col-md-offset-0 col-sm-2 col-sm-offset-1 col-xs-6 col-xs-offset-0 grid-icon"> <i class="fa fa-flag-checkered" data-unicode="f11e"></i> <span class="fa-class"></span>
+        <li class="col-md-1 col-md-offset-0 col-sm-2 col-xs-6 col-xs-offset-0 grid-icon"> <i class="fa fa-flag-checkered" data-unicode="f11e"></i> <span class="fa-class"></span>
           <div class="btn-container">
             <div class="btn-group">
               <button title="More options" type="button" class="btn btn-xs dropdown-toggle" data-toggle="dropdown"> Copy <span class="caret"></span> <span class="sr-only">Toggle Dropdown</span> </button>
@@ -1871,7 +1871,7 @@
         </li>
       </div>
 <div class="row row-alt">
-        <li class="col-md-1 col-md-offset-1 col-sm-2 col-sm-offset-1 col-xs-6 grid-icon"> <i class="fa fa-folder" data-unicode="f07b"></i> <span class="fa-class"></span>
+        <li class="col-md-1 col-sm-2 col-xs-6 grid-icon"> <i class="fa fa-folder" data-unicode="f07b"></i> <span class="fa-class"></span>
           <div class="btn-container">
             <div class="btn-group">
               <button title="More options" type="button" class="btn btn-xs dropdown-toggle" data-toggle="dropdown"> Copy <span class="caret"></span> <span class="sr-only">Toggle Dropdown</span> </button>
@@ -1931,7 +1931,7 @@
             </div>
           </div>
         </li>
-        <li class="col-md-1 col-md-offset-0 col-sm-2 col-sm-offset-1 col-xs-6 col-xs-offset-0 grid-icon"> <i class="fa fa-forward" data-unicode="f04e"></i> <span class="fa-class"></span>
+        <li class="col-md-1 col-md-offset-0 col-sm-2 col-xs-6 col-xs-offset-0 grid-icon"> <i class="fa fa-forward" data-unicode="f04e"></i> <span class="fa-class"></span>
           <div class="btn-container">
             <div class="btn-group">
               <button title="More options" type="button" class="btn btn-xs dropdown-toggle" data-toggle="dropdown"> Copy <span class="caret"></span> <span class="sr-only">Toggle Dropdown</span> </button>
@@ -1992,7 +1992,7 @@
         </li>
       </div>
 <div class="row">
-        <li class="col-md-1 col-md-offset-1 col-sm-2 col-sm-offset-1 col-xs-6 grid-icon"> <i class="fa fa-gbp" data-unicode="f154"></i> <span class="fa-class"></span>
+        <li class="col-md-1 col-sm-2 col-xs-6 grid-icon"> <i class="fa fa-gbp" data-unicode="f154"></i> <span class="fa-class"></span>
           <div class="btn-container">
             <div class="btn-group">
               <button title="More options" type="button" class="btn btn-xs dropdown-toggle" data-toggle="dropdown"> Copy <span class="caret"></span> <span class="sr-only">Toggle Dropdown</span> </button>
@@ -2052,7 +2052,7 @@
             </div>
           </div>
         </li>
-        <li class="col-md-1 col-md-offset-0 col-sm-2 col-sm-offset-1 col-xs-6 col-xs-offset-0 grid-icon"> <i class="fa fa-gittip" data-unicode="f184"></i> <span class="fa-class"></span>
+        <li class="col-md-1 col-md-offset-0 col-sm-2 col-xs-6 col-xs-offset-0 grid-icon"> <i class="fa fa-gittip" data-unicode="f184"></i> <span class="fa-class"></span>
           <div class="btn-container">
             <div class="btn-group">
               <button title="More options" type="button" class="btn btn-xs dropdown-toggle" data-toggle="dropdown"> Copy <span class="caret"></span> <span class="sr-only">Toggle Dropdown</span> </button>
@@ -2113,7 +2113,7 @@
         </li>
       </div>
 <div class="row row-alt">
-        <li class="col-md-1 col-md-offset-1 col-sm-2 col-sm-offset-1 col-xs-6 grid-icon"> <i class="fa fa-h-square" data-unicode="f0fd"></i> <span class="fa-class"></span>
+        <li class="col-md-1 col-sm-2 col-xs-6 grid-icon"> <i class="fa fa-h-square" data-unicode="f0fd"></i> <span class="fa-class"></span>
           <div class="btn-container">
             <div class="btn-group">
               <button title="More options" type="button" class="btn btn-xs dropdown-toggle" data-toggle="dropdown"> Copy <span class="caret"></span> <span class="sr-only">Toggle Dropdown</span> </button>
@@ -2173,7 +2173,7 @@
             </div>
           </div>
         </li>
-        <li class="col-md-1 col-md-offset-0 col-sm-2 col-sm-offset-1 col-xs-6 col-xs-offset-0 grid-icon"> <i class="fa fa-hdd-o" data-unicode="f0a0"></i> <span class="fa-class"></span>
+        <li class="col-md-1 col-md-offset-0 col-sm-2 col-xs-6 col-xs-offset-0 grid-icon"> <i class="fa fa-hdd-o" data-unicode="f0a0"></i> <span class="fa-class"></span>
           <div class="btn-container">
             <div class="btn-group">
               <button title="More options" type="button" class="btn btn-xs dropdown-toggle" data-toggle="dropdown"> Copy <span class="caret"></span> <span class="sr-only">Toggle Dropdown</span> </button>
@@ -2234,7 +2234,7 @@
         </li>
       </div>
 <div class="row">
-        <li class="col-md-1 col-md-offset-1 col-sm-2 col-sm-offset-1 col-xs-6 grid-icon"> <i class="fa fa-hospital-o" data-unicode="f0f8"></i> <span class="fa-class"></span>
+        <li class="col-md-1 col-sm-2 col-xs-6 grid-icon"> <i class="fa fa-hospital-o" data-unicode="f0f8"></i> <span class="fa-class"></span>
           <div class="btn-container">
             <div class="btn-group">
               <button title="More options" type="button" class="btn btn-xs dropdown-toggle" data-toggle="dropdown"> Copy <span class="caret"></span> <span class="sr-only">Toggle Dropdown</span> </button>
@@ -2294,7 +2294,7 @@
             </div>
           </div>
         </li>
-        <li class="col-md-1 col-md-offset-0 col-sm-2 col-sm-offset-1 col-xs-6 col-xs-offset-0 grid-icon"> <i class="fa fa-info-circle" data-unicode="f05a"></i> <span class="fa-class"></span>
+        <li class="col-md-1 col-md-offset-0 col-sm-2 col-xs-6 col-xs-offset-0 grid-icon"> <i class="fa fa-info-circle" data-unicode="f05a"></i> <span class="fa-class"></span>
           <div class="btn-container">
             <div class="btn-group">
               <button title="More options" type="button" class="btn btn-xs dropdown-toggle" data-toggle="dropdown"> Copy <span class="caret"></span> <span class="sr-only">Toggle Dropdown</span> </button>
@@ -2355,7 +2355,7 @@
         </li>
       </div>
 <div class="row row-alt">
-        <li class="col-md-1 col-md-offset-1 col-sm-2 col-sm-offset-1 col-xs-6 grid-icon"> <i class="fa fa-key" data-unicode="f084"></i> <span class="fa-class"></span>
+        <li class="col-md-1 col-sm-2 col-xs-6 grid-icon"> <i class="fa fa-key" data-unicode="f084"></i> <span class="fa-class"></span>
           <div class="btn-container">
             <div class="btn-group">
               <button title="More options" type="button" class="btn btn-xs dropdown-toggle" data-toggle="dropdown"> Copy <span class="caret"></span> <span class="sr-only">Toggle Dropdown</span> </button>
@@ -2415,7 +2415,7 @@
             </div>
           </div>
         </li>
-        <li class="col-md-1 col-md-offset-0 col-sm-2 col-sm-offset-1 col-xs-6 col-xs-offset-0 grid-icon"> <i class="fa fa-lemon-o" data-unicode="f094"></i> <span class="fa-class"></span>
+        <li class="col-md-1 col-md-offset-0 col-sm-2 col-xs-6 col-xs-offset-0 grid-icon"> <i class="fa fa-lemon-o" data-unicode="f094"></i> <span class="fa-class"></span>
           <div class="btn-container">
             <div class="btn-group">
               <button title="More options" type="button" class="btn btn-xs dropdown-toggle" data-toggle="dropdown"> Copy <span class="caret"></span> <span class="sr-only">Toggle Dropdown</span> </button>
@@ -2476,7 +2476,7 @@
         </li>
       </div>
 <div class="row">
-        <li class="col-md-1 col-md-offset-1 col-sm-2 col-sm-offset-1 col-xs-6 grid-icon"> <i class="fa fa-linkedin" data-unicode="f0e1"></i> <span class="fa-class"></span>
+        <li class="col-md-1 col-sm-2 col-xs-6 grid-icon"> <i class="fa fa-linkedin" data-unicode="f0e1"></i> <span class="fa-class"></span>
           <div class="btn-container">
             <div class="btn-group">
               <button title="More options" type="button" class="btn btn-xs dropdown-toggle" data-toggle="dropdown"> Copy <span class="caret"></span> <span class="sr-only">Toggle Dropdown</span> </button>
@@ -2536,7 +2536,7 @@
             </div>
           </div>
         </li>
-        <li class="col-md-1 col-md-offset-0 col-sm-2 col-sm-offset-1 col-xs-6 col-xs-offset-0 grid-icon"> <i class="fa fa-list-ol" data-unicode="f0cb"></i> <span class="fa-class"></span>
+        <li class="col-md-1 col-md-offset-0 col-sm-2 col-xs-6 col-xs-offset-0 grid-icon"> <i class="fa fa-list-ol" data-unicode="f0cb"></i> <span class="fa-class"></span>
           <div class="btn-container">
             <div class="btn-group">
               <button title="More options" type="button" class="btn btn-xs dropdown-toggle" data-toggle="dropdown"> Copy <span class="caret"></span> <span class="sr-only">Toggle Dropdown</span> </button>
@@ -2597,7 +2597,7 @@
         </li>
       </div>
 <div class="row row-alt">
-        <li class="col-md-1 col-md-offset-1 col-sm-2 col-sm-offset-1 col-xs-6 grid-icon"> <i class="fa fa-long-arrow-left" data-unicode="f177"></i> <span class="fa-class"></span>
+        <li class="col-md-1 col-sm-2 col-xs-6 grid-icon"> <i class="fa fa-long-arrow-left" data-unicode="f177"></i> <span class="fa-class"></span>
           <div class="btn-container">
             <div class="btn-group">
               <button title="More options" type="button" class="btn btn-xs dropdown-toggle" data-toggle="dropdown"> Copy <span class="caret"></span> <span class="sr-only">Toggle Dropdown</span> </button>
@@ -2657,7 +2657,7 @@
             </div>
           </div>
         </li>
-        <li class="col-md-1 col-md-offset-0 col-sm-2 col-sm-offset-1 col-xs-6 col-xs-offset-0 grid-icon"> <i class="fa fa-mail-reply-all" data-unicode="f122"></i> <span class="fa-class"></span>
+        <li class="col-md-1 col-md-offset-0 col-sm-2 col-xs-6 col-xs-offset-0 grid-icon"> <i class="fa fa-mail-reply-all" data-unicode="f122"></i> <span class="fa-class"></span>
           <div class="btn-container">
             <div class="btn-group">
               <button title="More options" type="button" class="btn btn-xs dropdown-toggle" data-toggle="dropdown"> Copy <span class="caret"></span> <span class="sr-only">Toggle Dropdown</span> </button>
@@ -2718,7 +2718,7 @@
         </li>
       </div>
 <div class="row">
-        <li class="col-md-1 col-md-offset-1 col-sm-2 col-sm-offset-1 col-xs-6 grid-icon"> <i class="fa fa-meh-o" data-unicode="f11a"></i> <span class="fa-class"></span>
+        <li class="col-md-1 col-sm-2 col-xs-6 grid-icon"> <i class="fa fa-meh-o" data-unicode="f11a"></i> <span class="fa-class"></span>
           <div class="btn-container">
             <div class="btn-group">
               <button title="More options" type="button" class="btn btn-xs dropdown-toggle" data-toggle="dropdown"> Copy <span class="caret"></span> <span class="sr-only">Toggle Dropdown</span> </button>
@@ -2778,7 +2778,7 @@
             </div>
           </div>
         </li>
-        <li class="col-md-1 col-md-offset-0 col-sm-2 col-sm-offset-1 col-xs-6 col-xs-offset-0 grid-icon"> <i class="fa fa-minus-square" data-unicode="f146"></i> <span class="fa-class"></span>
+        <li class="col-md-1 col-md-offset-0 col-sm-2 col-xs-6 col-xs-offset-0 grid-icon"> <i class="fa fa-minus-square" data-unicode="f146"></i> <span class="fa-class"></span>
           <div class="btn-container">
             <div class="btn-group">
               <button title="More options" type="button" class="btn btn-xs dropdown-toggle" data-toggle="dropdown"> Copy <span class="caret"></span> <span class="sr-only">Toggle Dropdown</span> </button>
@@ -2839,7 +2839,7 @@
         </li>
       </div>
 <div class="row row-alt">
-        <li class="col-md-1 col-md-offset-1 col-sm-2 col-sm-offset-1 col-xs-6 grid-icon"> <i class="fa fa-music" data-unicode="f001"></i> <span class="fa-class"></span>
+        <li class="col-md-1 col-sm-2 col-xs-6 grid-icon"> <i class="fa fa-music" data-unicode="f001"></i> <span class="fa-class"></span>
           <div class="btn-container">
             <div class="btn-group">
               <button title="More options" type="button" class="btn btn-xs dropdown-toggle" data-toggle="dropdown"> Copy <span class="caret"></span> <span class="sr-only">Toggle Dropdown</span> </button>
@@ -2899,7 +2899,7 @@
             </div>
           </div>
         </li>
-        <li class="col-md-1 col-md-offset-0 col-sm-2 col-sm-offset-1 col-xs-6 col-xs-offset-0 grid-icon"> <i class="fa fa-pencil" data-unicode="f040"></i> <span class="fa-class"></span>
+        <li class="col-md-1 col-md-offset-0 col-sm-2 col-xs-6 col-xs-offset-0 grid-icon"> <i class="fa fa-pencil" data-unicode="f040"></i> <span class="fa-class"></span>
           <div class="btn-container">
             <div class="btn-group">
               <button title="More options" type="button" class="btn btn-xs dropdown-toggle" data-toggle="dropdown"> Copy <span class="caret"></span> <span class="sr-only">Toggle Dropdown</span> </button>
@@ -2960,7 +2960,7 @@
         </li>
       </div>
 <div class="row">
-        <li class="col-md-1 col-md-offset-1 col-sm-2 col-sm-offset-1 col-xs-6 grid-icon"> <i class="fa fa-picture-o" data-unicode="f03e"></i> <span class="fa-class"></span>
+        <li class="col-md-1 col-sm-2 col-xs-6 grid-icon"> <i class="fa fa-picture-o" data-unicode="f03e"></i> <span class="fa-class"></span>
           <div class="btn-container">
             <div class="btn-group">
               <button title="More options" type="button" class="btn btn-xs dropdown-toggle" data-toggle="dropdown"> Copy <span class="caret"></span> <span class="sr-only">Toggle Dropdown</span> </button>
@@ -3020,7 +3020,7 @@
             </div>
           </div>
         </li>
-        <li class="col-md-1 col-md-offset-0 col-sm-2 col-sm-offset-1 col-xs-6 col-xs-offset-0 grid-icon"> <i class="fa fa-play-circle" data-unicode="f144"></i> <span class="fa-class"></span>
+        <li class="col-md-1 col-md-offset-0 col-sm-2 col-xs-6 col-xs-offset-0 grid-icon"> <i class="fa fa-play-circle" data-unicode="f144"></i> <span class="fa-class"></span>
           <div class="btn-container">
             <div class="btn-group">
               <button title="More options" type="button" class="btn btn-xs dropdown-toggle" data-toggle="dropdown"> Copy <span class="caret"></span> <span class="sr-only">Toggle Dropdown</span> </button>
@@ -3081,7 +3081,7 @@
         </li>
       </div>
 <div class="row row-alt">
-        <li class="col-md-1 col-md-offset-1 col-sm-2 col-sm-offset-1 col-xs-6 grid-icon"> <i class="fa fa-plus-square-o" data-unicode="f196"></i> <span class="fa-class"></span>
+        <li class="col-md-1 col-sm-2 col-xs-6 grid-icon"> <i class="fa fa-plus-square-o" data-unicode="f196"></i> <span class="fa-class"></span>
           <div class="btn-container">
             <div class="btn-group">
               <button title="More options" type="button" class="btn btn-xs dropdown-toggle" data-toggle="dropdown"> Copy <span class="caret"></span> <span class="sr-only">Toggle Dropdown</span> </button>
@@ -3141,7 +3141,7 @@
             </div>
           </div>
         </li>
-        <li class="col-md-1 col-md-offset-0 col-sm-2 col-sm-offset-1 col-xs-6 col-xs-offset-0 grid-icon"> <i class="fa fa-question" data-unicode="f128"></i> <span class="fa-class"></span>
+        <li class="col-md-1 col-md-offset-0 col-sm-2 col-xs-6 col-xs-offset-0 grid-icon"> <i class="fa fa-question" data-unicode="f128"></i> <span class="fa-class"></span>
           <div class="btn-container">
             <div class="btn-group">
               <button title="More options" type="button" class="btn btn-xs dropdown-toggle" data-toggle="dropdown"> Copy <span class="caret"></span> <span class="sr-only">Toggle Dropdown</span> </button>
@@ -3202,7 +3202,7 @@
         </li>
       </div>
 <div class="row">
-        <li class="col-md-1 col-md-offset-1 col-sm-2 col-sm-offset-1 col-xs-6 grid-icon"> <i class="fa fa-refresh" data-unicode="f021"></i> <span class="fa-class"></span>
+        <li class="col-md-1 col-sm-2 col-xs-6 grid-icon"> <i class="fa fa-refresh" data-unicode="f021"></i> <span class="fa-class"></span>
           <div class="btn-container">
             <div class="btn-group">
               <button title="More options" type="button" class="btn btn-xs dropdown-toggle" data-toggle="dropdown"> Copy <span class="caret"></span> <span class="sr-only">Toggle Dropdown</span> </button>
@@ -3262,7 +3262,7 @@
             </div>
           </div>
         </li>
-        <li class="col-md-1 col-md-offset-0 col-sm-2 col-sm-offset-1 col-xs-6 col-xs-offset-0 grid-icon"> <i class="fa fa-retweet" data-unicode="f079"></i> <span class="fa-class"></span>
+        <li class="col-md-1 col-md-offset-0 col-sm-2 col-xs-6 col-xs-offset-0 grid-icon"> <i class="fa fa-retweet" data-unicode="f079"></i> <span class="fa-class"></span>
           <div class="btn-container">
             <div class="btn-group">
               <button title="More options" type="button" class="btn btn-xs dropdown-toggle" data-toggle="dropdown"> Copy <span class="caret"></span> <span class="sr-only">Toggle Dropdown</span> </button>
@@ -3323,7 +3323,7 @@
         </li>
       </div>
 <div class="row row-alt">
-        <li class="col-md-1 col-md-offset-1 col-sm-2 col-sm-offset-1 col-xs-6 grid-icon"> <i class="fa fa-rub" data-unicode="f158"></i> <span class="fa-class"></span>
+        <li class="col-md-1 col-sm-2 col-xs-6 grid-icon"> <i class="fa fa-rub" data-unicode="f158"></i> <span class="fa-class"></span>
           <div class="btn-container">
             <div class="btn-group">
               <button title="More options" type="button" class="btn btn-xs dropdown-toggle" data-toggle="dropdown"> Copy <span class="caret"></span> <span class="sr-only">Toggle Dropdown</span> </button>
@@ -3383,7 +3383,7 @@
             </div>
           </div>
         </li>
-        <li class="col-md-1 col-md-offset-0 col-sm-2 col-sm-offset-1 col-xs-6 col-xs-offset-0 grid-icon"> <i class="fa fa-share" data-unicode="f064"></i> <span class="fa-class"></span>
+        <li class="col-md-1 col-md-offset-0 col-sm-2 col-xs-6 col-xs-offset-0 grid-icon"> <i class="fa fa-share" data-unicode="f064"></i> <span class="fa-class"></span>
           <div class="btn-container">
             <div class="btn-group">
               <button title="More options" type="button" class="btn btn-xs dropdown-toggle" data-toggle="dropdown"> Copy <span class="caret"></span> <span class="sr-only">Toggle Dropdown</span> </button>
@@ -3444,7 +3444,7 @@
         </li>
       </div>
 <div class="row">
-        <li class="col-md-1 col-md-offset-1 col-sm-2 col-sm-offset-1 col-xs-6 grid-icon"> <i class="fa fa-sign-in" data-unicode="f090"></i> <span class="fa-class"></span>
+        <li class="col-md-1 col-sm-2 col-xs-6 grid-icon"> <i class="fa fa-sign-in" data-unicode="f090"></i> <span class="fa-class"></span>
           <div class="btn-container">
             <div class="btn-group">
               <button title="More options" type="button" class="btn btn-xs dropdown-toggle" data-toggle="dropdown"> Copy <span class="caret"></span> <span class="sr-only">Toggle Dropdown</span> </button>
@@ -3504,7 +3504,7 @@
             </div>
           </div>
         </li>
-        <li class="col-md-1 col-md-offset-0 col-sm-2 col-sm-offset-1 col-xs-6 col-xs-offset-0 grid-icon"> <i class="fa fa-smile-o" data-unicode="f118"></i> <span class="fa-class"></span>
+        <li class="col-md-1 col-md-offset-0 col-sm-2 col-xs-6 col-xs-offset-0 grid-icon"> <i class="fa fa-smile-o" data-unicode="f118"></i> <span class="fa-class"></span>
           <div class="btn-container">
             <div class="btn-group">
               <button title="More options" type="button" class="btn btn-xs dropdown-toggle" data-toggle="dropdown"> Copy <span class="caret"></span> <span class="sr-only">Toggle Dropdown</span> </button>
@@ -3565,7 +3565,7 @@
         </li>
       </div>
 <div class="row row-alt">
-        <li class="col-md-1 col-md-offset-1 col-sm-2 col-sm-offset-1 col-xs-6 grid-icon"> <i class="fa fa-sort-amount-desc" data-unicode="f161"></i> <span class="fa-class"></span>
+        <li class="col-md-1 col-sm-2 col-xs-6 grid-icon"> <i class="fa fa-sort-amount-desc" data-unicode="f161"></i> <span class="fa-class"></span>
           <div class="btn-container">
             <div class="btn-group">
               <button title="More options" type="button" class="btn btn-xs dropdown-toggle" data-toggle="dropdown"> Copy <span class="caret"></span> <span class="sr-only">Toggle Dropdown</span> </button>
@@ -3625,7 +3625,7 @@
             </div>
           </div>
         </li>
-        <li class="col-md-1 col-md-offset-0 col-sm-2 col-sm-offset-1 col-xs-6 col-xs-offset-0 grid-icon"> <i class="fa fa-spinner" data-unicode="f110"></i> <span class="fa-class"></span>
+        <li class="col-md-1 col-md-offset-0 col-sm-2 col-xs-6 col-xs-offset-0 grid-icon"> <i class="fa fa-spinner" data-unicode="f110"></i> <span class="fa-class"></span>
           <div class="btn-container">
             <div class="btn-group">
               <button title="More options" type="button" class="btn btn-xs dropdown-toggle" data-toggle="dropdown"> Copy <span class="caret"></span> <span class="sr-only">Toggle Dropdown</span> </button>
@@ -3686,7 +3686,7 @@
         </li>
       </div>
 <div class="row">
-        <li class="col-md-1 col-md-offset-1 col-sm-2 col-sm-offset-1 col-xs-6 grid-icon"> <i class="fa fa-star" data-unicode="f005"></i> <span class="fa-class"></span>
+        <li class="col-md-1 col-sm-2 col-xs-6 grid-icon"> <i class="fa fa-star" data-unicode="f005"></i> <span class="fa-class"></span>
           <div class="btn-container">
             <div class="btn-group">
               <button title="More options" type="button" class="btn btn-xs dropdown-toggle" data-toggle="dropdown"> Copy <span class="caret"></span> <span class="sr-only">Toggle Dropdown</span> </button>
@@ -3746,7 +3746,7 @@
             </div>
           </div>
         </li>
-        <li class="col-md-1 col-md-offset-0 col-sm-2 col-sm-offset-1 col-xs-6 col-xs-offset-0 grid-icon"> <i class="fa fa-step-forward" data-unicode="f051"></i> <span class="fa-class"></span>
+        <li class="col-md-1 col-md-offset-0 col-sm-2 col-xs-6 col-xs-offset-0 grid-icon"> <i class="fa fa-step-forward" data-unicode="f051"></i> <span class="fa-class"></span>
           <div class="btn-container">
             <div class="btn-group">
               <button title="More options" type="button" class="btn btn-xs dropdown-toggle" data-toggle="dropdown"> Copy <span class="caret"></span> <span class="sr-only">Toggle Dropdown</span> </button>
@@ -3807,7 +3807,7 @@
         </li>
       </div>
 <div class="row row-alt">
-        <li class="col-md-1 col-md-offset-1 col-sm-2 col-sm-offset-1 col-xs-6 grid-icon"> <i class="fa fa-suitcase" data-unicode="f0f2"></i> <span class="fa-class"></span>
+        <li class="col-md-1 col-sm-2 col-xs-6 grid-icon"> <i class="fa fa-suitcase" data-unicode="f0f2"></i> <span class="fa-class"></span>
           <div class="btn-container">
             <div class="btn-group">
               <button title="More options" type="button" class="btn btn-xs dropdown-toggle" data-toggle="dropdown"> Copy <span class="caret"></span> <span class="sr-only">Toggle Dropdown</span> </button>
@@ -3867,7 +3867,7 @@
             </div>
           </div>
         </li>
-        <li class="col-md-1 col-md-offset-0 col-sm-2 col-sm-offset-1 col-xs-6 col-xs-offset-0 grid-icon"> <i class="fa fa-tachometer" data-unicode="f0e4"></i> <span class="fa-class"></span>
+        <li class="col-md-1 col-md-offset-0 col-sm-2 col-xs-6 col-xs-offset-0 grid-icon"> <i class="fa fa-tachometer" data-unicode="f0e4"></i> <span class="fa-class"></span>
           <div class="btn-container">
             <div class="btn-group">
               <button title="More options" type="button" class="btn btn-xs dropdown-toggle" data-toggle="dropdown"> Copy <span class="caret"></span> <span class="sr-only">Toggle Dropdown</span> </button>
@@ -3928,7 +3928,7 @@
         </li>
       </div>
 <div class="row">
-        <li class="col-md-1 col-md-offset-1 col-sm-2 col-sm-offset-1 col-xs-6 grid-icon"> <i class="fa fa-text-height" data-unicode="f034"></i> <span class="fa-class"></span>
+        <li class="col-md-1 col-sm-2 col-xs-6 grid-icon"> <i class="fa fa-text-height" data-unicode="f034"></i> <span class="fa-class"></span>
           <div class="btn-container">
             <div class="btn-group">
               <button title="More options" type="button" class="btn btn-xs dropdown-toggle" data-toggle="dropdown"> Copy <span class="caret"></span> <span class="sr-only">Toggle Dropdown</span> </button>
@@ -3988,7 +3988,7 @@
             </div>
           </div>
         </li>
-        <li class="col-md-1 col-md-offset-0 col-sm-2 col-sm-offset-1 col-xs-6 col-xs-offset-0 grid-icon"> <i class="fa fa-thumb-tack" data-unicode="f08d"></i> <span class="fa-class"></span>
+        <li class="col-md-1 col-md-offset-0 col-sm-2 col-xs-6 col-xs-offset-0 grid-icon"> <i class="fa fa-thumb-tack" data-unicode="f08d"></i> <span class="fa-class"></span>
           <div class="btn-container">
             <div class="btn-group">
               <button title="More options" type="button" class="btn btn-xs dropdown-toggle" data-toggle="dropdown"> Copy <span class="caret"></span> <span class="sr-only">Toggle Dropdown</span> </button>
@@ -4049,7 +4049,7 @@
         </li>
       </div>
 <div class="row row-alt">
-        <li class="col-md-1 col-md-offset-1 col-sm-2 col-sm-offset-1 col-xs-6 grid-icon"> <i class="fa fa-ticket" data-unicode="f145"></i> <span class="fa-class"></span>
+        <li class="col-md-1 col-sm-2 col-xs-6 grid-icon"> <i class="fa fa-ticket" data-unicode="f145"></i> <span class="fa-class"></span>
           <div class="btn-container">
             <div class="btn-group">
               <button title="More options" type="button" class="btn btn-xs dropdown-toggle" data-toggle="dropdown"> Copy <span class="caret"></span> <span class="sr-only">Toggle Dropdown</span> </button>
@@ -4109,7 +4109,7 @@
             </div>
           </div>
         </li>
-        <li class="col-md-1 col-md-offset-0 col-sm-2 col-sm-offset-1 col-xs-6 col-xs-offset-0 grid-icon"> <i class="fa fa-trash-o" data-unicode="f014"></i> <span class="fa-class"></span>
+        <li class="col-md-1 col-md-offset-0 col-sm-2 col-xs-6 col-xs-offset-0 grid-icon"> <i class="fa fa-trash-o" data-unicode="f014"></i> <span class="fa-class"></span>
           <div class="btn-container">
             <div class="btn-group">
               <button title="More options" type="button" class="btn btn-xs dropdown-toggle" data-toggle="dropdown"> Copy <span class="caret"></span> <span class="sr-only">Toggle Dropdown</span> </button>
@@ -4170,7 +4170,7 @@
         </li>
       </div>
 <div class="row">
-        <li class="col-md-1 col-md-offset-1 col-sm-2 col-sm-offset-1 col-xs-6 grid-icon"> <i class="fa fa-tumblr" data-unicode="f173"></i> <span class="fa-class"></span>
+        <li class="col-md-1 col-sm-2 col-xs-6 grid-icon"> <i class="fa fa-tumblr" data-unicode="f173"></i> <span class="fa-class"></span>
           <div class="btn-container">
             <div class="btn-group">
               <button title="More options" type="button" class="btn btn-xs dropdown-toggle" data-toggle="dropdown"> Copy <span class="caret"></span> <span class="sr-only">Toggle Dropdown</span> </button>
@@ -4230,7 +4230,7 @@
             </div>
           </div>
         </li>
-        <li class="col-md-1 col-md-offset-0 col-sm-2 col-sm-offset-1 col-xs-6 col-xs-offset-0 grid-icon"> <i class="fa fa-underline" data-unicode="f0cd"></i> <span class="fa-class"></span>
+        <li class="col-md-1 col-md-offset-0 col-sm-2 col-xs-6 col-xs-offset-0 grid-icon"> <i class="fa fa-underline" data-unicode="f0cd"></i> <span class="fa-class"></span>
           <div class="btn-container">
             <div class="btn-group">
               <button title="More options" type="button" class="btn btn-xs dropdown-toggle" data-toggle="dropdown"> Copy <span class="caret"></span> <span class="sr-only">Toggle Dropdown</span> </button>
@@ -4291,7 +4291,7 @@
         </li>
       </div>
 <div class="row row-alt">
-        <li class="col-md-1 col-md-offset-1 col-sm-2 col-sm-offset-1 col-xs-6 grid-icon"> <i class="fa fa-usd" data-unicode="f155"></i> <span class="fa-class"></span>
+        <li class="col-md-1 col-sm-2 col-xs-6 grid-icon"> <i class="fa fa-usd" data-unicode="f155"></i> <span class="fa-class"></span>
           <div class="btn-container">
             <div class="btn-group">
               <button title="More options" type="button" class="btn btn-xs dropdown-toggle" data-toggle="dropdown"> Copy <span class="caret"></span> <span class="sr-only">Toggle Dropdown</span> </button>
@@ -4351,7 +4351,7 @@
             </div>
           </div>
         </li>
-        <li class="col-md-1 col-md-offset-0 col-sm-2 col-sm-offset-1 col-xs-6 col-xs-offset-0 grid-icon"> <i class="fa fa-vimeo-square" data-unicode="f194"></i> <span class="fa-class"></span>
+        <li class="col-md-1 col-md-offset-0 col-sm-2 col-xs-6 col-xs-offset-0 grid-icon"> <i class="fa fa-vimeo-square" data-unicode="f194"></i> <span class="fa-class"></span>
           <div class="btn-container">
             <div class="btn-group">
               <button title="More options" type="button" class="btn btn-xs dropdown-toggle" data-toggle="dropdown"> Copy <span class="caret"></span> <span class="sr-only">Toggle Dropdown</span> </button>
@@ -4412,7 +4412,7 @@
         </li>
       </div>
 <div class="row">
-        <li class="col-md-1 col-md-offset-1 col-sm-2 col-sm-offset-1 col-xs-6 grid-icon"> <i class="fa fa-weibo" data-unicode="f18a"></i> <span class="fa-class"></span>
+        <li class="col-md-1 col-sm-2 col-xs-6 grid-icon"> <i class="fa fa-weibo" data-unicode="f18a"></i> <span class="fa-class"></span>
           <div class="btn-container">
             <div class="btn-group">
               <button title="More options" type="button" class="btn btn-xs dropdown-toggle" data-toggle="dropdown"> Copy <span class="caret"></span> <span class="sr-only">Toggle Dropdown</span> </button>
@@ -4472,7 +4472,7 @@
             </div>
           </div>
         </li>
-        <li class="col-md-1 col-md-offset-0 col-sm-2 col-sm-offset-1 col-xs-6 col-xs-offset-0 grid-icon"> <i class="fa fa-xing-square" data-unicode="f169"></i> <span class="fa-class"></span>
+        <li class="col-md-1 col-md-offset-0 col-sm-2 col-xs-6 col-xs-offset-0 grid-icon"> <i class="fa fa-xing-square" data-unicode="f169"></i> <span class="fa-class"></span>
           <div class="btn-container">
             <div class="btn-group">
               <button title="More options" type="button" class="btn btn-xs dropdown-toggle" data-toggle="dropdown"> Copy <span class="caret"></span> <span class="sr-only">Toggle Dropdown</span> </button>

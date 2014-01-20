@@ -36,16 +36,23 @@ $(document).ready(function (){
     	});
 	});
 	
-	/* initially hide list items */
-	
-	$('#glyph-search').on("keyup click input", function () {
-   var valThis = $(this).val().toLowerCase();
-    $('.font-awesome-icons>li .fa-class').each(function(){
-     var text = $(this).text().toLowerCase();
-        (text.indexOf(valThis) == 0) ? $(this).show() : $(this).hide();            
-   });
-});
+/* Search: https://github.com/DeuxHuitHuit/quicksearch */
+// The search function needs to be timedOut so the classnames can be loaded in first
 
+setTimeout(function() {
+	$('input#glyph-search').quicksearch('li.grid-icon', {
+		 'onBefore': function () {
+        $('ul.font-awesome-icons div.row').hide();
+		$('li.grid-icon').addClass('temp').appendTo('#first-row');
+    },
+		'show': function () {
+			$(this).show();
+			$(this).parent('div.row').show();
+		},
+		'onAfter': function () {	
+    }
+		});
+}, 100);
 
 	
 	//For each of the icons in the grid 
@@ -84,7 +91,6 @@ client.on( "load", function(client, args) {
 		  //Copy the HTML Tag into the clipboard
 		  //Because of the unicode symbols rendered as contents in the <i> tag, a local clone must be taken and emptied to parse the correct clipboard value
 		  glyphClipboard = glyphStore.clone().empty().removeAttr("data-unicode")[0].outerHTML;
-		  console.log($(glyphClipboard));
 		  $(this).html($("<code/>").text(glyphClipboard));
 	  };
 	  if ($(this).hasClass("copy-unicode-html")) {
@@ -147,4 +153,5 @@ client.on( "load", function(client, args) {
     }, 600)	
   });
 });
+
 

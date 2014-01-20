@@ -59,6 +59,7 @@
 		
 		.home {
 			margin: 81px auto 100px auto;
+			min-height: 600px;
 		}
 		.row-alt {
 			background-color:rgba(255,255,255,0.1);
@@ -124,7 +125,8 @@
 		  font-weight:700;
 		}
 		.row {
-			padding: 25px 0;
+			padding: 25px;
+			margin: 0;
 		}
 		.font-awesome-icons > .row li:hover {
 		  color: #fff;
@@ -133,7 +135,7 @@
 		  color: #fff;
 		}
 		
-		.font-awesome-icons .glyphicon, .font-awesome-icons .row li > .fa {
+		.font-awesome-icons .glyphicon, .font-awesome-icons li.grid-icon > .fa {
 			font-size: 42px;
 			display: block;
 			text-align: center;
@@ -145,7 +147,7 @@
 			font-size: 16px;
 		}
 		
-		.font-awesome-icons .glyphicon, .font-awesome-icons .row li > .fa:before {
+		.font-awesome-icons .glyphicon, .font-awesome-icons li.grid-icon > .fa:before {
 			content: ""!important;
 		}
 
@@ -299,7 +301,6 @@
 		  .fa-class {
 			  font-weight:400;
 		  }
-
 		  
 		  .nav-contain {
 				width: 100%;
@@ -336,7 +337,7 @@
 		.example ul.nav {
 			margin-bottom: 10px;
 		}
-		  		  
+		
 		@media screen and (min-width: 768px) { 
 			.container-wide {
 	          width: 100%;
@@ -366,7 +367,19 @@
 				position:relative;
 				top: -1px;
 			}
+			.font-awesome-icons li {
+				width: 19%;	
+			}
+
 		}
+		
+		@media screen and (min-width: 992px) {
+			.font-awesome-icons li {
+				width: 9.5%;	
+			}
+		}
+		
+		
 		@media screen and (min-width: 992px) and (max-width: 1200px) {  
 			
 			.font-awesome-icons li {
