@@ -58,7 +58,7 @@
 		
 		
 		.home {
-			margin: 81px auto 100px auto;
+			margin: 81px auto 5px auto;
 			min-height: 600px;
 		}
 		.row-alt {
@@ -127,6 +127,9 @@
 		.row {
 			padding: 25px;
 			margin: 0;
+		}
+		#last-row {
+			min-height: 360px;
 		}
 		.font-awesome-icons > .row li:hover {
 		  color: #fff;

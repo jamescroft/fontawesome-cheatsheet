@@ -45,17 +45,13 @@
 		.nav-contain {
 			max-width: 1030px;
 			padding: 0 0 0 20px;
-		}
-		
+		}		
 		.home {
 			margin: 81px auto 100px auto;
 		}
 		.row-alt {
 			background-color:rgba(255,255,255,0.1);
 		}
-		
-		
-		
 		h1, h2, h3, h4, h5, h6 {
 			font-family: 'Source Sans Pro', sans-serif;
 		}

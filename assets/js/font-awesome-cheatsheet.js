@@ -117,6 +117,7 @@ client.on( "load", function(client, args) {
 		  $(this).html($("<code/>").text(glyphClipboard));
 	  };
 	  
+	  
 	});
 	
 	client.on( 'mouseout', function (client, args) {
