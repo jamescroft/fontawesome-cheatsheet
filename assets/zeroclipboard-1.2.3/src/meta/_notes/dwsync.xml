@@ -4,4 +4,8 @@
 <file name="composer.json.tmpl" server="ftp.gomake.com.au//githubio/" local="130288731060000000" remote="130331325000000000" Dst="0" />
 <file name="LICENSE.tmpl" server="ftp.gomake.com.au//githubio/" local="130288731060000000" remote="130331325000000000" Dst="0" />
 <file name="source-banner.tmpl" server="ftp.gomake.com.au//githubio/" local="130288731060000000" remote="130331325000000000" Dst="0" />
+<file name="LICENSE.tmpl" server="ftp.gomake.com.au/githubio/" local="130347406535347587" remote="130331325000000000" Dst="0" />
+<file name="bower.json.tmpl" server="ftp.gomake.com.au/githubio/" local="130347406535357588" remote="130331325000000000" Dst="0" />
+<file name="composer.json.tmpl" server="ftp.gomake.com.au/githubio/" local="130347406538047857" remote="130331325000000000" Dst="0" />
+<file name="source-banner.tmpl" server="ftp.gomake.com.au/githubio/" local="130347406540728125" remote="130331325000000000" Dst="0" />
 </dwsync>

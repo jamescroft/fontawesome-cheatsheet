@@ -18,7 +18,7 @@ $(document).ready(function (){
 		var scrollPos = $('#about').offset().top - (fixedNavHeight - 1);
 		$('html, body').animate({
 			scrollTop: scrollPos
-		}, 500, function () {
+		}, 1000, "easeInOutExpo", function () {
 			if ($("div.navbar-collapse").hasClass("in")) {
 				$(".navbar-toggle").click();
 			};
@@ -28,8 +28,8 @@ $(document).ready(function (){
 	$("#scroll-to-home").click(function() {
 		var scrollPos = $('#home').offset().top - (fixedNavHeight - 1);
 		$('html, body').animate({
-			scrollTop: scrollPos
-		}, 500, function () {
+			scrollTop: scrollPos,
+		}, 1000, "easeInOutExpo", function () {
 			if ($("div.navbar-collapse").hasClass("in")) {
 				$(".navbar-toggle").click();
 			};
@@ -54,6 +54,17 @@ setTimeout(function() {
 		});
 }, 100);
 
+//Supress Enter key
+
+$('#glyph-form').bind("keyup keypress", function(e) {
+  var code = e.keyCode || e.which; 
+  if (code  == 13) {               
+    e.preventDefault();
+    return false;
+  }
+});
+
+// End Search
 	
 	//For each of the icons in the grid 
  
@@ -119,19 +130,13 @@ client.on( "load", function(client, args) {
 	  if ($(this).hasClass("copy-unicode-hex")) {
 		  $(this).text("CSS Rule");
 	  };
-
-
-	  
-	  
 	});
-
 	client.on( 'noflash', function ( client, args ) {
-		alert("no flash!");
+		alert("No flash!");
 	});
 	client.on( 'wrongflash', function ( client, args ) {
 	  alert("Your flash is too old " + args.flashVersion);
 	} );
-	
 	
 	client.on( 'dataRequested', function (client, args) {
 	  //Inject the glyph HTML code into the clipboard
@@ -149,7 +154,6 @@ client.on( "load", function(client, args) {
     setTimeout(function() {
         $(that).removeClass("btn-success", 100, "linear"), 
 		$(that).html($("<code/>").text(btnString.text()));
-
     }, 600)	
   });
 });

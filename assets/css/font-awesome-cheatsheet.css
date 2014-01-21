@@ -368,14 +368,14 @@
 				top: -1px;
 			}
 			.font-awesome-icons li {
-				width: 19%;	
+				width: 20%;	
 			}
 
 		}
 		
 		@media screen and (min-width: 992px) {
 			.font-awesome-icons li {
-				width: 9.5%;	
+				width: 10%;	
 			}
 		}
 		
