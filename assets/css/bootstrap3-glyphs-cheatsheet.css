@@ -1,11 +1,11 @@
-/* 
-   Bootstrap Cheat Sheets
+@charset "utf-8";
+/* Bootstrap Cheat Sheets
    
-   Bootstrap 3 Glyphicons
+   Bootstrap 3 Glyphs
    
    By: James Croft (@jamescroft on Twitter)
    
-   Contribute to or fork this project.  
+   Contribute or fork this project.  
  */
 
 		html {
@@ -17,54 +17,15 @@
 			overflow-x:hidden;
 			font-family: 'Source Sans Pro', sans-serif;
 			font-size: 16px;
-			-webkit-text-stroke: 1px rgba(255,255,255,0.1);
 		}
-		.container-wide {
-	          width: 100%;
-			padding: 10px 0;  
-		  }
-		.navbar {
-			font-family: Varela Round, arial, sans-serif;
-		}
-		.navbar-brand {
-			font-size: 11px;
-			line-height: 1.2em;
-			text-transform: uppercase;
-			text-decoration: none;
-			letter-spacing: 2px;
-			font-weight: 700;
-			font-style: normal;
-			padding-top: 20px;
-			padding-left: 10px;
-		}
-		.navbar-form {
-			margin-right: 5px;
-			margin-top: 13px;
-		}
-		.navbar ul li a {
-			font-family: Varela Round, arial, sans-serif;
-			font-size: 12px;
-			line-height: 2em;
-			text-transform: uppercase;
-			letter-spacing: 2px;
-			font-weight: normal;
-			font-style: normal;
-			padding-top: 20px;
-		}
-		.nav-contain {
-			max-width: 1030px;
-			padding: 0 0 0 20px;
+		.main {
+			margin: 61px auto 100px auto;
 		}
 		
-		
-		.home {
-			margin: 81px auto 5px auto;
-			min-height: 600px;
+		.anchor {
+			padding-top: 80px!important;
+			margin-top: -60px!important;
 		}
-		.row-alt {
-			background-color:rgba(255,255,255,0.1);
-		}
-
 		
 		h1, h2, h3, h4, h5, h6 {
 			font-family: 'Source Sans Pro', sans-serif;
@@ -73,24 +34,15 @@
 			font-family: 'Source Sans Pro', sans-serif;
 			text-transform:uppercase;
 			font-weight: bold;
-			font-size:42px;		
-			z-index: 1;
+			font-size:42px;	
+			position: relative;
+			top:-15px;	
 		}
-		
-		.subtitle-container {
-				position:absolute;
-				left: 50%;
-				top: 62px;
-			}
-		
 		h2.subtitle {
 			font-family: 'Source Sans Pro', sans-serif;
 			text-transform:uppercase;
-			font-size:14px;
-			z-index:2;
-			position: relative;
-			left: -50%;
-
+			font-size:16px;
+			z-index:999;
 		}
 		h2.subtitle span.glyphicon-align-justify {
 			font-size:8px;
@@ -108,118 +60,73 @@
 		  padding-left: 0;
 		  padding-bottom: 1px;
 		  margin-bottom: 20px;
-		  list-style: none;	 
-		  margin: 0 auto; 
-		  max-width: 1170px;
+		  list-style: none;
+		  overflow: hidden;		  
 		}
 			
-		.glyphicons .row > li {		  
-		  padding: 20px 0 0 0;
-		  text-align: center;
-		}
-	    .glyphicon-class {
-		  font-size: 14px;
+		.glyphicons li {
+		  height: 145px;
+		  padding: 0px;
+		  font-size: 12px;
 		  font-family:Consolas, "Andale Mono", "Lucida Console", "Lucida Sans Typewriter", Monaco, "Courier New", monospace;
 		  line-height: 1.4;
 		  text-align: center;
-		  color: #fff;
-		  font-weight:700;
+		  color: #ccbede;
+		  margin-bottom: 20px;
 		}
 		.row {
-			padding: 25px;
-			margin: 0;
+			margin-top:15px;
 		}
-		#last-row {
-			min-height: 360px;
-		}
-		.glyphicons > .row li:hover {
+		.glyphicons li:hover {
+		  background-color: #9269d6;
 		  color: #fff;
 		}
 		.hover {
+		  background-color: #9269d6;
 		  color: #fff;
 		}
-			
-		.glyphicons .glyphicon, .glyphicons li.grid-icon > .fa {
-			font-size: 32px;
+		
+		.glyphicons .glyphicon {
+			font-size: 36px;
 			display: block;
 			text-align: center;
 			margin: 10px auto 20px auto;
 			color: #fff;
 		}
-		.btn-container .glyphicon {
-			color:#000;
-			font-size: 16px;
-		}
-		
-		.glyphicons .glyphicon, .glyphicons li.grid-icon > .glyphicon:before {
-			content: ""!important;
-		}
-
 		span.glyphicon-class {
 			display: inline-block;			
+			background-color:rgba(255,255,255,0.1);
 			width: 100%;
 			padding: 10px 15px 0;
-			height: 70px;
 		}
 		.btn-container {
 				padding: 10px 0 1px 0;
-				text-align:center;
+				background-color:rgba(255,255,255,0.1);
 			}
 		.btn-container .btn {
+			display:block;
 			text-align:center;
+			margin: 10px auto 20px auto;
 			font-size:12px;
+			width: 60px;
 			font-family:Consolas, "Andale Mono", "Lucida Console", "Lucida Sans Typewriter", Monaco, "Courier New", monospace;
 		  } 
-		  .btn-container .btn-group .dropdown-menu {
-			  min-width:220px;
-		  }
-		  .btn-container .btn-group .dropdown-menu li {
-			  text-align:left;
-			  margin: 5px 0;
-		  }
-		  .btn-container .btn-group .dropdown-menu li a.copy-html:before {
-			  content: "\f121 \00a0";
-			  font-family:FontAwesome;
-		  }		  
-		  .btn-container .btn-group .dropdown-menu li a.copy-unicode-html:before {
-		    content: "\f05b \00a0";
-			font-family:FontAwesome;  
-		  }
-		  .btn-container .btn-group .dropdown-menu li a.copy-unicode-hex:before {
-		    content: "\f084 \00a0";
-			font-family:FontAwesome;  
-		  }
-		  .btn-container .btn-group .dropdown-menu li a {
-			  display:inline-block;
-			  width: 210px;
-			  overflow:hidden;
-			  white-space:nowrap;
-			  text-overflow:ellipsis;
-		  }
-
-
-		  
-		  
-		  
 		  button.zeroclipboard-is-hover {
-		  	  color: #1fa67a;
+			  background-color: #9269d6;
+		  	  color: #fff;
 		  }
 		   
 		  .about {
-			padding: 30px 0;
+			padding: 50px 0;
 			margin-top: 0;
 			margin-bottom: 0;
 			border-top: 1px solid #ccbede;
 			background-color: #ccbede;
 			font-size: 19px;
 			color: #553d7c;
-			-webkit-text-stroke: 1px rgba(21,115,85,0.1);
 			font-family: 'Source Sans Pro', sans-serif;
 		  }
 		  
-		  .alert {
-			  margin-top: 20px;
-		  }
 		  
 		  code, pre {
 			padding: 4px 8px;
@@ -246,14 +153,6 @@
 		  
 		  .code-green {
 			  color: #006648;
-		  }
-		  
-		  .margin-bottom-sm {
-			  margin-bottom: 10px;
-		  }
-		  .example .input-group-addon .fa-lock {
-			  width: 18px;
-			  font-size: 22px;
 		  }
 		  
 		  .example {
@@ -285,36 +184,9 @@
 			  border-radius: 0;
 			  border-width: 0 0 1px;
 			}
-			
-		footer.footer {
-			padding: 30px 10px;
-		}
-		footer.footer a, footer.footer a:hover {
-			color: #fff;
-			font-weight:600;
-		}
-		
-		@media (max-width: 576px) {
-			.row {
-				margin: 0;
-			}
-		}
 
 		/* Make the examples and snippets not full-width */
 		@media (min-width: 768px) {
-		  .glyphicon-class {
-			  font-weight:400;
-		  }
-		  
-		  .nav-contain {
-				width: 100%;
-		  }
-		  
-		 .navbar-brand {
-			font-size: 20px;
-			font-weight: 400;
-			letter-spacing: 3px;
-		}
 		  .example {
 			margin-left: 0;
 			margin-right: 0;
@@ -341,28 +213,21 @@
 		.example ul.nav {
 			margin-bottom: 10px;
 		}
-		
+		  
+		  
 		@media screen and (min-width: 768px) { 
-			.container-wide {
-	          width: 100%;
-			padding: 10px 0;  
-		  }
-			.nav-contain {
-				width: 100%;
-			}
-			.navbar-nav {
-				float: right;
+			.glyphicons li {
+		  		height: 182px;
 			}
 			span.glyphicon-class {
-				height: 69px;
+				height: 53px;
 				padding: 5px 0 0 0;
 			}
 			h1.title {
 				font-size:82px;
 				line-height: 62px;
-				margin: 22px auto 10px auto;
+				margin: 0 auto 10px auto;
 			}
-			
 			h2.subtitle {
 				font-size:24px;
 			}
@@ -371,36 +236,9 @@
 				position:relative;
 				top: -1px;
 			}
-			.glyphicons li {
-				width: 20%;	
-			}
-
 		}
-		
-		@media screen and (min-width: 992px) {
-			.glyphicons li {
-				width: 10%;	
-			}
-		}
-		
-		
 		@media screen and (min-width: 992px) and (max-width: 1200px) {  
-			
 			.glyphicons li {
 				font-size: 11px;
 			}
-			code, pre {
-				  font-size: 70%;
-			  }
-		}
-		@media screen and (min-width: 1200px) {  
-			.container-wide {
-	          width: 100%;
-			padding: 10px 0;  
-		  }
-
-		
-		code, pre {
-			  font-size: 80%;
-		  }
 		}

@@ -108,8 +108,9 @@
 		  padding-left: 0;
 		  padding-bottom: 1px;
 		  margin-bottom: 20px;
-		  list-style: none;
-		  overflow: hidden;		  
+		  list-style: none;	
+		  margin: 0 auto;
+		  max-width: 1170px;
 		}
 			
 		.font-awesome-icons .row > li {		  

@@ -9,11 +9,11 @@
 
 // Animated scroll to page anchors via nav
 
+
 $(document).ready(function (){
 	var fixedNavHeight = $(".navbar").height();
+	
 	$('body').scrollspy({ target: '.navbar', offset: (fixedNavHeight - 1)    });
-	
-	
 	$("#scroll-to-about").click(function() {
 		var scrollPos = $('#about').offset().top - (fixedNavHeight - 1);
 		$('html, body').animate({
@@ -35,6 +35,23 @@ $(document).ready(function (){
 			};
     	});
 	});
+
+//Create rows: 10 icons per row
+
+function createGlyphRows() {
+	var glyphCount = $("li.grid-icon").length;	
+	var rowSize = 10;
+	for (var c = 0; c<=glyphCount;c+=20) {
+		$("li.grid-icon").slice(c, c+rowSize).wrapAll("<div class='row'><div class='container'></div></div>");
+	};
+	for (var c = 10; c<=glyphCount;c+=20) {
+		$("li.grid-icon").slice(c, c+rowSize).wrapAll("<div class='row row-alt'><div class='container'></div></div>");
+	};
+	$("ul.glyphicons .row:first").attr("id", "first-row");
+	$("ul.glyphicons").css("max-width", "100%");
+};
+
+createGlyphRows();
 	
 /* Search: https://github.com/DeuxHuitHuit/quicksearch */
 // The search function needs to be timedOut so the classnames can be loaded in first
@@ -43,7 +60,7 @@ setTimeout(function() {
 	$('input#glyph-search').quicksearch('li.grid-icon', {
 		 'onBefore': function () {
         $('ul.glyphicons div.row').hide();
-		$('li.grid-icon').addClass('temp').appendTo('#first-row');
+		$('li.grid-icon').appendTo('#first-row');
     },
 		'show': function () {
 			$(this).show();
@@ -80,6 +97,7 @@ $('#glyph-form').bind("keyup keypress", function(e) {
 	});
  		
 });
+
 
 // Using ZeroClipboard to copy glyph codes to clipboard.
 

@@ -35,6 +35,23 @@ $(document).ready(function (){
 			};
     	});
 	});
+
+//Create rows: 10 icons per row
+
+function createGlyphRows() {
+	var glyphCount = $("li.grid-icon").length;	
+	var rowSize = 10;
+	for (var c = 0; c<=glyphCount;c+=20) {
+		$("li.grid-icon").slice(c, c+rowSize).wrapAll("<div class='row'><div class='container'></div></div>");
+	};
+	for (var c = 10; c<=glyphCount;c+=20) {
+		$("li.grid-icon").slice(c, c+rowSize).wrapAll("<div class='row row-alt'><div class='container'></div></div>");
+	};
+	$("ul.font-awesome-icons .row:first").attr("id", "first-row");
+	$("ul.font-awesome-icons").css("max-width", "100%");
+};
+
+createGlyphRows();
 	
 /* Search: https://github.com/DeuxHuitHuit/quicksearch */
 // The search function needs to be timedOut so the classnames can be loaded in first
