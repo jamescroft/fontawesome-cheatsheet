@@ -21,7 +21,7 @@
 		}
 		.container-wide {
 	          width: 100%;
-			padding: 10px 0;  
+			padding: 10px 0 0 0;  
 		  }
 		.navbar {
 			font-family: Varela Round, arial, sans-serif;
@@ -58,7 +58,7 @@
 		
 		
 		.home {
-			margin: 81px auto 5px auto;
+			margin: 81px auto 0 auto;
 			min-height: 600px;
 		}
 		.row-alt {
@@ -345,7 +345,7 @@
 		@media screen and (min-width: 768px) { 
 			.container-wide {
 	          width: 100%;
-			padding: 10px 0;  
+			padding: 10px 0 0 0;  
 		  }
 			.nav-contain {
 				width: 100%;
@@ -396,7 +396,7 @@
 		@media screen and (min-width: 1200px) {  
 			.container-wide {
 	          width: 100%;
-			padding: 10px 0;  
+			padding: 10px 0 0 0;  
 		  }
 
 		
