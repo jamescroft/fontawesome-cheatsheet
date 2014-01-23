@@ -4512,13 +4512,15 @@
       <p>Yeah! To use this cheat sheet, simply find the icon you want to use and click the copy button. This will give you the complete HTML Tag, Unicode HTML Entity or CSS rule for that icon to your clipboard, ready to paste into your web development tool of choice.</p>
       <h2>What is Font Awesome exactly?</h2>
       <p>Font Awesome is a font that's made up of symbols, icons, or pictograms (whatever you prefer to call them) that you can use in a webpage, just like a font.</p>
-      <p>Don't know how to set up Font Awesome? Go check out the offical <a href="http://fontawesome.io/get-started/" target="_blank">getting started guide</a>.</p>
+      <p>Don't know how to set up Font Awesome? Go check out the offical <a href="http://fontawesome.io/get-started/" target="_blank">getting started guide</a>, or simply just include this line in your <code>&lt;head&gt;</code> tag:</p>
+      <div class="form-group"><label for="CDN Link">Add:</label><input type="text" value="&lt;link href=&quot;//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.min.css&quot; rel=&quot;stylesheet&quot;&gt;" class="form-control"></div>
+       <p class="small text-muted">(Font Awesome hosting very kindly provided by <a href="http://www.bootstrapcdn.com/#fontawesome_tab" target="_blank">bootstrapcdn.com</a>)</p>
       <div class="alert alert-info">
         <p><strong>Counterpoint</strong></p>
         <p>Icon fonts aren't the only way to implement icons on the web. If you're looking for a explanation of using icon fonts vs. SVG files (another possible method), I'd suggest reading this excellent post by Ian Feather: <a href="http://ianfeather.co.uk/ten-reasons-we-switched-from-an-icon-font-to-svg/"><em>Ten reasons we switched from an icon font to SVG</em>.</a></p>
       </div>
       <h2>How does it work?</h2>
-      <p>So, how do I add an icon to my webpage? Well, Font Awesome's icons can work in one of three ways.</p>      
+      <p>So, how do I add an icon to my webpage? Well, Font Awesome's icons can be used on the web in one of three ways.</p>      
 <div class="panel-group" id="accordion">
   <div class="panel panel-default">
     <div class="panel-heading">
@@ -4530,6 +4532,7 @@
     </div>
     <div id="collapseOne" class="panel-collapse collapse in">
       <div class="panel-body">
+      <p>You can use a simple <code>&lt;i&gt;</code> tag to place an icon in your page, like this:</p>
       <p><code>&lt;i class=<span class="code-blue">&#34;<strong>fa</strong> <strong>fa-home</strong>&#34;&gt;</span>&lt;/i&gt;</code> = <code><i class="fa fa-home"></i></code></p>
       <ul>
         <li>The first class—<strong><em>fa</em></strong>—is a base class. It tells the <code>&lt;i&gt;</code> tag, "hey, heads up: this is going to be an icon."</li>
@@ -4555,7 +4558,7 @@
       <div class="panel-body">
       <p>This works slightly differently, by:</p>
       <ol>
-       <li>Specifying the Font Awesome web-font in a CSS rule</li>
+       <li>Specifying the Font Awesome web-font in a CSS rule with <code><span class="code-pink">font-family</span></code></li>
        <li>Using the Unicode HTML Entity to display the icon</li>
       </ol>
        <p>Firstly, the CSS rule. This should be placed inside a <code><span class="code-pink">&lt;style&gt;</span></code> tag, or better yet, in a seperate stylesheet:</p>
@@ -4566,11 +4569,11 @@
         </pre> 
       <p>Next, the HTML Entity part:</p>
         <pre>
-          &lt;span class=<span class="code-blue">&#34;<strong>icon</strong>&#34;&gt;</span>&#x26;&#x23;xf015&#x3b;&lt;/span&gt;
+          &lt;span class=<span class="code-blue">&#34;<strong>icon</strong>&#34;&gt;</span>&#x26;&#x23;xe021&#x3b;&lt;/span&gt;
         </pre>  
-      <p>The CSS rule specifies that any Unicode HTML Entity <em>inside</em> a <code>&lt;span class=<span class="code-blue">&#34;<strong>icon</strong>&#34;&gt;</span>&lt;/span&gt;</code> tag will be rendered on the page as an icon.</p>
-        <p>The HTML entity inside the tag (in this case, <strong>&#x26;&#x23;xf015&#x3b;</strong>) is a string of characters that tells the web-font to display a certain icon.</p>
-        <p class="well well-lg"><strong>Note:</strong> This method may offer you a little more flexibility with your icon tag (for example, you could use a <code>&lt;div&gt;</code> or <code>&lt;span&gt;</code> tag instead).</p> 
+      <p>The CSS rule specifies that any Unicode HTML Entity <em>inside</em> a <code>&lt;span class=<span class="code-blue">&#34;<strong>icon</strong>&#34;&gt;</span></code> tag will be rendered on the page as an icon.</p>
+        <p>The HTML entity inside the tag (in this case, <strong>&#x26;&#x23;xe021&#x3b;</strong>) is a string of characters that tells the web-font to display a certain icon.</p>
+        <p class="well well-lg"><strong>Note:</strong> This method may offer you more flexibility (for example, you could use a <code>&lt;div&gt;</code> or <code>&lt;span&gt;</code> tag instead).</p> 
       </div>
     </div>
   </div>
@@ -4585,8 +4588,10 @@
     <div id="collapseThree" class="panel-collapse collapse">
       <div class="panel-body">
       <p>This method works by including the rendering of the icon before the content using the <code><span class="code-pink">:before</span></code> CSS psuedo-element.</p> 
-      <p>Firstly, the web-font is specified with <code>font-family</code>, and then the icon is specified by using the <code>content</code> property alongside a unicode hex entity (in this case, <strong>f015</strong>).</p> 
-      <p>Because the hex entity is inside a style tag, it must be prepended with an escaped backslash, making it <strong>&#x5c;f015</strong>.</p>
+      <p>Firstly, the web-font is specified with <code>font-family</code>, and then the icon is specified by using the <code>content</code> property alongside a unicode hex entity (in this case, <strong>e021</strong>).</p> 
+      <p>Because the hex entity is inside a style tag, it must be prepended with an escaped backslash, making it <strong>&#x5c;e021</strong>.</p>
+      <p>This should be placed inside a <code><span class="code-pink">&lt;style&gt;</span></code> tag, or better yet, in a seperate stylesheet:</p>
+
       <pre>
           <span class="code-pink">span.icon:before {</span> <br />
           &nbsp;&nbsp;font-family<span class="code-pink">:</span> <span class="code-blue">FontAwesome;</span> <br />
@@ -4597,7 +4602,7 @@
        <pre>
           &lt;span class=<span class="code-blue">&#34;<strong>icon</strong>&#34;&gt;</span>&lt;/span&gt;
         </pre>
-       <p class="well well-lg"><strong>Note:</strong> This method is useful because it seperates the visual elements of your design (like icons) from the structural HTML. Particularly useful for tasks like (like <a href="http://codex.wordpress.org/Theme_Development">Wordpress</a> or <a href="http://docs.moodle.org/dev/Themes">Moodle</a> theme development, for example).</p> 
+       <p class="well well-lg"><strong>Note:</strong> This method is useful because it seperates the visual elements of your design—like icons—from the structural HTML, so you can add glyphicons to existing elements. Particularly useful for tasks like <a href="http://codex.wordpress.org/Theme_Development">Wordpress</a> or <a href="http://docs.moodle.org/dev/Themes">Moodle</a> theme development, for example.</p> 
       </div>
     </div>
   </div>

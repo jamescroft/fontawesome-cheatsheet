@@ -38,7 +38,7 @@
 </style>
 </head>
 
-<body class="font-awesome">
+<body>
 <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
   <div class="container nav-contain">
     <div class="navbar-header">
@@ -2487,26 +2487,106 @@
   <h2>What are Glyphicons?</h2>
   <p>Glyphicons are basically little symbols, icons, or pictograms (whatever you prefer to call them) that you can use in a webpage. They're implemented in Bootstrap as an icon font — a custom font that contains these glyphs instead of letters.</p>
   <p>If you're creating a site based on Bootstrap 3, you already have access to all 200 glyphs in the Glyphicons set.</p> 
-  <p>Don't know how to set up Bootstrap? Go check out the offical <a href="http://getbootstrap.com/getting-started/" target="_blank">getting started guide</a>.</p>
+  <p>Don't know how to set up Bootstrap? Go check out the offical <a href="http://getbootstrap.com/getting-started/" target="_blank">getting started guide</a>, or simply just include these two lines in your <code>&lt;head&gt;</code> tag:</p>
+      <div class="form-group"><label for="CSS">CSS</label><input type="text" value="&lt;link href=&quot;//netdna.bootstrapcdn.com/bootstrap/3.0.3/css/bootstrap.min.css&quot; rel=&quot;stylesheet&quot;&gt;" class="form-control"></div>
+      <div class="form-group"><label for="javascript">Javacript:</label><input type="text" value="&lt;script src=&quot;//netdna.bootstrapcdn.com/bootstrap/3.0.3/js/bootstrap.min.js&quot;&gt;&lt;/script&gt;" class="form-control"></div>
+       <p class="small">(Bootstrap hosting very kindly provided by <a href="http://www.bootstrapcdn.com/#fontawesome_tab" target="_blank">bootstrapcdn.com</a>)</p>
     <div class="alert alert-info"><p><strong>Counterpoint</strong></p> <p>Icon fonts aren't the only way to implement icons on the web. If you're looking for a explanation of using icon fonts vs. SVG files (another possible method), I'd suggest reading this excellent post by Ian Feather: <a href="http://ianfeather.co.uk/ten-reasons-we-switched-from-an-icon-font-to-svg/"><em>Ten reasons we switched from an icon font to SVG</em>.</a></p></div> 
   
   <h2>Who made them?</h2>
-  <p>The glyphicons you see in Bootstrap are part of a set called <em>GLYPHICONS Halflings</em> and were created by the very talented Jan Kovařík over at <a href="http://glyphicons.com/" target="_blank">GLYPHICONS</a>.</p>
+  <p>The glyphicons you see in Bootstrap are part of a set called <em>Glyphicons Halflings</em> and were created by the very talented Jan Kovařík over at <a href="http://glyphicons.com/" target="_blank">GLYPHICONS</a>.</p>
   <h2>Am I allowed to use them?</h2> 
   <p>Short answer: absolutely! Jan has kindly released them under the <a href="https://github.com/twbs/bootstrap#copyright-and-license" target="_blank">same MIT license as Bootstrap</a>. If you'd like more detail, please check out <a href="http://glyphicons.com/license/" target="_blank">Jan's licensing page</a>.</p>
   <h2>How do they work?</h2>
-  <p>Bootstrap uses glyphicons in a format like this:</p>
-  
-  <p><code>&#60;span class=<span class="code-blue">&#34;<strong>glyphicon</strong> <strong>glyphicon-camera</strong>&#34;&#62;</span>&#60;/span&#62;</code> = <code><span class="glyphicon glyphicon-camera about-glyphicon"></span></code></p>
-  <ul>
-  <li>The first class—<strong><em>glyphicon</em></strong>—is a base class. It tells the span tag, "hey, heads up: this is going to be a glyph."</li>
-  <li>The second class (in this example, <strong><em>glyphicon-camera</em></strong>) points the <em>specific</em> glyph you want to use. This one is an icon of a camera!</li>
-  </ul>
-  
-  <div class="alert alert-danger">
-      <strong>Warning: Don't mix with other Bootstrap components</strong>
-      <p>Icon classes can't be combined with other elements. They're designed to be standalone elements.</p>
-    </div> 
+  <p>So, how do I add an icon to my webpage? Well, Glyphicons can be used on the web in one of three ways.</p>      
+<div class="panel-group" id="accordion">
+  <div class="panel panel-default">
+    <div class="panel-heading">
+      <h3 class="panel-title">
+        <a data-toggle="collapse" data-parent="#accordion" href="#collapseOne">
+          1. HTML Tag
+        </a>
+      </h3>
+    </div>
+    <div id="collapseOne" class="panel-collapse collapse in">
+      <div class="panel-body">
+      <p>You can use a simple <code>&lt;span&gt;</code> tag to place an glyphicon in your page, like this:</p>
+      <p><code>&lt;span class=<span class="code-blue">&#34;<strong>glyphicon</strong> <strong>glyphicon-home</strong>&#34;&gt;</span>&lt;/span&gt;</code> = <code><i class="glyphicon glyphicon-home"></i></code></p>
+      <ul>
+        <li>The first class—<strong><em>glyphicon</em></strong>—is a base class. It tells the <code>&lt;span&gt;</code> tag, "hey, heads up: this is going to be an icon."</li>
+        <li>The second class (in this example, <strong><em>glyphicon-home</em></strong>) points the <em>specific</em> icon you want to use. This one is an icon of a house!</li>
+      </ul>
+      <p>To use a HTML Tag for an icon, simply copy and paste <code>&lt;i class=<span class="code-blue">&#34;<strong>glyphicon</strong> <strong>glyphicon-home</strong>&#34;&gt;</span>&lt;/i&gt;</code> anywhere within the <code>&lt;body&gt;</code> of your page.</p>
+      <div class="alert alert-danger"> <strong>Warning: Don't mix glyphicons with other components</strong>
+        <p>Icon classes shouldn't be combined with other elements in Bootstrap. They're designed to be standalone.</p>
+      </div>
+      </div>
+    </div>
+  </div>
+  <div class="panel panel-default">
+    <div class="panel-heading">
+      <h3 class="panel-title">
+        <a data-toggle="collapse" data-parent="#accordion" href="#collapseTwo">
+          2. Unicode HTML Entity
+        </a>
+      </h3>
+    </div>
+    <div id="collapseTwo" class="panel-collapse collapse">
+      <div class="panel-body">
+      <p>This works slightly differently, by:</p>
+      <ol>
+       <li>Specifying the Font Awesome web-font in a CSS rule with <code><span class="code-pink">font-family</span></code></li>
+       <li>Using the Unicode HTML Entity to display the icon</li>
+      </ol>
+       <p>Firstly, the CSS rule. This should be placed inside a <code><span class="code-pink">&lt;style&gt;</span></code> tag, or better yet, in a seperate stylesheet:</p>
+        <pre>
+          <span class="code-pink">span.icon {</span> <br />
+          &nbsp;&nbsp;font-family<span class="code-pink">:</span> <span class="code-blue">'Glyphicons Halflings';</span> <br />
+          <span class="code-pink">}</span>
+        </pre> 
+      <p>Next, the HTML Entity part:</p>
+        <pre>
+          &lt;span class=<span class="code-blue">&#34;<strong>icon</strong>&#34;&gt;</span>&#x26;&#x23;xf015&#x3b;&lt;/span&gt;
+        </pre>  
+      <p>The CSS rule specifies that any Unicode HTML Entity <em>inside</em> a <code>&lt;span class=<span class="code-blue">&#34;<strong>icon</strong>&#34;&gt;</span>&lt;/span&gt;</code> tag will be rendered on the page as an icon.</p>
+        <p>The HTML entity inside the tag (in this case, <strong>&#x26;&#x23;xf015&#x3b;</strong>) is a string of characters that tells the web-font to display a certain icon.</p>
+        <p class="well well-lg"><strong>Note:</strong> This method may offer you more flexibility (for example, you could use a <code>&lt;div&gt;</code> or <code>&lt;li&gt;</code> tag instead).</p> 
+      </div>
+    </div>
+  </div>
+  <div class="panel panel-default">
+    <div class="panel-heading">
+      <h3 class="panel-title">
+        <a data-toggle="collapse" data-parent="#accordion" href="#collapseThree">
+          3. CSS Rule
+        </a>
+      </h3>
+    </div>
+    <div id="collapseThree" class="panel-collapse collapse">
+      <div class="panel-body">
+      <p>This method works by including the rendering of the icon before the content using the <code><span class="code-pink">:before</span></code> CSS psuedo-element.</p> 
+      <p>Firstly, the web-font is specified with <code>font-family</code>, and then the icon is specified by using the <code>content</code> property alongside a unicode hex entity (in this case, <strong>f015</strong>).</p> 
+      <p>Because the hex entity is inside a style tag, it must be prepended with an escaped backslash, making it <strong>&#x5c;f015</strong>.</p> 
+      <p>This should be placed inside a <code><span class="code-pink">&lt;style&gt;</span></code> tag, or better yet, in a seperate stylesheet:</p>
+      <pre>
+          <span class="code-pink">span.icon:before {</span> <br />
+          &nbsp;&nbsp;font-family<span class="code-pink">:</span> <span class="code-blue">'Glyphicons Halflings';</span> <br />
+          &nbsp;&nbsp;content<span class="code-pink">:</span> <span class="code-green">"\f015"</span><span class="code-pink">;</span> <br />
+          <span class="code-pink">}</span>
+        </pre> 
+       <p>To add this icon to a page, add this HTML tag anywhere in the <code>body</code> of your page.</p> 
+       <pre>
+          &lt;span class=<span class="code-blue">&#34;<strong>icon</strong>&#34;&gt;</span>&lt;/span&gt;
+        </pre>
+       <p class="well well-lg"><strong>Note:</strong> This method is useful because it seperates the visual elements of your design—like icons—from the structural HTML, so you can add glyphicons to existing elements. Particularly useful for tasks like <a href="http://codex.wordpress.org/Theme_Development">Wordpress</a> or <a href="http://docs.moodle.org/dev/Themes">Moodle</a> theme development, for example.</p> 
+      </div>
+    </div>
+  </div>
+</div>      
+
+    
+    
+    
     <h2>Examples</h2>
     <p>You can use glyphicons in a variety of ways; in buttons, button groups for a toolbar, navigation or prepended form inputs. Here are a few examples of glyphicons in action:</p>
     <h3>Buttons</h3>
