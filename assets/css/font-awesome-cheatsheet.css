@@ -122,6 +122,10 @@
 		  margin: 0 auto;
 		  max-width: 1170px;
 		}
+		
+		.font-awesome-icons li {
+			margin: 20px 0;
+		}
 			
 		.font-awesome-icons .row > li {		  
 		  padding: 20px 0 0 0;
@@ -368,7 +372,7 @@
 				float: right;
 			}
 			span.fa-class {
-				height: 69px;
+				height: 65px;
 				padding: 5px 0 0 0;
 			}
 			h1.title {
@@ -387,6 +391,8 @@
 			}
 			.font-awesome-icons li {
 				width: 20%;	
+				margin: 10px 0;
+				
 			}
 
 		}
@@ -395,6 +401,10 @@
 			.font-awesome-icons li {
 				width: 10%;	
 			}
+			span.fa-class {
+				height: 89px;
+			}
+
 		}
 		
 		

@@ -7,8 +7,6 @@
    Contribute or fork this project.  
  */
 
-
-
 $(window).load(function() {
   // When the page has loaded, animate in
   $("#home").animate({opacity: 1 });
@@ -109,9 +107,11 @@ $('#glyph-form').bind("keyup keypress", function(e) {
 
 $('body').scrollspy({ target: '.navbar', offset: (fixedNavHeight - 1)    });
 
- //End document ready
- 		
-});
+if (Modernizr.touch) {
+	 $("ul.glyphicons li.grid-icon .btn-container").hide();
+};
+
+}); //End document ready
 
 
 // Using ZeroClipboard to copy glyph codes to clipboard.

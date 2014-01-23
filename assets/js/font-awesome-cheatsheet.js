@@ -108,10 +108,11 @@ $('#glyph-form').bind("keyup keypress", function(e) {
 
 $('body').scrollspy({ target: '.navbar', offset: (fixedNavHeight - 1)    });
 
- //End document ready		
-});
+if (Modernizr.touch) {
+	 $("ul.font-awesome-icons li.grid-icon .btn-container").hide();
+};
 
-
+}); //End document ready
 
 // Using ZeroClipboard to copy glyph codes to clipboard.
 
@@ -165,7 +166,6 @@ client.on( "load", function(client, args) {
 	  };
 	});
 	client.on( 'noflash', function ( client, args ) {
-		alert("No flash!");
 	});
 	client.on( 'wrongflash', function ( client, args ) {
 	  alert("Your flash is too old " + args.flashVersion);

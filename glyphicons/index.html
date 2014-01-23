@@ -10,17 +10,25 @@
 <script src="http://code.jquery.com/ui/1.10.3/jquery-ui.js"></script>
 <script src="../assets/js/jquery.quicksearch.min.js"></script>
 
+<!-- Modernizr for simple touch detection -->
+
+<script src="../assets/js/modernizr-touchevents.js"></script>
+
 <!-- Latest compiled and minified CSS -->
 <link rel="stylesheet" href="http://netdna.bootstrapcdn.com/bootstrap/3.0.3/css/bootstrap.min.css">
 
 <!-- Latest compiled and minified JavaScript -->
 <script src="http://netdna.bootstrapcdn.com/bootstrap/3.0.3/js/bootstrap.min.js"></script>
+
+<!-- Hover menu plugin for Bootstrap -->
+<script src="../assets/js/bootstrap-hover-dropdown.min.js"></script>
+
 <!--[if lt IE 9]>
     <script src="//html5shim.googlecode.com/svn/trunk/html5.js"></script>
 <![endif]-->
 
 <!-- Cheat sheet CSS -->
-<link rel="stylesheet" href="../assets/css/bootstrap3-glyphicon-cheatsheet.css">
+<link rel="stylesheet" href="../assets/css/bootstrap3-glyphicons-cheatsheet.css">
 <!-- Font Awesome -->
 <link href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
 
@@ -48,7 +56,7 @@
         </form>
         </li>
         <li class="dropdown">
-        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Digital <b class="caret"></b></a>
+        <a href="#" class="dropdown-toggle" data-toggle="dropdown" data-hover="dropdown" data-delay="1000" data-close-others="false">Digital <b class="caret"></b></a>
         <ul class="dropdown-menu">
           <li><a href="#home" id="scroll-to-home">Glyphicons</a></li>
           <li><a href="../fontawesome">Font Awesome</a></li>
