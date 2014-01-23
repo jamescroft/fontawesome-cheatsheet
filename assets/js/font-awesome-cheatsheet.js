@@ -7,7 +7,7 @@
    Contribute or fork this project.  
  */
 
-// Animated scroll to page anchors via nav
+
 
 $(window).load(function() {
   // When the page has loaded, animate in
@@ -17,6 +17,9 @@ $(window).load(function() {
 
 
 $(document).ready(function (){
+	
+	// Animated scroll to page anchors via nav
+	
 	var fixedNavHeight = $(".navbar").height();	
 	
 	$("#scroll-to-about").click(function() {

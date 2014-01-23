@@ -1,23 +1,23 @@
 /* Bootstrap Cheat Sheets
    
-   Font Awesome Cheat Sheets
+   Glyphicon Cheat Sheet
    
    By: James Croft (@jamescroft on Twitter)
    
    Contribute or fork this project.  
  */
 
-// Animated scroll to page anchors via nav
 
 
 $(window).load(function() {
-  // When the page has loaded
+  // When the page has loaded, animate in
   $("#home").animate({opacity: 1 });
   $("#about").animate({opacity: 1 });
-  console.log("animated entry");
 });
 
 $(document).ready(function (){
+	
+// Animated scroll to page anchors via nav
 
 	var fixedNavHeight = $(".navbar").height();
 	

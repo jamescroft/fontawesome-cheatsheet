@@ -51,6 +51,16 @@
 			font-style: normal;
 			padding-top: 20px;
 		}
+		
+		ul.nav ul.dropdown-menu li a {
+			padding-top: 0px;
+			line-height: auto;
+		}
+		ul.nav ul.dropdown-menu>.active>a, ul.nav ul.dropdown-menu>.active>a:hover, ul.nav ul.dropdown-menu>.active>a:focus {
+			background-color: #ccbede;
+			color: #333;
+		}
+		
 		.nav-contain {
 			max-width: 1030px;
 			padding: 0 0 0 20px;
