@@ -4501,7 +4501,7 @@
       <p>Font Awesome is... well, awesome! It's a great icon-based font that's very commonly paired-up with Bootstrap-based web projects. It has a library of 369 icons—larger than the <a href="http://bootstrapcheatsheets.com/glyphicons">200 native Bootstrap 3 glyphicons</a>—and can also unlock unique features like flipped, stacked or rotated icons (and much more).</p>
       <p><strong>If you're finding the Glyphicons in Bootstrap 3 a little bit limited, Font Awesome is for you.</strong></p>
       <h2>Cheat sheet?</h2>
-      <p>Yeah! To use this cheat sheet, simply find the icon you want to use and click the copy button. This will add the complete HTML code for that icon (<em>&#60;i&#62;</em> tag and all) to your clipboard, ready to paste into your web development tool of choice.</p>
+      <p>Yeah! To use this cheat sheet, simply find the icon you want to use and click the copy button. This will give you the complete HTML Tag, Unicode HTML Entity or CSS rule for that icon to your clipboard, ready to paste into your web development tool of choice.</p>
       <h2>What is Font Awesome exactly?</h2>
       <p>Font Awesome is a font that's made up of symbols, icons, or pictograms (whatever you prefer to call them) that you can use in a webpage, just like a font.</p>
       <p>Don't know how to set up Font Awesome? Go check out the offical <a href="http://fontawesome.io/get-started/" target="_blank">getting started guide</a>.</p>
@@ -4510,15 +4510,92 @@
         <p>Icon fonts aren't the only way to implement icons on the web. If you're looking for a explanation of using icon fonts vs. SVG files (another possible method), I'd suggest reading this excellent post by Ian Feather: <a href="http://ianfeather.co.uk/ten-reasons-we-switched-from-an-icon-font-to-svg/"><em>Ten reasons we switched from an icon font to SVG</em>.</a></p>
       </div>
       <h2>How does it work?</h2>
-      <p>So, how do I add an icon to my webpage? Well, Font Awesome's icons work like this:</p>
-      <p><code>&#60;i class=<span class="code-blue">&#34;<strong>fa</strong> <strong>fa-home</strong>&#34;&#62;</span>&#60;/i&#62;</code> = <code><i class="fa fa-home"></i></code></p>
+      <p>So, how do I add an icon to my webpage? Well, Font Awesome's icons can work in one of three ways.</p>      
+<div class="panel-group" id="accordion">
+  <div class="panel panel-default">
+    <div class="panel-heading">
+      <h3 class="panel-title">
+        <a data-toggle="collapse" data-parent="#accordion" href="#collapseOne">
+          1. HTML Tag
+        </a>
+      </h3>
+    </div>
+    <div id="collapseOne" class="panel-collapse collapse in">
+      <div class="panel-body">
+      <p><code>&lt;i class=<span class="code-blue">&#34;<strong>fa</strong> <strong>fa-home</strong>&#34;&gt;</span>&lt;/i&gt;</code> = <code><i class="fa fa-home"></i></code></p>
       <ul>
-        <li>The first class—<strong><em>fa</em></strong>—is a base class. It tells the <em>&#60;i&#62;</em> tag, "hey, heads up: this is going to be an icon."</li>
+        <li>The first class—<strong><em>fa</em></strong>—is a base class. It tells the <code>&lt;i&gt;</code> tag, "hey, heads up: this is going to be an icon."</li>
         <li>The second class (in this example, <strong><em>fa-home</em></strong>) points the <em>specific</em> icon you want to use. This one is an icon of a house!</li>
       </ul>
-      <div class="alert alert-danger"> <strong>Warning: Don't mix with other Bootstrap components</strong>
-        <p>Icon classes can't be combined with other elements. They're designed to be standalone elements.</p>
+      <p>To use a HTML Tag for an icon, simply copy and paste <code>&lt;i class=<span class="code-blue">&#34;<strong>fa</strong> <strong>fa-home</strong>&#34;&gt;</span>&lt;/i&gt;</code> anywhere within the <code>&lt;body&gt;</code> of your page.</p>
+      <div class="alert alert-danger"> <strong>Warning: Don't mix with other components</strong>
+        <p>Icon classes shouldn't be combined with other elements. They're designed to be standalone.</p>
       </div>
+
+      </div>
+    </div>
+  </div>
+  <div class="panel panel-default">
+    <div class="panel-heading">
+      <h3 class="panel-title">
+        <a data-toggle="collapse" data-parent="#accordion" href="#collapseTwo">
+          2. Unicode HTML Entity
+        </a>
+      </h3>
+    </div>
+    <div id="collapseTwo" class="panel-collapse collapse">
+      <div class="panel-body">
+      <p>This works slightly differently, by:</p>
+      <ol>
+       <li>Specifying the Font Awesome web-font in a CSS rule</li>
+       <li>Using the Unicode HTML Entity to display the icon</li>
+      </ol>
+       <p>Firstly, the CSS rule. This should be placed inside a <code><span class="code-pink">&lt;style&gt;</span></code> tag, or better yet, in a seperate stylesheet:</p>
+        <pre>
+          <span class="code-pink">span.icon {</span> <br />
+          &nbsp;&nbsp;font-family<span class="code-pink">:</span> <span class="code-blue">FontAwesome;</span> <br />
+          <span class="code-pink">}</span>
+        </pre> 
+      <p>Next, the HTML Entity part:</p>
+        <pre>
+          &lt;span class=<span class="code-blue">&#34;<strong>icon</strong>&#34;&gt;</span>&#x26;&#x23;xf015&#x3b;&lt;/span&gt;
+        </pre>  
+      <p>The CSS rule specifies that any Unicode HTML Entity <em>inside</em> a <code>&lt;span class=<span class="code-blue">&#34;<strong>icon</strong>&#34;&gt;</span>&lt;/span&gt;</code> tag will be rendered on the page as an icon.</p>
+        <p>The HTML entity inside the tag (in this case, <strong>&#x26;&#x23;xf015&#x3b;</strong>) is a string of characters that tells the web-font to display a certain icon.</p>
+        <p class="well well-lg"><strong>Note:</strong> This method may offer you a little more flexibility with your icon tag (for example, you could use a <code>&lt;div&gt;</code> or <code>&lt;span&gt;</code> tag instead).</p> 
+      </div>
+    </div>
+  </div>
+  <div class="panel panel-default">
+    <div class="panel-heading">
+      <h3 class="panel-title">
+        <a data-toggle="collapse" data-parent="#accordion" href="#collapseThree">
+          3. CSS Rule
+        </a>
+      </h3>
+    </div>
+    <div id="collapseThree" class="panel-collapse collapse">
+      <div class="panel-body">
+      <p>This method works by including the rendering of the icon before the content using the <code><span class="code-pink">:before</span></code> CSS psuedo-element.</p> 
+      <p>Firstly, the web-font is specified with <code>font-family</code>, and then the icon is specified by using the <code>content</code> property alongside a unicode hex entity (in this case, <strong>f015</strong>).</p> 
+      <p>Because the hex entity is inside a style tag, it must be prepended with an escaped backslash, making it <strong>&#x5c;f015</strong>.</p>
+      <pre>
+          <span class="code-pink">span.icon:before {</span> <br />
+          &nbsp;&nbsp;font-family<span class="code-pink">:</span> <span class="code-blue">FontAwesome;</span> <br />
+          &nbsp;&nbsp;content<span class="code-pink">:</span> <span class="code-green">"\f015"</span><span class="code-pink">;</span> <br />
+          <span class="code-pink">}</span>
+        </pre> 
+       <p>To add this icon to a page, add this HTML tag anywhere in the <code>body</code> of your page.</p> 
+       <pre>
+          &lt;span class=<span class="code-blue">&#34;<strong>icon</strong>&#34;&gt;</span>&lt;/span&gt;
+        </pre>
+       <p class="well well-lg"><strong>Note:</strong> This method is useful because it seperates the visual elements of your design (like icons) from the structural HTML. Particularly useful for tasks like (like <a href="http://codex.wordpress.org/Theme_Development">Wordpress</a> or <a href="http://docs.moodle.org/dev/Themes">Moodle</a> theme development, for example).</p> 
+      </div>
+    </div>
+  </div>
+</div>      
+      
+      
       <h2>Examples</h2>
       <div class="alert alert-info">
         <p><strong>Note:</strong> For simplicity & clarity, in these examples Font Awesome has been paired up with the web components from Bootstrap 3. However, Font Awesome can be used in any website or web framework.</p>
