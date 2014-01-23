@@ -9,10 +9,15 @@
 
 // Animated scroll to page anchors via nav
 
+$(window).load(function() {
+  // When the page has loaded, animate in
+  $("#home").animate({opacity: 1 });
+  $("#about").animate({opacity: 1 });
+});
+
+
 $(document).ready(function (){
-	var fixedNavHeight = $(".navbar").height();
-	$('body').scrollspy({ target: '.navbar', offset: (fixedNavHeight - 1)    });
-	
+	var fixedNavHeight = $(".navbar").height();	
 	
 	$("#scroll-to-about").click(function() {
 		var scrollPos = $('#about').offset().top - (fixedNavHeight - 1);
@@ -95,8 +100,15 @@ $('#glyph-form').bind("keyup keypress", function(e) {
 		var classCode = glyphStore.attr("class").split(" ");
 		 $(glyphStore).next(".fa-class").text("." + classCode[1]);		 
 	});
- 		
+
+//End of element insertions into page, so initialise scrollspy
+
+$('body').scrollspy({ target: '.navbar', offset: (fixedNavHeight - 1)    });
+
+ //End document ready		
 });
+
+
 
 // Using ZeroClipboard to copy glyph codes to clipboard.
 

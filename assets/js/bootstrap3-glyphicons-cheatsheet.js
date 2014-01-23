@@ -10,10 +10,17 @@
 // Animated scroll to page anchors via nav
 
 
+$(window).load(function() {
+  // When the page has loaded
+  $("#home").animate({opacity: 1 });
+  $("#about").animate({opacity: 1 });
+  console.log("animated entry");
+});
+
 $(document).ready(function (){
+
 	var fixedNavHeight = $(".navbar").height();
 	
-	$('body').scrollspy({ target: '.navbar', offset: (fixedNavHeight - 1)    });
 	$("#scroll-to-about").click(function() {
 		var scrollPos = $('#about').offset().top - (fixedNavHeight - 1);
 		$('html, body').animate({
@@ -47,8 +54,10 @@ function createGlyphRows() {
 	for (var c = 10; c<=glyphCount;c+=20) {
 		$("li.grid-icon").slice(c, c+rowSize).wrapAll("<div class='row row-alt'><div class='container'></div></div>");
 	};
+	$("li.grid-icon .btn-container").attr("display","block");
 	$("ul.glyphicons .row:first").attr("id", "first-row");
 	$("ul.glyphicons").css("max-width", "100%");
+	
 };
 
 createGlyphRows();
@@ -95,6 +104,12 @@ $('#glyph-form').bind("keyup keypress", function(e) {
 		var classCode = glyphStore.attr("class").split(" ");
 		 $(glyphStore).next(".glyphicon-class").text("." + classCode[1]);		 
 	});
+ 		
+//End of element insertions into page, so initialise scrollspy
+
+$('body').scrollspy({ target: '.navbar', offset: (fixedNavHeight - 1)    });
+
+ //End document ready
  		
 });
 
