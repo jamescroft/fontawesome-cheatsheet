@@ -121,6 +121,11 @@
 		  margin: 0 auto; 
 		  max-width: 1170px;
 		}
+		
+		.glyphicons li {
+			margin: 20px 0;
+		}
+
 			
 		.glyphicons .row > li {		  
 		  padding: 20px 0 0 0;
