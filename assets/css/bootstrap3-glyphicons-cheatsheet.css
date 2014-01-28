@@ -56,8 +56,8 @@
 			line-height: auto;
 		}
 		ul.nav ul.dropdown-menu>.active>a, ul.nav ul.dropdown-menu>.active>a:hover, ul.nav ul.dropdown-menu>.active>a:focus {
-			background-color: #ccbede;
-			color: #333;
+			background-color: #ebebeb;
+			color: #696969;
 		}
 		
 		.nav-contain {

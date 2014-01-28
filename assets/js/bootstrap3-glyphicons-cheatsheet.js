@@ -9,8 +9,8 @@
 
 $(window).load(function() {
   // When the page has loaded, animate in
-  $("#home").animate({opacity: 1 });
-  $("#about").animate({opacity: 1 });
+  $("#home").css("opacity", 1 );
+  $("#about").css("opacity", 1 );
 });
 
 $(document).ready(function (){
@@ -18,9 +18,9 @@ $(document).ready(function (){
 // Animated scroll to page anchors via nav
 
 	var fixedNavHeight = $(".navbar").height();
-	
-	$("#scroll-to-about").click(function() {
-		var scrollPos = $('#about').offset().top - (fixedNavHeight - 1);
+
+function scrollToAbout() {
+	var scrollPos = $('#about').offset().top - (fixedNavHeight - 1);
 		$('html, body').animate({
 			scrollTop: scrollPos
 		}, 1000, "easeInOutExpo", function () {
@@ -28,9 +28,9 @@ $(document).ready(function (){
 				$(".navbar-toggle").click();
 			};
     	});
-	});
-	
-	$("#scroll-to-home").click(function() {
+}
+
+function scrollToHome() {
 		var scrollPos = $('#home').offset().top - (fixedNavHeight - 1);
 		$('html, body').animate({
 			scrollTop: scrollPos,
@@ -39,6 +39,16 @@ $(document).ready(function (){
 				$(".navbar-toggle").click();
 			};
     	});
+
+}
+
+	
+	$("#scroll-to-about").click(function() {
+		scrollToAbout();
+	});
+	
+	$("#scroll-to-home").click(function() {
+		scrollToHome();
 	});
 
 //Create rows: 10 icons per row
@@ -74,7 +84,8 @@ setTimeout(function() {
 			$(this).parent('div.row').show();
 		},
 		'onAfter': function () {	
-    }
+			scrollToHome();
+    	}
 		});
 }, 100);
 

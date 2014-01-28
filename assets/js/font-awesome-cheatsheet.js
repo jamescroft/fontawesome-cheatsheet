@@ -19,11 +19,11 @@ $(window).load(function() {
 $(document).ready(function (){
 	
 	// Animated scroll to page anchors via nav
-	
-	var fixedNavHeight = $(".navbar").height();	
-	
-	$("#scroll-to-about").click(function() {
-		var scrollPos = $('#about').offset().top - (fixedNavHeight - 1);
+
+	var fixedNavHeight = $(".navbar").height();
+
+function scrollToAbout() {
+	var scrollPos = $('#about').offset().top - (fixedNavHeight - 1);
 		$('html, body').animate({
 			scrollTop: scrollPos
 		}, 1000, "easeInOutExpo", function () {
@@ -31,9 +31,9 @@ $(document).ready(function (){
 				$(".navbar-toggle").click();
 			};
     	});
-	});
-	
-	$("#scroll-to-home").click(function() {
+}
+
+function scrollToHome() {
 		var scrollPos = $('#home').offset().top - (fixedNavHeight - 1);
 		$('html, body').animate({
 			scrollTop: scrollPos,
@@ -42,7 +42,16 @@ $(document).ready(function (){
 				$(".navbar-toggle").click();
 			};
     	});
-	});
+
+}
+	
+$("#scroll-to-about").click(function() {
+	scrollToAbout();
+});
+
+$("#scroll-to-home").click(function() {
+	scrollToHome();
+});
 
 //Create rows: 10 icons per row
 
@@ -74,8 +83,9 @@ setTimeout(function() {
 			$(this).show();
 			$(this).parent('div.row').show();
 		},
-		'onAfter': function () {	
-    }
+		'onAfter': function () {
+			scrollToHome();
+   		}
 		});
 }, 100);
 
