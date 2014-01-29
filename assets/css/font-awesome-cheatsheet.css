@@ -70,6 +70,12 @@
 			margin: 81px auto 0 auto;
 			min-height: 600px;
 		}
+		
+		.alert-noflash {
+			margin: auto 20px;
+			text-align:center;
+		}
+		
 		.row-alt {
 			background-color:rgba(255,255,255,0.1);
 		}

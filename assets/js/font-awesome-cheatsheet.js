@@ -10,9 +10,9 @@
 
 
 $(window).load(function() {
-  // When the page has loaded, animate in
-  $("#home").animate({opacity: 1 });
-  $("#about").animate({opacity: 1 });
+  // When the page has loaded, reveal
+  $("#home").css("opacity", 1 );
+  $("#about").css("opacity", 1 );
 });
 
 
@@ -111,8 +111,16 @@ $('#glyph-form').bind("keyup keypress", function(e) {
 		};		
 	//Finds the class of the font awesome icon in the grid and display it underneath		
 		var classCode = glyphStore.attr("class").split(" ");
-		 $(glyphStore).next(".fa-class").text("." + classCode[1]);		 
+		 $(glyphStore).next(".fa-class").text("." + classCode[1]);	
 	});
+	
+	//Adds a break to the font awesome class prefix, helps with display of class names in grid
+		 $(".fa-class").each(function() {
+			var html = $(this).html().split("-");
+			html = html[0] + "-" + "<br>" + html.slice(1).join("-");
+			$(this).html(html);
+		 });
+
 
 //End of element insertions into page, so initialise scrollspy
 
@@ -174,13 +182,7 @@ client.on( "load", function(client, args) {
 	  if ($(this).hasClass("copy-unicode-hex")) {
 		  $(this).text("CSS Rule");
 	  };
-	});
-	client.on( 'noflash', function ( client, args ) {
-	});
-	client.on( 'wrongflash', function ( client, args ) {
-	  alert("Your flash is too old " + args.flashVersion);
-	} );
-	
+	});	
 	client.on( 'dataRequested', function (client, args) {
 	  //Inject the glyph HTML code into the clipboard
 	  client.setText(glyphClipboard);
@@ -200,5 +202,16 @@ client.on( "load", function(client, args) {
     }, 600)	
   });
 });
+
+client.on( 'noflash', function ( client, args ) {
+  $(".btn-container").hide();
+  $(".alert-noflash").removeClass("hide");
+  
+  
+} );	
+client.on( 'wrongflash', function ( client, args ) {
+  alert("Your flash is too old " + args.flashVersion);
+} );
+
 
 
