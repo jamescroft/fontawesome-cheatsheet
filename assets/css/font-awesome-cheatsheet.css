@@ -52,7 +52,7 @@
 		}
 		.navbar ul.navbar-nav li.nav-search {
 			width:250px;
-			margin: 12px 10px 0 0;
+			margin: 12px 10px;
 		}
 		
 		ul.nav ul.dropdown-menu li a {
@@ -182,7 +182,7 @@
 			display: inline-block;			
 			width: 100%;
 			padding: 10px 15px 0;
-			height: 70px;
+			height: 90px;
 		}
 		.btn-container {
 				padding: 10px 0 1px 0;
