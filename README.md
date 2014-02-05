@@ -1,28 +1,20 @@
 ###Using this cheat sheet
 
-Go check out the [published Bootstrap 3 Glyphs cheat sheet page](http://jamescroft.github.io/bootstrap-cheatsheets/glyphicons).
+Go check out the [published Font Awesome cheat sheet page](http://fontawesome.bootstrapcheatsheets.com).
 
-The [Font Awesome version of this cheat sheet](http://jamescroft.github.io/bootstrap-cheatsheets/font-awesome) is also available.
+###About
 
-###About Bootstrap 3 Glyphs
-
-Glyphs are great! They're one of my favourite additions to [Bootstrap 3](http://getbootstrap.com), and are made by the very talented Jan Kovařík over at [Glyphicons](http://glyphicons.com/). I've been working with these glyphs quite a lot, so I thought I'd make a cheat sheet for myself.
+Font Awesome is great! It's one of my favourite add-ons to [Bootstrap 3](http://getbootstrap.com). I've been working with these icons quite a lot, so I thought I'd make a cheat sheet for myself.
 
 ###Cheat sheet?
 
-Yeah! It's basically a big grid with all the glyphicons on it. It's similar to the [official Bootstrap documentation on Glyphicons](http://getbootstrap.com/components/#glyphicons), except [this cheat sheet](http://jamescroft.github.io/bootstrap-cheatsheets/glyphicons) has handy-dandy copy buttons.
+Yeah! It's basically a big grid with all the glyphicons on it. It's similar to the [official Font Awesome documentation](http://fontawesome.io/examples/), except [this cheat sheet](http://fontawesome.bootstrapcheatsheets.com) has some handy-dandy copy buttons.
 
-To use it, simply find the glyphicon you want to use on the page and click the copy button. That's it! This will add the complete HTML code for that glyphicon (span tag and all) to your clipboard, ready to paste into your web development tool of choice.
+To use it, simply find the icon you want to use on the page and click the copy button. That's it! This will add the complete HTML code, unicode, or CSS rule for that glyphicon to your clipboard, ready to paste into your web development tool of choice.
 
-There are also descriptive class tags on them, so you can Ctrl/Cmd + F and find an icon by keyword.
+There is also a search box up top, so you can find an icon by keyword.
 
-###What are Glyphicons exactly?
-[Glyphicons](http://glyphicons.com/) are basically little symbols, icons, or pictograms (whatever you prefer to call them) that you can use in a webpage, just like a font. If you're creating a site based on Bootstrap 3, [you already have access to 200 of them](http://getbootstrap.com/components/#glyphicons).
+###Is are Font Awesome exactly?
+[Font Awesome](http://fontawesome.io) is basically little symbols, icons, or pictograms (whatever you prefer to call them) that you can use in a webpage, just like a font. If you're creating a site based on the current version (4.0.3), [you have access to 369 of them](http://fontawesome.io/cheatsheet/).
 
-Don't know how to set up Bootstrap? Go check out the [offical getting started guide](http://getbootstrap.com/getting-started/).
-
-###Task list
-
-- [ ] Both: Add a search box to nav-contain using jquery filter
-- [ ] Add 'Copy unicode' button
-- [ ] Find a way to incorporate offical documentation categories, sort by alpha vs. sort by category etc
+Don't know how to set up Font Awesome? Go check out the [offical getting started guide](http://fontawesome.io/get-started).
