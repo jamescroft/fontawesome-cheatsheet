@@ -92,9 +92,20 @@
 			font-family: 'Source Sans Pro', sans-serif;
 			text-transform:uppercase;
 			font-weight: bold;
-			font-size:42px;		
+			font-size: 42px;		
 			z-index: 1;
 		}
+        
+        h1.title sup {
+            font-size: 20%;
+            font-weight: normal;
+            text-transform: lowercase;
+            color: #fff;
+            position: relative;
+            top: -50px;
+            left: 8px;
+            
+        }
 		
 		.subtitle-container {
 				position:absolute;
