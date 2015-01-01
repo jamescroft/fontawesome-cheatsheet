@@ -199,7 +199,7 @@ client.on( 'wrongflash', function ( client, args ) {
   alert("Your flash is too old " + args.flashVersion);
 } ); 
 
-},100);
+},600);
 
 
 
