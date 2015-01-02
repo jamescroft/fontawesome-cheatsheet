@@ -8,6 +8,9 @@
    Contribute to or fork this project.  
  */
 
+    #home{opacity: 0;} 
+	#about{opacity: 0;}
+
 		html {
 			overflow-x: hidden; /* Prevent scroll on narrow devices */
 	}

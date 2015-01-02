@@ -17,7 +17,7 @@ $(window).load(function() {
 
 
 $(document).ready(function (){
-	
+
 	// Animated scroll to page anchors via nav
 
 	var fixedNavHeight = $(".navbar").height();
