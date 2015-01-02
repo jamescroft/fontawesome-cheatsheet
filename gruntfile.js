@@ -22,12 +22,24 @@ module.exports = function(grunt){
         },
         
     uglify: {
-    build: {
-        files: {
-            'build/js/fa-cheatsheet.min.js': ['assets/js/*.js']
+        build: {
+            files: {
+                'build/js/fa-cheatsheet.min.js': ['assets/js/*.js']
+            }
         }
-    }
-},    
+    }, 
+        
+    cssmin: {
+      target: {
+        files: [{
+          expand: true,
+          cwd: 'assets/css',
+          src: ['*.css', '!*.min.css'],
+          dest: 'build/css',
+          ext: '.min.css'
+        }]
+      }
+    },
                      
    watch: {
     html: {
@@ -37,6 +49,10 @@ module.exports = function(grunt){
     js: {
         files: ['assets/js/*.js'],
         tasks: ['uglify']
+    },
+    css: {
+        files: ['assets/css/*.css'],
+        tasks: ['cssmin']
     }
 }   
 
