@@ -14,7 +14,7 @@ To use it, simply find the icon you want to use on the page and click the copy b
 
 There is also a search box up top, so you can find an icon by keyword.
 
-###Is are Font Awesome exactly?
-[Font Awesome](http://fontawesome.io) is basically little symbols, icons, or pictograms (whatever you prefer to call them) that you can use in a webpage, just like a font. If you're creating a site based on the current version (4.0.3), [you have access to 369 of them](http://fontawesome.io/cheatsheet/).
+###What is Font Awesome exactly?
+[Font Awesome](http://fontawesome.io) is basically a library of little symbols, icons, or pictograms (whatever you prefer to call them) that you can use in a webpage, just like a font. If you're creating a site based on the current version (4.2.0), [you have access to 479 of them](http://fontawesome.io/cheatsheet/).
 
 Don't know how to set up Font Awesome? Go check out the [offical getting started guide](http://fontawesome.io/get-started).
