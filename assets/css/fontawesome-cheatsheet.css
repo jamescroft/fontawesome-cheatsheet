@@ -206,6 +206,7 @@
 			text-align:center;
 			font-size:12px;
 			font-family:Consolas, "Andale Mono", "Lucida Console", "Lucida Sans Typewriter", Monaco, "Courier New", monospace;
+            color:#000;
 		  } 
 		  .btn-container .btn-group .dropdown-menu {
 			  min-width:220px;
