@@ -134,5 +134,20 @@ clipboard.on('success', function(e) {
 	window.setTimeout(function() {
 		e.trigger.textContent = buttonText;
 	}, 2000);
-}); 
+});
+
+// prevent Bootstrap dropdown from closing on click
+
+$('.btn-container .btn-group button.dropdown-toggle').on('click', function (event) {
+    $(this).parent().toggleClass('open');
+});
+
+$('body').on('click', function (e) {
+    if (!$('.btn-container .btn-group').is(e.target) 
+        && $('.btn-container .btn-group').has(e.target).length === 0 
+        && $('.open').has(e.target).length === 0
+    ) {
+        $('.btn-container .btn-group').removeClass('open');
+    }
+});
 
