@@ -1,17 +1,17 @@
 {
-    "name" : "FontAwesomeCheatsheet",
-    "version" : "0.1.0",
-    "author" : "James Croft",
-    "private" : true,
-
-    "devDependencies" : {
-        "grunt" :                       "~0.4.0",
-        "grunt-contrib-cssmin":         "*",
-        "grunt-contrib-sass":           "*",
-        "grunt-contrib-uglify":         "*",
-        "grunt-contrib-watch":          "*",
-        "grunt-cssc":                   "*",
-        "grunt-htmlhint":               "*",
-        "matchdep":                     "*"
-    }
+  "name": "FontAwesomeCheatsheet",
+  "version": "0.1.0",
+  "author": "James Croft",
+  "private": true,
+  "devDependencies": {
+    "grunt": "~0.4.0",
+    "grunt-contrib-cssmin": "*",
+    "grunt-contrib-sass": "*",
+    "grunt-contrib-uglify": "*",
+    "grunt-contrib-watch": "*",
+    "grunt-cssc": "*",
+    "grunt-htmlhint": "*",
+    "grunt-mustache-render": "^1.9.2",
+    "matchdep": "*"
+  }
 }

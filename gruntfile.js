@@ -3,6 +3,24 @@ module.exports = function(grunt){
 
     grunt.initConfig({
         pkg: grunt.file.readJSON('package.json'),
+
+        mustache_render: {
+            options: {
+            // Task global options go here 
+            },
+            your_target: {
+            options: {
+                // Target specific options go here 
+            },
+            files : [
+                {
+                data: "assets/icons-4-7-0.json", 
+                template: "index.mustache",
+                dest: "index.html" 
+                }
+            ]
+            },
+        },
         
         htmlhint: {
             build: {
@@ -42,6 +60,10 @@ module.exports = function(grunt){
     },
                      
    watch: {
+    mustache: {
+        files: ['*.mustache'],
+        tasks: ['mustache_render']
+    },
     html: {
         files: ['*.html'],
         tasks: ['htmlhint']
@@ -57,7 +79,8 @@ module.exports = function(grunt){
 }   
 
     });
-    
+
+    grunt.loadNpmTasks('grunt-mustache-render');
     grunt.registerTask('default', []);
 
 };
