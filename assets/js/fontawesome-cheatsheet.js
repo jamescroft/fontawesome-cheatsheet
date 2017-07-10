@@ -116,90 +116,23 @@ if (Modernizr.touch) {
 
 }); //End document ready
 
-// Using ZeroClipboard to copy glyph codes to clipboard. This is set in a Timeout to allow the Mustache-templated items to be loaded in.
+// Micro-plugin that excludes children from text
 
-setTimeout (function(){
-   var client = new ZeroClipboard( $('.copy-button'), {
-  moviePath: "assets/zeroclipboard-1.2.3/ZeroClipboard.swf"
-});
-
-
-client.on( "load", function(client, args) {
-
-	client.on( 'mouseover', function ( client, args ) {
-	  //Sets the value to be injected into the clipboard as the item on mouseover
-	  	
-	  glyphStore = $(this).parents("li.grid-icon").children("i.fa");
-	  if ($(this).hasClass("parent-copy")) {
-		  //Copy the HTML Tag into the clipboard
-		  //Because of the unicode symbols rendered as contents in the <i> tag, a local clone must be taken and emptied to parse the correct clipboard value
-		  glyphClipboard = glyphStore.clone().empty().removeAttr("data-unicode")[0].outerHTML;
-	  };
-	  if ($(this).hasClass("copy-html")) {
-		  //Copy the HTML Tag into the clipboard
-		  //Because of the unicode symbols rendered as contents in the <i> tag, a local clone must be taken and emptied to parse the correct clipboard value
-		  glyphClipboard = glyphStore.clone().empty().removeAttr("data-unicode")[0].outerHTML;
-		  $(this).html($("<code/>").text(glyphClipboard));
-	  };
-	  if ($(this).hasClass("copy-unicode-html")) {
-	  	  //Copy the Unicode HTML Entity into the clipboard
-		  //The unicode HTML entity is prepended with "&#x" and appended with ";"
-		  glyphClipboard = "&#x" + glyphStore.data("unicode") + ";";
-		  $(this).html($("<code/>").text(glyphClipboard));
-	  };
-	  if ($(this).hasClass("copy-unicode-hex")) {
-	  	  //Copy the Escaped Unicode Hex (for CSS) into the clipboard
-		  //The unicode Hex entity is prepended with " content:"/ " and appended with " "; "
-		  glyphClipboard = "content:\"\\" + glyphStore.data("unicode") + "\";";
-		  $(this).html($("<code/>").text(glyphClipboard));
-	  };
-	  
-	  
-	});
-	
-	client.on( 'mouseout', function (client, args) {
-	  //Revert the button label
-	  if ($(this).hasClass("copy-html")) {
-		  $(this).text("HTML Tag");
-	  };
-	  	  if ($(this).hasClass("copy-unicode-html")) {
-		  $(this).text("Unicode HTML Entity");
-	  };
-	  if ($(this).hasClass("copy-unicode-hex")) {
-		  $(this).text("CSS Rule");
-	  };
-	});	
-	client.on( 'dataRequested', function (client, args) {
-	  //Inject the glyph HTML code into the clipboard
-	  client.setText(glyphClipboard);
-	});
-  
-  client.on( "complete", function(client, args) {
-    // `this` is the element that was clicked, we're setting $(this) to 'that' because $(this) doesn't work with the timeout function.
-    that = $(this);
-	btnString = that.contents();
-	// Animation to indicate element has been copied
-	$(that).text("Copied!");
-	$(that).removeClass("zeroclipboard-is-hover", 0, "linear");
-	$(that).addClass("btn-success", 100, "linear");	
-    setTimeout(function() {
-        $(that).removeClass("btn-success", 100, "linear"), 
-		$(that).html($("<code/>").text(btnString.text()));
-    }, 600)	
-  });
-});
-
-client.on( 'noflash', function ( client, args ) {
-  $(".btn-container").hide();
-  $(".alert-noflash").removeClass("hide");
-  
-  
-} );	
-client.on( 'wrongflash', function ( client, args ) {
-  alert("Your flash is too old " + args.flashVersion);
-} ); 
-
-},600);
+$.fn.ignore = function(sel){
+  return this.clone().find(sel||">*").remove().end();
+};
 
 
+//clipboard.js code
+
+var clipboard = new Clipboard('.copy-button');
+clipboard.on('success', function(e) {
+	console.info('Action:', e.action);
+	console.info('Text:', e.text);
+	var buttonText = $(e.trigger).ignore("code").text();
+	$(e.trigger).html("<span class=\"copy-success\"> Copied!</span>");
+	window.setTimeout(function() {
+		e.trigger.textContent = buttonText;
+	}, 2000);
+}); 
 
